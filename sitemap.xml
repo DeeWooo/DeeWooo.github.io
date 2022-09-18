@@ -2,40 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://deewooo.github.io/post/3rd/</loc>
-    <lastmod>2022-09-19T00:10:25+08:00</lastmod>
-  </url><url>
     <loc>https://deewooo.github.io/categories/</loc>
-    <lastmod>2022-09-19T00:10:25+08:00</lastmod>
+    <lastmod>2020-06-12T01:51:19+08:00</lastmod>
   </url><url>
     <loc>https://deewooo.github.io/post/</loc>
-    <lastmod>2022-09-19T00:10:25+08:00</lastmod>
-  </url><url>
-    <loc>https://deewooo.github.io/tags/tag1/</loc>
-    <lastmod>2022-09-19T00:10:25+08:00</lastmod>
-  </url><url>
-    <loc>https://deewooo.github.io/tags/tag2/</loc>
-    <lastmod>2022-09-19T00:10:25+08:00</lastmod>
+    <lastmod>2020-06-12T01:51:19+08:00</lastmod>
   </url><url>
     <loc>https://deewooo.github.io/tags/</loc>
-    <lastmod>2022-09-19T00:10:25+08:00</lastmod>
-  </url><url>
-    <loc>https://deewooo.github.io/categories/tech/</loc>
-    <lastmod>2022-09-19T00:10:25+08:00</lastmod>
-  </url><url>
-    <loc>https://deewooo.github.io/</loc>
-    <lastmod>2022-09-19T00:10:25+08:00</lastmod>
-  </url><url>
-    <loc>https://deewooo.github.io/post/test/</loc>
-    <lastmod>2022-09-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://deewooo.github.io/post/2nd/</loc>
-    <lastmod>2022-09-18T00:00:00+00:00</lastmod>
+    <lastmod>2020-06-12T01:51:19+08:00</lastmod>
   </url><url>
     <loc>https://deewooo.github.io/tags/%E5%9C%9F%E7%8C%AB%E7%88%AA%E7%97%95/</loc>
     <lastmod>2020-06-12T01:51:19+08:00</lastmod>
   </url><url>
     <loc>https://deewooo.github.io/post/%E6%99%B4%E4%BA%86%E4%B8%80%E5%A4%A9%E5%90%8E%E5%8F%88%E4%B8%8B%E8%B5%B7%E4%BA%86%E9%9B%A8/</loc>
+    <lastmod>2020-06-12T01:51:19+08:00</lastmod>
+  </url><url>
+    <loc>https://deewooo.github.io/</loc>
     <lastmod>2020-06-12T01:51:19+08:00</lastmod>
   </url><url>
     <loc>https://deewooo.github.io/tags/%E7%AE%80%E5%8D%95%E7%94%9F%E9%95%BF/</loc>
@@ -63,6 +45,9 @@
     <lastmod>2019-01-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://deewooo.github.io/tags/istio/</loc>
+    <lastmod>2017-11-08T15:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deewooo.github.io/categories/tech/</loc>
     <lastmod>2017-11-08T15:00:00+00:00</lastmod>
   </url><url>
     <loc>https://deewooo.github.io/2017/11/08/istio-canary-release/</loc>
