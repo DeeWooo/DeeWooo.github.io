@@ -6,43 +6,7 @@
     <description>Recent content on 猫猫和狗狗的小窝</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Sep 2022 00:13:22 +0800</lastBuildDate><atom:link href="https://deewooo.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>7th</title>
-      <link>https://deewooo.github.io/post/7th/</link>
-      <pubDate>Mon, 19 Sep 2022 00:13:22 +0800</pubDate>
-      
-      <guid>https://deewooo.github.io/post/7th/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>6th</title>
-      <link>https://deewooo.github.io/post/6th/</link>
-      <pubDate>Mon, 19 Sep 2022 00:12:13 +0800</pubDate>
-      
-      <guid>https://deewooo.github.io/post/6th/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>5th</title>
-      <link>https://deewooo.github.io/post/5th/</link>
-      <pubDate>Mon, 19 Sep 2022 00:11:56 +0800</pubDate>
-      
-      <guid>https://deewooo.github.io/post/5th/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>4th</title>
-      <link>https://deewooo.github.io/post/4th/</link>
-      <pubDate>Mon, 19 Sep 2022 00:11:06 +0800</pubDate>
-      
-      <guid>https://deewooo.github.io/post/4th/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Mon, 19 Sep 2022 00:10:25 +0800</lastBuildDate><atom:link href="https://deewooo.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>3rd</title>
       <link>https://deewooo.github.io/post/3rd/</link>
@@ -71,6 +35,24 @@
     </item>
     
     <item>
+      <title>晴了一天后又下起了雨</title>
+      <link>https://deewooo.github.io/post/%E6%99%B4%E4%BA%86%E4%B8%80%E5%A4%A9%E5%90%8E%E5%8F%88%E4%B8%8B%E8%B5%B7%E4%BA%86%E9%9B%A8/</link>
+      <pubDate>Fri, 12 Jun 2020 01:51:19 +0800</pubDate>
+      
+      <guid>https://deewooo.github.io/post/%E6%99%B4%E4%BA%86%E4%B8%80%E5%A4%A9%E5%90%8E%E5%8F%88%E4%B8%8B%E8%B5%B7%E4%BA%86%E9%9B%A8/</guid>
+      <description>晴了一天后又下起了雨，公交车等了很久没来，现在必然已经迟到了。等车的时候看到狗狗带着绿帽子，骑着自行车火急火燎地经过，小短腿快速地登啊登，车</description>
+    </item>
+    
+    <item>
+      <title>一堆漂亮的MARCO铅笔，让我记起善良和给予</title>
+      <link>https://deewooo.github.io/post/%E4%B8%80%E5%A0%86%E6%BC%82%E4%BA%AE%E7%9A%84marco%E9%93%85%E7%AC%94%E8%AE%A9%E6%88%91%E8%AE%B0%E8%B5%B7%E5%96%84%E8%89%AF%E5%92%8C%E7%BB%99%E4%BA%88/</link>
+      <pubDate>Fri, 12 Jun 2020 01:48:29 +0800</pubDate>
+      
+      <guid>https://deewooo.github.io/post/%E4%B8%80%E5%A0%86%E6%BC%82%E4%BA%AE%E7%9A%84marco%E9%93%85%E7%AC%94%E8%AE%A9%E6%88%91%E8%AE%B0%E8%B5%B7%E5%96%84%E8%89%AF%E5%92%8C%E7%BB%99%E4%BA%88/</guid>
+      <description>从今年2月底失业到现在，失业大概接近4个月时间，而工作前景依旧不明朗，少有岗位发布出来，企业招人的少，要求也比以前挑剔很多。 不得不说，疫情的</description>
+    </item>
+    
+    <item>
       <title>第一次切整个菠萝蜜，烤菠萝蜜干</title>
       <link>https://deewooo.github.io/post/%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%88%87%E6%95%B4%E4%B8%AA%E8%8F%A0%E8%90%9D%E8%9C%9C%E7%83%A4%E8%8F%A0%E8%90%9D%E8%9C%9C%E5%B9%B2/</link>
       <pubDate>Fri, 12 Jun 2020 01:19:56 +0800</pubDate>
@@ -95,16 +77,6 @@
       
       <guid>https://deewooo.github.io/post/readme/</guid>
       <description>Clean White Theme for Hugo CleanWhite is a clean, elegant, but fully functional blog theme for Hugo. Here is a live demo site using this theme. It is based on huxblog Jekyll Theme and Clean Blog Jekyll Theme. These two upstream projects have done awesome jobs to create a blog theme, what I&amp;rsquo;m doing here is porting it to Hugo, of which I like the simplicity and the much faster</description>
-    </item>
-    
-    <item>
-      <title>如何从外部访问Kubernetes集群中的应用？</title>
-      <link>https://deewooo.github.io/2017/11/28/access-application-from-outside/</link>
-      <pubDate>Tue, 28 Nov 2017 12:00:00 +0000</pubDate>
-      
-      <guid>https://deewooo.github.io/2017/11/28/access-application-from-outside/</guid>
-      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;我们知道，kubernetes的Cluster Network属于私有网络，只能在cluster Network内部才能访问部署的应用，那如何才能将Kubernetes集群中的应用暴露到外部网络，为外部用户提供服务呢？本文探讨了从外部网络访问kubernetes cluster中应用的几种实现方式。&lt;/p&gt;</description>
     </item>
     
     <item>

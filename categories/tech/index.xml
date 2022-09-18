@@ -6,43 +6,7 @@
     <description>Recent content in Tech on 猫猫和狗狗的小窝</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Sep 2022 00:13:22 +0800</lastBuildDate><atom:link href="https://deewooo.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>7th</title>
-      <link>https://deewooo.github.io/post/7th/</link>
-      <pubDate>Mon, 19 Sep 2022 00:13:22 +0800</pubDate>
-      
-      <guid>https://deewooo.github.io/post/7th/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>6th</title>
-      <link>https://deewooo.github.io/post/6th/</link>
-      <pubDate>Mon, 19 Sep 2022 00:12:13 +0800</pubDate>
-      
-      <guid>https://deewooo.github.io/post/6th/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>5th</title>
-      <link>https://deewooo.github.io/post/5th/</link>
-      <pubDate>Mon, 19 Sep 2022 00:11:56 +0800</pubDate>
-      
-      <guid>https://deewooo.github.io/post/5th/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>4th</title>
-      <link>https://deewooo.github.io/post/4th/</link>
-      <pubDate>Mon, 19 Sep 2022 00:11:06 +0800</pubDate>
-      
-      <guid>https://deewooo.github.io/post/4th/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Mon, 19 Sep 2022 00:10:25 +0800</lastBuildDate><atom:link href="https://deewooo.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>3rd</title>
       <link>https://deewooo.github.io/post/3rd/</link>
@@ -68,16 +32,6 @@
       
       <guid>https://deewooo.github.io/post/2nd/</guid>
       <description>这是第二个测试</description>
-    </item>
-    
-    <item>
-      <title>如何从外部访问Kubernetes集群中的应用？</title>
-      <link>https://deewooo.github.io/2017/11/28/access-application-from-outside/</link>
-      <pubDate>Tue, 28 Nov 2017 12:00:00 +0000</pubDate>
-      
-      <guid>https://deewooo.github.io/2017/11/28/access-application-from-outside/</guid>
-      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;我们知道，kubernetes的Cluster Network属于私有网络，只能在cluster Network内部才能访问部署的应用，那如何才能将Kubernetes集群中的应用暴露到外部网络，为外部用户提供服务呢？本文探讨了从外部网络访问kubernetes cluster中应用的几种实现方式。&lt;/p&gt;</description>
     </item>
     
     <item>
