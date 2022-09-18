@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<meta name="generator" content="Hugo 0.88.1" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,9 +15,9 @@
     
 
     
-    <meta name="title" content="" />
-    <meta property="og:title" content="" />
-    <meta property="twitter:title" content="" />
+    <meta name="title" content="Istio" />
+    <meta property="og:title" content="Istio" />
+    <meta property="twitter:title" content="Istio" />
     
 
     
@@ -35,9 +34,9 @@
     <meta name="keyword"  content="赵化冰, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>猫猫和狗狗的小窝 | 赵化冰的博客 | Zhaohuabing Blog</title>
+    <title>Istio | 赵化冰的博客 | Zhaohuabing Blog</title>
 
-    <link rel="canonical" href="/">
+    <link rel="canonical" href="/tags/istio/">
 
     
     
@@ -196,33 +195,6 @@
             
 
 <div class="post-preview">
-    <a href="https://deewooo.github.io/post/readme/">
-        <h2 class="post-title">
-            Clean White Theme for Hugo
-        </h2>
-	
-        <h3 class="post-subtitle">
-            How to set up this theme
-        </h3>
-	
-        <div class="post-content-preview">
-	
-            Clean White Theme for Hugo CleanWhite is a clean, elegant, but fully functional blog theme for Hugo. Here is a live demo site using this theme. It is based on huxblog Jekyll Theme and Clean Blog Jekyll Theme. These two upstream projects have done awesome jobs to create a blog theme, what I&rsquo;m doing here is porting it to Hugo, of which I like the simplicity and the much faster
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by 赵化冰 on Wednesday, January 9, 2019
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
     <a href="https://deewooo.github.io/2018/06/04/introducing-the-istio-v1alpha3-routing-api/">
         <h2 class="post-title">
             Istio v1aplha3 routing API介绍(译文）
@@ -273,20 +245,24 @@
 <hr>
 
 <div class="post-preview">
-    <a href="https://deewooo.github.io/2018/05/24/set_up_my_ubuntu_desktop/">
+    <a href="https://deewooo.github.io/2018/05/23/istio-auto-injection-with-webhook/">
         <h2 class="post-title">
-            Everything about Setting Up My Ubuntu Desktop
+            Istio Sidecar自动注入原理
         </h2>
+	
+        <h3 class="post-subtitle">
+            Kubernetes webhook扩展机制解析
+        </h3>
 	
         <div class="post-content-preview">
 	
-            Everything about setting up my own ubuntu desktop, it&#39;s just a Note in case I need it later
+            Kubernets 1.9版本引入了Admission Webhook(web 回调)扩展机制，通过Webhook,开发者可以非常灵活地对Kubernets API Server的功能进行扩展，在API Server创建资源时对资源进行验证或者修改。 Istio 0.7版本就利用了Kubernets webhook实现了sidecar的自动注入。
         
         </div>
     </a>
     <p class="post-meta">
     
-        Posted by     &#34;赵化冰&#34; on Thursday, May 24, 2018
+        Posted by     &#34;赵化冰&#34; on Wednesday, May 23, 2018
         
         
     
@@ -296,24 +272,47 @@
 <hr>
 
 <div class="post-preview">
-    <a href="https://deewooo.github.io/2018/05/23/external_system_auth/">
+    <a href="https://deewooo.github.io/2018/03/29/what-is-service-mesh-and-istio/">
         <h2 class="post-title">
-            微服务安全沉思录之三
+            谈谈微服务架构中的基础设施：Service Mesh与Istio
         </h2>
 	
         <h3 class="post-subtitle">
-            外部系统访问控制
+            Service Mesh模式及Istio开源项目介绍
         </h3>
 	
         <div class="post-content-preview">
 	
-            一些外部的第三方系统可能需要访问系统内部的微服务。例如在网上商店的例子中，外部的推荐服务可能需要接入系统，以获取商店的商品目录信息。相对于内部服务之间的访问而言，外部系统的访问需要进行严格的安全控制。
+            作为一种架构模式，微服务将复杂系统切分为数十乃至上百个小服务，每个服务负责实现一个独立的业务逻辑。这些小服务易于被小型的软件工程师团队所理解和修改，并带来了语言和框架选择灵活性，缩短应用开发上线时间，可根据不同的工作负载和资源要求对服务进行独立缩扩容等优势。另一方面，当应用被拆分为多个微服务进程后，进程内的方法调用变成了了进程间的远程调用。引入了对大量服务的连接、管理和监控的复杂性,本文介绍了Service Mesh模式如何应对微服务架构的这些挑战，以及Service Mesh的明星开源项目Istio。
         
         </div>
     </a>
     <p class="post-meta">
     
-        Posted by     &#34;赵化冰&#34; on Wednesday, May 23, 2018
+        Posted by 赵化冰 on Thursday, March 29, 2018
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="https://deewooo.github.io/2018/01/02/nginmesh-install/">
+        <h2 class="post-title">
+            Nginx开源Service Mesh组件Nginmesh安装指南
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            Nginmesh是NGINX的Service Mesh开源项目，用于Istio服务网格平台中的数据面代理。它旨在提供七层负载均衡和服务路由功能，与Istio集成作为sidecar部署，并将以“标准，可靠和安全的方式”使得服务间通信更容易。Nginmesh在今年底已经连续发布了0.2和0.3版本，提供了服务发现，请求转发，路由规则，性能指标收集等功能。本文介绍如何采用kubeadmin安装kubernetes集群并部署Nginmesh sidecar。
+        
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by 赵化冰 on Tuesday, January 2, 2018
         
         
     
@@ -330,7 +329,7 @@
     
     
     <li class="next">
-        <a href="/page/2/">Older Posts &rarr;</a>
+        <a href="/tags/istio/page/2/">Older Posts &rarr;</a>
     </li>
     
 </ul>
@@ -591,7 +590,7 @@
             
            
                    <li>
-                       <a href='/index.xml' rel="alternate" type="application/rss+xml" title="猫猫和狗狗的小窝" >
+                       <a href='/tags/istio/index.xml' rel="alternate" type="application/rss+xml" title="猫猫和狗狗的小窝" >
                            <span class="fa-stack fa-lg">
                                <i class="fas fa-circle fa-stack-2x"></i>
                                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>

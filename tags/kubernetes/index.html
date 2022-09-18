@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<meta name="generator" content="Hugo 0.88.1" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,9 +15,9 @@
     
 
     
-    <meta name="title" content="" />
-    <meta property="og:title" content="" />
-    <meta property="twitter:title" content="" />
+    <meta name="title" content="Kubernetes" />
+    <meta property="og:title" content="Kubernetes" />
+    <meta property="twitter:title" content="Kubernetes" />
     
 
     
@@ -35,9 +34,9 @@
     <meta name="keyword"  content="赵化冰, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>猫猫和狗狗的小窝 | 赵化冰的博客 | Zhaohuabing Blog</title>
+    <title>Kubernetes | 赵化冰的博客 | Zhaohuabing Blog</title>
 
-    <link rel="canonical" href="/">
+    <link rel="canonical" href="/tags/kubernetes/">
 
     
     
@@ -196,118 +195,18 @@
             
 
 <div class="post-preview">
-    <a href="https://deewooo.github.io/post/readme/">
+    <a href="https://deewooo.github.io/2018/05/23/istio-auto-injection-with-webhook/">
         <h2 class="post-title">
-            Clean White Theme for Hugo
+            Istio Sidecar自动注入原理
         </h2>
 	
         <h3 class="post-subtitle">
-            How to set up this theme
+            Kubernetes webhook扩展机制解析
         </h3>
 	
         <div class="post-content-preview">
 	
-            Clean White Theme for Hugo CleanWhite is a clean, elegant, but fully functional blog theme for Hugo. Here is a live demo site using this theme. It is based on huxblog Jekyll Theme and Clean Blog Jekyll Theme. These two upstream projects have done awesome jobs to create a blog theme, what I&rsquo;m doing here is porting it to Hugo, of which I like the simplicity and the much faster
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by 赵化冰 on Wednesday, January 9, 2019
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://deewooo.github.io/2018/06/04/introducing-the-istio-v1alpha3-routing-api/">
-        <h2 class="post-title">
-            Istio v1aplha3 routing API介绍(译文）
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            介绍Istio v1alpha3 routing API及其设计原则
-        
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by     &#34;赵化冰&#34; on Monday, June 4, 2018
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://deewooo.github.io/2018/06/02/istio08/">
-        <h2 class="post-title">
-            Istio 0.8 Release发布
-        </h2>
-	
-        <h3 class="post-subtitle">
-            来自Istio的儿童节礼物
-        </h3>
-	
-        <div class="post-content-preview">
-	
-            在6月1日这一天的早上，Istio社区宣布发布0.8 Release，除了常规的故障修复和性能改进外，这个儿童节礼物里面还有什么值得期待内容呢？让我们来看一看：
-        
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by     &#34;赵化冰&#34; on Saturday, June 2, 2018
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://deewooo.github.io/2018/05/24/set_up_my_ubuntu_desktop/">
-        <h2 class="post-title">
-            Everything about Setting Up My Ubuntu Desktop
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            Everything about setting up my own ubuntu desktop, it&#39;s just a Note in case I need it later
-        
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by     &#34;赵化冰&#34; on Thursday, May 24, 2018
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://deewooo.github.io/2018/05/23/external_system_auth/">
-        <h2 class="post-title">
-            微服务安全沉思录之三
-        </h2>
-	
-        <h3 class="post-subtitle">
-            外部系统访问控制
-        </h3>
-	
-        <div class="post-content-preview">
-	
-            一些外部的第三方系统可能需要访问系统内部的微服务。例如在网上商店的例子中，外部的推荐服务可能需要接入系统，以获取商店的商品目录信息。相对于内部服务之间的访问而言，外部系统的访问需要进行严格的安全控制。
+            Kubernets 1.9版本引入了Admission Webhook(web 回调)扩展机制，通过Webhook,开发者可以非常灵活地对Kubernets API Server的功能进行扩展，在API Server创建资源时对资源进行验证或者修改。 Istio 0.7版本就利用了Kubernets webhook实现了sidecar的自动注入。
         
         </div>
     </a>
@@ -322,18 +221,59 @@
 </div>
 <hr>
 
+<div class="post-preview">
+    <a href="https://deewooo.github.io/2018/04/16/using-helm-to-deploy-to-kubernetes/">
+        <h2 class="post-title">
+            Helm介绍
+        </h2>
+	
+        <h3 class="post-subtitle">
+            强大的Kubernetes包管理工具
+        </h3>
+	
+        <div class="post-content-preview">
+	
+            Helm是Kubernetes生态系统中的一个软件包管理工具。本文将介绍为何要使用Helm进行Kubernetes软件包管理，澄清Helm中使用到的相关概念，并通过一个具体的示例学习如何使用Helm打包，分发，安装，升级及回退Kubernetes应用。
+        
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by 赵化冰 on Monday, April 16, 2018
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="https://deewooo.github.io/2017/11/28/access-application-from-outside/">
+        <h2 class="post-title">
+            如何从外部访问Kubernetes集群中的应用？
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            我们知道，kubernetes的Cluster Network属于私有网络，只能在cluster Network内部才能访问部署的应用，那如何才能将Kubernetes集群中的应用暴露到外部网络，为外部用户提供服务呢？本文探讨了从外部网络访问kubernetes cluster中应用的几种实现方式。
+        
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by 赵化冰 on Tuesday, November 28, 2017
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
 
             
 
-
-<ul class="pager">
-    
-    
-    <li class="next">
-        <a href="/page/2/">Older Posts &rarr;</a>
-    </li>
-    
-</ul>
 
 
        	</div>
@@ -591,7 +531,7 @@
             
            
                    <li>
-                       <a href='/index.xml' rel="alternate" type="application/rss+xml" title="猫猫和狗狗的小窝" >
+                       <a href='/tags/kubernetes/index.xml' rel="alternate" type="application/rss+xml" title="猫猫和狗狗的小窝" >
                            <span class="fa-stack fa-lg">
                                <i class="fas fa-circle fa-stack-2x"></i>
                                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
