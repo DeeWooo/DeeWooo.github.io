@@ -37,9 +37,9 @@ if (!doNotTrack) {
     
 
     
-    <meta name="description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。">
-    <meta property="og:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
-    <meta property="twitter:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
+    <meta name="description" content="IvyWooo，程序员, 开源爱好者，生活探险家 | 这里是 DD299 的博客，与你一起发现更大的世界。">
+    <meta property="og:description" content="IvyWooo，程序员, 开源爱好者，生活探险家 | 这里是 DD299 的博客，与你一起发现更大的世界。" />
+    <meta property="twitter:description" content="IvyWooo，程序员, 开源爱好者，生活探险家 | 这里是 DD299 的博客，与你一起发现更大的世界。" />
     
 
     
@@ -47,10 +47,10 @@ if (!doNotTrack) {
     
     
 
-    <meta name="keyword"  content="赵化冰, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
+    <meta name="keyword"  content="dd299, dd299的网络日志, dd299的博客, DD299 Blog, 博客, 个人网站, 互联网, Web, 量化，投资，美食">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>猫猫和狗狗的小窝 | 赵化冰的博客 | Zhaohuabing Blog</title>
+    <title>猫猫和狗狗的小窝 | DD299的博客 | DD299 Blog</title>
 
     <link rel="canonical" href="/">
 
@@ -116,15 +116,7 @@ if (!doNotTrack) {
                     
                         
                         <li>
-                            <a href="/categories/life">life</a>
-                        </li>
-                        
-                        <li>
                             <a href="/categories/tech">tech</a>
-                        </li>
-                        
-                        <li>
-                            <a href="/categories/tips">tips</a>
                         </li>
                         
                     
@@ -187,7 +179,7 @@ if (!doNotTrack) {
                 <div class="site-heading">
                     <h1>猫猫和狗狗的小窝 </h1>
                     
-		    <span class="subheading">山河远阔，人间烟火</span>
+		    <span class="subheading">山河远阔，人间烟火，美食与技术的温暖光芒</span>
                 </div>
             </div>
         </div>
@@ -211,47 +203,24 @@ if (!doNotTrack) {
             
 
 <div class="post-preview">
-    <a href="https://deewooo.github.io/2018/04/11/service-mesh-vs-api-gateway/">
+    <a href="https://deewooo.github.io/2017/11/08/istio-canary-release/">
         <h2 class="post-title">
-            Service Mesh 和 API Gateway的关系探讨（译文）
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            API Gateway和Service Mesh的关系是我最近一直在思考的问题，也和同事及社区的朋友之间进行了一些讨论。这篇短文很清晰地总结了两者之间的相似之处以及这两者在微服务架构中的不同用途。
-        
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by 赵化冰 on Wednesday, April 11, 2018
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://deewooo.github.io/2018/03/29/what-is-service-mesh-and-istio/">
-        <h2 class="post-title">
-            谈谈微服务架构中的基础设施：Service Mesh与Istio
+            采用Istio实现灰度发布(金丝雀发布)
         </h2>
 	
         <h3 class="post-subtitle">
-            Service Mesh模式及Istio开源项目介绍
+            用户无感知的平滑业务升级
         </h3>
 	
         <div class="post-content-preview">
 	
-            作为一种架构模式，微服务将复杂系统切分为数十乃至上百个小服务，每个服务负责实现一个独立的业务逻辑。这些小服务易于被小型的软件工程师团队所理解和修改，并带来了语言和框架选择灵活性，缩短应用开发上线时间，可根据不同的工作负载和资源要求对服务进行独立缩扩容等优势。另一方面，当应用被拆分为多个微服务进程后，进程内的方法调用变成了了进程间的远程调用。引入了对大量服务的连接、管理和监控的复杂性,本文介绍了Service Mesh模式如何应对微服务架构的这些挑战，以及Service Mesh的明星开源项目Istio。
+            当应用上线以后，运维面临的一大挑战是如何能在不影响已上线业务的情况下进行升级。本文将介绍如何使用Istio实现应用的灰度发布（金丝雀发布）
         
         </div>
     </a>
     <p class="post-meta">
     
-        Posted by 赵化冰 on Thursday, March 29, 2018
+        Posted by 赵化冰 on Wednesday, November 8, 2017
         
         
     
@@ -261,20 +230,24 @@ if (!doNotTrack) {
 <hr>
 
 <div class="post-preview">
-    <a href="https://deewooo.github.io/2018/03/13/use-docker-behind-http-proxy/">
+    <a href="https://deewooo.github.io/2017/11/07/istio-traffic-shifting/">
         <h2 class="post-title">
-            如何配置docker使用HTTP代理
+            使用Istio实现应用流量转移
         </h2>
+	
+        <h3 class="post-subtitle">
+              &#34;本文翻译自istio官方文档&#34;
+        </h3>
 	
         <div class="post-content-preview">
 	
-            如何配置docker使用HTTP代理
+            本任务将演示如何将应用流量逐渐从旧版本的服务迁移到新版本。通过Istio，可以使用一系列不同权重的规则（10%，20%，··· 100%）将流量平缓地从旧版本服务迁移到新版本服务。
         
         </div>
     </a>
     <p class="post-meta">
     
-        Posted by 赵化冰 on Tuesday, March 13, 2018
+        Posted by     &#34;赵化冰&#34; on Tuesday, November 7, 2017
         
         
     
@@ -284,43 +257,24 @@ if (!doNotTrack) {
 <hr>
 
 <div class="post-preview">
-    <a href="https://deewooo.github.io/2018/02/09/vim-tips/">
+    <a href="https://deewooo.github.io/2017/11/03/hello-world/">
         <h2 class="post-title">
-            Vim Tips
+            Welcome to Zhaohuabing Blog
         </h2>
+	
+        <h3 class="post-subtitle">
+            Hello World, Hello Blog
+        </h3>
 	
         <div class="post-content-preview">
 	
-            Vim Tips and tricks
-        
+            “Yeah It&rsquo;s on. ” Hello World!
+       
         </div>
     </a>
     <p class="post-meta">
     
-        Posted by 赵化冰 on Friday, February 9, 2018
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://deewooo.github.io/2018/02/09/docker-without-sudo/">
-        <h2 class="post-title">
-            如何使用非root用户执行docker命令
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            如何使用非root用户执行docker命令
-        
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by 赵化冰 on Friday, February 9, 2018
+        Posted by 赵化冰 on Saturday, November 4, 2017
         
         
     
@@ -339,10 +293,6 @@ if (!doNotTrack) {
         <a href="/page/2/">&larr; Newer Posts</a>
     </li>
     
-    
-    <li class="next">
-        <a href="/page/4/">Older Posts &rarr;</a>
-    </li>
     
 </ul>
 
@@ -364,23 +314,14 @@ if (!doNotTrack) {
         <div class="short-about">
             
             <a href="/top/about">
-               <img src="/img/zhaohuabing.png" alt="avatar" style="cursor: pointer" />
+               <img src="/img/logo.png" alt="avatar" style="cursor: pointer" />
             </a>
             
             
-                <p>Software Developer, Open Source Enthusiast and Life Adventurer</p>
+                <p>Developer，Quant，Freelancer，Coding life</p>
             
            
            <ul class="list-inline">
-               
-               <li>
-                   <a href="mailto:youremail@gmail.com">
-                      <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                      </span>
-                   </a>
-               </li>
                
                
                
@@ -423,57 +364,23 @@ if (!doNotTrack) {
             
             
                
-            
-               
-                    <a href="/tags/docker" title="docker">
-                        docker
-                    </a>
-               
-            
-               
-            
-               
                     <a href="/tags/istio" title="istio">
                         istio
                     </a>
                
             
                
-                    <a href="/tags/kubernetes" title="kubernetes">
-                        kubernetes
+            
+               
+                    <a href="/tags/tag1" title="tag1">
+                        tag1
                     </a>
                
             
                
-                    <a href="/tags/microservice" title="microservice">
-                        microservice
+                    <a href="/tags/tag2" title="tag2">
+                        tag2
                     </a>
-               
-            
-               
-            
-               
-                    <a href="/tags/security" title="security">
-                        security
-                    </a>
-               
-            
-               
-                    <a href="/tags/service-mesh" title="service-mesh">
-                        service-mesh
-                    </a>
-               
-            
-               
-                    <a href="/tags/tips" title="tips">
-                        tips
-                    </a>
-               
-            
-               
-            
-               
-            
                
             
         </div>
@@ -508,15 +415,6 @@ if (!doNotTrack) {
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">                  
                     
-                    <li>
-                        <a href="mailto:youremail@gmail.com">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-		           
                     
                     
                     
