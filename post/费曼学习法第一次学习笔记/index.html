@@ -30,9 +30,9 @@ if (!doNotTrack) {
     
 
     
-    <meta name="title" content="Clean White Theme for Hugo" />
-    <meta property="og:title" content="Clean White Theme for Hugo" />
-    <meta property="twitter:title" content="Clean White Theme for Hugo" />
+    <meta name="title" content="费曼学习法（第一次学习笔记）" />
+    <meta property="og:title" content="费曼学习法（第一次学习笔记）" />
+    <meta property="twitter:title" content="费曼学习法（第一次学习笔记）" />
     
 
     
@@ -49,9 +49,9 @@ if (!doNotTrack) {
     <meta name="keyword"  content="dd299, dd299的网络日志, dd299的博客, DD299 Blog, 博客, 个人网站, 互联网, Web, 量化，投资，美食">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Clean White Theme for Hugo | DD299的博客 | DD299 Blog</title>
+    <title>费曼学习法（第一次学习笔记） | DD299的博客 | DD299 Blog</title>
 
-    <link rel="canonical" href="/post/readme/">
+    <link rel="canonical" href="/post/%E8%B4%B9%E6%9B%BC%E5%AD%A6%E4%B9%A0%E6%B3%95%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
 
     
     
@@ -182,7 +182,7 @@ if (!doNotTrack) {
 
 <style type="text/css">
     header.intro-header {
-        background-image: url('https://img.zhaohuabing.com/post-bg-2015.jpg')
+        background-image: url('/img/bg3-1.jpeg')
     }
 </style>
 
@@ -194,17 +194,25 @@ if (!doNotTrack) {
                 <div class="post-heading">
                     <div class="tags">
                         
+                        <a class="tag" href="/tags/%E6%95%88%E7%8E%87" title="效率">
+                            效率
+                        </a>
+                        
+                        <a class="tag" href="/tags/%E8%B4%B9%E6%9B%BC%E5%AD%A6%E4%B9%A0%E6%B3%95" title="费曼学习法">
+                            费曼学习法
+                        </a>
+                        
                     </div>
-                    <h1>Clean White Theme for Hugo</h1>
-                    <h2 class="subheading">How to set up this theme</h2>
+                    <h1>费曼学习法（第一次学习笔记）</h1>
+                    <h2 class="subheading"></h2>
                     <span class="meta">
                         
                             Posted by 
                             
-                                赵化冰
+                                     &#34;DD&#34;
                              
                             on 
-                            Wednesday, January 9, 2019
+                            Wednesday, March 30, 2022
                             
                             
                             
@@ -230,113 +238,23 @@ if (!doNotTrack) {
                 post-container">
 
                 
-                <h1 id="clean-white-theme-for-hugo">Clean White Theme for Hugo</h1>
-<p>CleanWhite is a clean, elegant, but fully functional blog theme for Hugo. Here is a live <a href="https://zhaohuabing.com">demo site</a> using this theme.</p>
-<p>It is based on <a href="https://github.com/Huxpro/huxpro.github.io">huxblog Jekyll Theme</a>
-and <a href="https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll">Clean Blog Jekyll Theme</a>.</p>
-<p>These two upstream projects have done awesome jobs to create a blog theme, what I&rsquo;m doing here is porting it to Hugo, of which I like the simplicity and the much faster compiling speed. Some other features which I think could be useful, such as site search with algolia and proxy for Disqus access in China, have also been built in the CleanWhite theme. Other fancy features of upstream projects are not supported by this Hugo theme, I&rsquo;d like to make it as simple as possible and only focus on blog purpose, at least for now.
-While I created this theme, I followed the Hugo theme best practice and tried to make every part of the template as a replaceable partial html, so it could be much easier for you to make your customization based on it.</p>
-<h2 id="screenshots">Screenshots</h2>
-<p><strong>Home</strong>
-
-  <img src="/img/fullscreenshot.png" alt="screenshot">
-
-</p>
-<p><strong>Post</strong>
-
-  <img src="/img/post.png" alt="screenshot">
-
-</p>
-<p><strong>Search</strong>
-
-  <img src="/img/sitesearch.png" alt="screenshot">
-
-</p>
-<p><strong>Disqus</strong>
-
-  <img src="/img/disqus.png" alt="screenshot">
-
-</p>
-<p><strong>Wechat Pay &amp; Alipay</strong>
-
-  <img src="/img/rewards.png" alt="screenshot">
-
-</p>
-<h2 id="quick-start">Quick Start</h2>
-<p>Go to the directory where you have your Hugo site and run:</p>
-<pre tabindex="0"><code>$ mkdir themes
-$ cd themes
-$ git clone https://github.com/zhaohuabing/hugo-theme-cleanwhite.git
-</code></pre><p>If your site is already a git project, you may want to choose to add the cleanwhite theme as a submodule to avoid messing up your existing git repository.</p>
-<pre tabindex="0"><code>$ mkdir themes
-$ git submodule add https://github.com/zhaohuabing/hugo-theme-cleanwhite.git themes/hugo-theme-cleanwhite
-</code></pre><p>Run  Hugo Build-in Server Locally</p>
-<pre tabindex="0"><code>$ hugo serve -t  hugo-theme-cleanwhite
-</code></pre><p>Now enter <a href="http://localhost:1313"><code>localhost:1313</code></a> in the address bar of your browser.</p>
-<p>If you start from scratch, there is a working Hugo site configured with the CleanWhite theme in the <a href="https://github.com/zhaohuabing/hugo-theme-cleanwhite/tree/master/exampleSite">exampleSite</a> directory.  You can use it as a starting point for your site.</p>
-<p>For more information read the official <a href="https://gohugo.io/overview/installing/">setup guide</a> of Hugo</p>
-<h2 id="configuration">Configuration</h2>
-<p>First, let&rsquo;s take a look at the <a href="https://github.com/zhaohuabing/hugo-cleanwhite-theme/tree/master/exampleSite/config.toml">config.toml</a>. It will be useful to learn how to customize your site. Feel free to play around with the settings.</p>
-<h3 id="comments">Comments</h3>
-<p>The optional comments system is powered by <a href="https://disqus.com">Disqus</a>. If you want to enable comments, create an account in Disqus and write down your shortname.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">disqusShortname = <span style="color:#f1fa8c">&#34;your-disqus-short-name&#34;</span>
-</code></pre></div><p>You can disable the comments system by leaving the <code>disqusShortname</code> empty.</p>
-<h3 id="disqus-in-china">Disqus in China</h3>
-<p>Disqus is inaccessible in China. To get it to work, we can set up a proxy with <a href="https://github.com/zhaohuabing/disqus-php-api">disqus-php-api</a> in a host which sets between the client browser and the Disqus server. The idea is that if Disqus can be reached in the guest network, the blog page will show the original Disqus comments UI, otherwise, it will downgrade and use the proxy to access the Disqus, the UI will be a little different, but the visitors can still write their comments on the page.</p>
-<p>The client side java script has already been integrated to CleanWhite them, but you need to set up a proxy server yourself.</p>
-<p>The proxy is written in php, which can be found here: <a href="https://github.com/zhaohuabing/disqus-php-api/tree/master/api">https://github.com/zhaohuabing/disqus-php-api/tree/master/api</a></p>
-<p>You need to specify  your Disqus account information in the config.php.</p>
-<pre tabindex="0"><code>define('PUBLIC_KEY', '');
-define('SECRET_KEY', '');
-define('DISQUS_USERNAME', '');
-define('DISQUS_EMAIL', '');
-define('DISQUS_PASSWORD', '');
-define('DISQUS_WEBSITE', '');
-define('DISQUS_SHORTNAME', '');
-</code></pre><p>Set the proxy server address in the site config file of your Hugo project.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">disqus_proxy = <span style="color:#f1fa8c">&#34;http://yourdisqusproxy.com&#34;</span>
-</code></pre></div><h3 id="site-search-with-algolia">Site Search with Algolia</h3>
-<p>Follow this <a href="https://forestry.io/blog/search-with-algolia-in-hugo/#3-create-your-index-in-algolia">tutorial</a> to create your index in Algolia. The index is just the storage of the indexing data of your site in the the cloud . The search page of CleanWhite theme will utilize this indexing data to do the search.</p>
-<p>Go to the directory where you have your Hugo site and run the following commands:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ npm init
-$ npm install atomic-algolia --save
-</code></pre></div><p>Next, open up the newly created package.json, where we’ll add an NPM script to update your index at Algolia. Find &ldquo;scripts&rdquo;, and add the following:</p>
-<pre tabindex="0"><code class="language-josn" data-lang="josn">&quot;algolia&quot;: &quot;atomic-algolia&quot;
-</code></pre><p>Algolia index output format has already been supported by the CleanWhite theme, so you can just build your site, then you’ll find a file called algolia.json in the root, which we can use to update your index in Algolia.
-Generate index file:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hugo
-</code></pre></div><p>Create a new file in the root of your Hugo project called .env, and add the following contents:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#8be9fd;font-style:italic">ALGOLIA_APP_ID</span><span style="color:#ff79c6">={{</span> YOUR_APP_ID <span style="color:#ff79c6">}}</span>
-<span style="color:#8be9fd;font-style:italic">ALGOLIA_ADMIN_KEY</span><span style="color:#ff79c6">={{</span> YOUR_ADMIN_KEY <span style="color:#ff79c6">}}</span>
-<span style="color:#8be9fd;font-style:italic">ALGOLIA_INDEX_NAME</span><span style="color:#ff79c6">={{</span> YOUR_INDEX_NAME <span style="color:#ff79c6">}}</span>
-<span style="color:#8be9fd;font-style:italic">ALGOLIA_INDEX_FILE</span><span style="color:#ff79c6">={{</span> PATH/TO/algolia.json <span style="color:#ff79c6">}}</span>
-</code></pre></div><p>Now you can push your index to Algolia by simply running:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ npm run algolia
-</code></pre></div><p>Add the following variables to your hugo site config so the search page can get access to algolia index data in the cloud:</p>
-<pre tabindex="0"><code>algolia_search = true
-algolia_appId = {{ YOUR_APP_ID }}
-algolia_indexName = {{ YOUR_INDEX_NAME }}
-algolia_apiKey = {{ YOUR_SEARCH_ONLY_KEY }}
-</code></pre><p>Open search page in your browser: http://localhost:1313/search</p>
-<h3 id="analytics">Analytics</h3>
-<p>You can optionally enable Google or Baidu Analytics. Type your tracking code in the</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">googleAnalytics = <span style="color:#f1fa8c">&#34;UA-XXXXX-X&#34;</span>
-ba_track_id  = <span style="color:#f1fa8c">&#34;XXXXXXXXXXXXXXXX&#34;</span>
-</code></pre></div><p>Leave the <code>googleAnalytics</code>  or &lsquo;ba_track_id ' key empty to disable it.</p>
-<h3 id="wechat-pay--alipay-rewards">Wechat Pay &amp; Alipay Rewards</h3>
-<p>You can enable Wechat Pay &amp; Alipay to allow readers send you money. So if they like your articles, you may even get rewards from your writing. Now you must be motivated to write more.</p>
-<ul>
-<li>Enable Wechat Pay &amp; Alipay in the site config</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">reward = <span style="color:#ff79c6">true</span>
-</code></pre></div><ul>
-<li>Replace the QR codes of Wechat Pay &amp; Alipay by overriding the photos in folder /static/img/reward/, otherwise the money will be sent to my accounts!</li>
-</ul>
-<h2 id="thank">Thank</h2>
-<p>Thanks for the great jobs of <a href="https://github.com/Huxpro/huxpro.github.io">huxblog Jekyll Theme</a> and <a href="https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll">Clean Blog Jekyll Theme</a> which are the the two upstream projects CleanWhite Hugo theme is based on.</p>
-<h2 id="feedback">Feedback</h2>
-<p>If you find any problems, please feel free to <a href="https://github.com/zhaohuabing/hugo-theme-cleanwhite/issues/new">raise an issue</a> or create a pull request to fix it.</p>
-<p>If it&rsquo;s helpful for you, I would appreciate it if you could star this repository, thanks!</p>
+                <p>通过向别人清楚的解说某一件事，来确认自己是否真的弄懂了这件事。</p>
+<h2 id="费曼学习法的步骤">费曼学习法的步骤</h2>
+<h3 id="第一步确立学习对象">第一步，确立学习对象</h3>
+<p>在这一步，我们要确定学习的目标。比如“学习费曼学习法”也可以成为学习的目标。</p>
+<h3 id="第二步理解要学习的知识">第二步，理解要学习的知识</h3>
+<p>通过系统化的思考，将知识理解、归纳、筛选、分析、消化。在这个过程中，可以尝试通过复述，找到理解中的盲区，进一步完成对知识的理解。</p>
+<h3 id="第三步以教代学">第三步，以教代学</h3>
+<p>“如果你不能向其他人简单地解释一件事，那么你就还没有真正弄懂它。”
+面对一个外行人，用对方听得懂的语言把这些知识解释给他听。经过反馈，再检查自己的学习效果。</p>
+<h3 id="第四步回顾和反思">第四步，回顾和反思</h3>
+<p>通过回顾和反思，对学习的不满意之处进行纠错，发现缺口，并用更精练的语言概括自己掌握的知识。</p>
+<h3 id="第五步简化">第五步，简化</h3>
+<p>抽取我们需要的东西，形成自己的知识体系。
+再次复述，建立原创观点，形成新知识。</p>
+<h2 id="参考资料">参考资料</h2>
+<p>尹红心，李伟《费曼学习法》
+知乎回答：https://www.zhihu.com/question/20576786</p>
 
 
                 
@@ -346,15 +264,10 @@ ba_track_id  = <span style="color:#f1fa8c">&#34;XXXXXXXXXXXXXXXX&#34;</span>
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/2017/11/08/istio-canary-release/" data-toggle="tooltip" data-placement="top" title="采用Istio实现灰度发布(金丝雀发布)">&larr;
+                        <a href="/post/%E6%99%B4%E4%BA%86%E4%B8%80%E5%A4%A9%E5%90%8E%E5%8F%88%E4%B8%8B%E8%B5%B7%E4%BA%86%E9%9B%A8/" data-toggle="tooltip" data-placement="top" title="晴了一天后又下起了雨">&larr;
                             Previous Post</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/post/%E5%A4%B1%E6%8E%A7kevin-kelly/" data-toggle="tooltip" data-placement="top" title="《失控》kevin Kelly">Next
-                            Post &rarr;</a>
-                    </li>
                     
                 </ul>
                 
