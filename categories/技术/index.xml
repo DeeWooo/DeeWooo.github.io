@@ -16,5 +16,14 @@
       <description>1 前言 随手浏览简书时，翻到一篇文章《服务器指北 - 有了服务器之后可以做点什么》，我平时就喜欢在家里搞东搞西，这标题正对胃口。毫不犹豫的点进去看</description>
     </item>
     
+    <item>
+      <title>建站第一篇 Leanote自建服务器</title>
+      <link>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B8%80%E7%AF%87-leanote%E8%87%AA%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <pubDate>Tue, 01 Jan 2019 22:26:39 +0800</pubDate>
+      
+      <guid>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B8%80%E7%AF%87-leanote%E8%87%AA%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <description>这是去年4月的一次自建笔记服务的记录，在这里也做个记录，有前辈说，备份不怕多，我也觉得应是如此。 这些年，笔记搬家了3次，又不喜欢笔记本地化，</description>
+    </item>
+    
   </channel>
 </rss>

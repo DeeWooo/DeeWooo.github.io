@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Leanote on 猫猫和狗狗的小窝</title>
+    <link>https://deewooo.github.io/tags/leanote/</link>
+    <description>Recent content in Leanote on 猫猫和狗狗的小窝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Jan 2019 22:26:39 +0800</lastBuildDate><atom:link href="https://deewooo.github.io/tags/leanote/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>建站第一篇 Leanote自建服务器</title>
+      <link>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B8%80%E7%AF%87-leanote%E8%87%AA%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <pubDate>Tue, 01 Jan 2019 22:26:39 +0800</pubDate>
+      
+      <guid>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B8%80%E7%AF%87-leanote%E8%87%AA%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <description>这是去年4月的一次自建笔记服务的记录，在这里也做个记录，有前辈说，备份不怕多，我也觉得应是如此。 这些年，笔记搬家了3次，又不喜欢笔记本地化，</description>
+    </item>
+    
+  </channel>
+</rss>
