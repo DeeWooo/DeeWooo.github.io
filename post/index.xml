@@ -97,34 +97,5 @@
       <description>Clean White Theme for Hugo CleanWhite is a clean, elegant, but fully functional blog theme for Hugo. Here is a live demo site using this theme. It is based on huxblog Jekyll Theme and Clean Blog Jekyll Theme. These two upstream projects have done awesome jobs to create a blog theme, what I&amp;rsquo;m doing here is porting it to Hugo, of which I like the simplicity and the much faster</description>
     </item>
     
-    <item>
-      <title>采用Istio实现灰度发布(金丝雀发布)</title>
-      <link>https://deewooo.github.io/2017/11/08/istio-canary-release/</link>
-      <pubDate>Wed, 08 Nov 2017 15:00:00 +0000</pubDate>
-      
-      <guid>https://deewooo.github.io/2017/11/08/istio-canary-release/</guid>
-      <description>灰度发布（又名金丝雀发布）介绍 当应用上线以后，运维面临的一大挑战是如何能够在不影响已上线业务的情况下进行升级。做过产品的同学都清楚，不管在发</description>
-    </item>
-    
-    <item>
-      <title>使用Istio实现应用流量转移</title>
-      <link>https://deewooo.github.io/2017/11/07/istio-traffic-shifting/</link>
-      <pubDate>Tue, 07 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://deewooo.github.io/2017/11/07/istio-traffic-shifting/</guid>
-      <description>&lt;p&gt;关于Istio的更多内容请参考&lt;a href=&#34;http://istio.doczh.cn/&#34;&gt;istio中文文档&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;原文参见&lt;a href=&#34;https://istio.io/docs/tasks/traffic-management/traffic-shifting.html&#34;&gt;Traffic Shifting&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;本任务将演示如何将应用流量逐渐从旧版本的服务迁移到新版本。通过Istio，可以使用一系列不同权重的规则（10%，20%，··· 100%）将流量平缓地从旧版本服务迁移到新版本服务。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Welcome to Zhaohuabing Blog</title>
-      <link>https://deewooo.github.io/2017/11/03/hello-world/</link>
-      <pubDate>Sat, 04 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://deewooo.github.io/2017/11/03/hello-world/</guid>
-      <description>“Yeah It&amp;rsquo;s on. ” Hello World!</description>
-    </item>
-    
   </channel>
 </rss>
