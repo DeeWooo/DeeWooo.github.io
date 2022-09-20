@@ -6,7 +6,16 @@
     <description>Recent content in 技术 on 猫猫和狗狗的小窝</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Jul 2019 23:11:30 +0800</lastBuildDate><atom:link href="https://deewooo.github.io/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Aug 2019 23:23:15 +0800</lastBuildDate><atom:link href="https://deewooo.github.io/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>建站第七篇 使用Docker安装elasticSearch</title>
+      <link>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B8%83%E7%AF%87-%E4%BD%BF%E7%94%A8docker%E5%AE%89%E8%A3%85elasticsearch/</link>
+      <pubDate>Wed, 07 Aug 2019 23:23:15 +0800</pubDate>
+      
+      <guid>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B8%83%E7%AF%87-%E4%BD%BF%E7%94%A8docker%E5%AE%89%E8%A3%85elasticsearch/</guid>
+      <description>在安装好docker之后，部署docker版的应用，只需要一句代码就好。 1 环境 os：ubuntu 16.04 docker版本：Docker CE，Doc</description>
+    </item>
+    
     <item>
       <title>建站第六篇 小站优化访问速度二三事</title>
       <link>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%85%AD%E7%AF%87-%E5%B0%8F%E7%AB%99%E4%BC%98%E5%8C%96%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%E4%BA%8C%E4%B8%89%E4%BA%8B/</link>
