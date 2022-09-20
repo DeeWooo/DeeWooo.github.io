@@ -80,6 +80,15 @@
     </item>
     
     <item>
+      <title>建站第三篇 使用Docker安装Jellyfin媒体服务器</title>
+      <link>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B8%89%E7%AF%87-%E4%BD%BF%E7%94%A8docker%E5%AE%89%E8%A3%85jellyfin%E5%AA%92%E4%BD%93%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <pubDate>Thu, 04 Jul 2019 21:42:29 +0800</pubDate>
+      
+      <guid>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B8%89%E7%AF%87-%E4%BD%BF%E7%94%A8docker%E5%AE%89%E8%A3%85jellyfin%E5%AA%92%E4%BD%93%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <description>原文传送门 1 前言 随手浏览简书时，翻到一篇文章《服务器指北 - 有了服务器之后可以做点什么》，我平时就喜欢在家里搞东搞西，这标题正对胃口。毫不犹豫</description>
+    </item>
+    
+    <item>
       <title>Clean White Theme for Hugo</title>
       <link>https://deewooo.github.io/post/readme/</link>
       <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
