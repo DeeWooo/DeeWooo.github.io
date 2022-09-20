@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-131907052-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="猫猫和狗狗的小窝">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://deewooo.github.io//img/bg3-1.jpeg">
+    <meta property="twitter:image" content="https://deewooo.github.io//img/bg3-1.jpeg" />
+    
+
+    
+    <meta name="title" content="建站第六篇 小站优化访问速度二三事" />
+    <meta property="og:title" content="建站第六篇 小站优化访问速度二三事" />
+    <meta property="twitter:title" content="建站第六篇 小站优化访问速度二三事" />
+    
+
+    
+    <meta name="description" content="IvyWooo，程序员, 开源爱好者，生活探险家 | 这里是 DD299 的博客，与你一起发现更大的世界。">
+    <meta property="og:description" content="IvyWooo，程序员, 开源爱好者，生活探险家 | 这里是 DD299 的博客，与你一起发现更大的世界。" />
+    <meta property="twitter:description" content="IvyWooo，程序员, 开源爱好者，生活探险家 | 这里是 DD299 的博客，与你一起发现更大的世界。" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="dd299, dd299的网络日志, dd299的博客, DD299 Blog, 博客, 个人网站, 互联网, Web, 量化，投资，美食">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>建站第六篇 小站优化访问速度二三事 | DD299的博客 | DD299 Blog</title>
+
+    <link rel="canonical" href="/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%85%AD%E7%AF%87-%E5%B0%8F%E7%AB%99%E4%BC%98%E5%8C%96%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%E4%BA%8C%E4%B8%89%E4%BA%8B/">
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.1/css/all.css" rel="stylesheet" type="text/css">
+
+    
+    
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+</head>
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">猫猫和狗狗的小窝</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">All Posts</a>
+                    </li>
+                    
+                        
+                        <li>
+                            <a href="/categories/%E5%8E%86%E5%8F%B2">历史</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/%E6%8A%80%E6%9C%AF">技术</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/%E6%96%B9%E6%B3%95%E8%AE%BA">方法论</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/%E7%AE%80%E5%8D%95%E7%94%9F%E9%95%BF">简单生长</a>
+                        </li>
+                        
+                    
+                    
+		    
+                        <li><a href="/archive/">ARCHIVE</a></li>
+                    
+
+                    
+		    <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/bg3-1.jpeg')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/nginx" title="nginx">
+                            nginx
+                        </a>
+                        
+                        <a class="tag" href="/tags/aws" title="aws">
+                            aws
+                        </a>
+                        
+                        <a class="tag" href="/tags/cloudflare" title="CloudFlare">
+                            CloudFlare
+                        </a>
+                        
+                    </div>
+                    <h1>建站第六篇 小站优化访问速度二三事</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                     &#34;DD&#34;
+                             
+                            on 
+                            Sunday, July 14, 2019
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <p>自己的小站还是一个实验田，没有明确的目的，更不想费心运营，所以并不想去备案，希望保持一个自由的初心，所以就把主机放到aws的美东机房。但是由于众所周知的原因，访问速度慢到令人发指，不上缓存的话，一次打开时间超过了1分钟，因此不得不认真考虑优化的问题。</p>
+<h2 id="1-网站部署情况">1 网站部署情况</h2>
+<ul>
+<li>aws美东主机，免备案，作为域名源站，使用nginx转发；</li>
+<li>阿里云ecs，建站，可通过ip+端口访问；</li>
+</ul>
+<h2 id="2-问题分析与定位">2 问题分析与定位</h2>
+<p>用firefox检查了一下小站主页的加载耗时情况，发现存在几个问题：</p>
+<blockquote>
+<ol>
+<li>cdn解析时间过长，每个资源的cdn解析时间超过了1s；</li>
+<li>页面内嵌的GoogleAnalytics的js代码，访问google地址时间过长超过了4s；</li>
+<li>js和css等静态资源加载时间过长；</li>
+<li>图片资源加载时间过长</li>
+</ol>
+</blockquote>
+<p>分析一下，发现根本原因都是资源要访问在美国的主机造成的。因为一次国内的请求，要先解析到美东aws主机，再通过nginx转发到杭州ecs，光建立连接就往返了两次太平洋。</p>
+<p>针对主机在海外这个情况，分析目前的问题，我的想法是：</p>
+<blockquote>
+<ol>
+<li>尽量将静态资源分流出去，使浏览器不需要通过海外主机即可获取到资源;</li>
+<li>GoogleAnalytics方式由页面加载js，改成nginx转发，以减少页面的无关资源；</li>
+<li>nginx加缓存，减少主机转发的时间；</li>
+</ol>
+</blockquote>
+<p>下面就一步一步来落实。</p>
+<h2 id="3-静态资源分流">3 静态资源分流</h2>
+<p>所谓静态资源是指不需要后端服务处理，服务器直接把相应资源发送到客户端。一个网站的静态资源一般包括js/css/img/webfont这些，将这些资源放到访问性能更好的地址，用户的浏览器就不用通过aws获取了。
+我用以下几个方法来对资源做分流：</p>
+<blockquote>
+<ol>
+<li>依赖的js和css组件库，引用地址换成BootCDN提供的CDN 加速服务；</li>
+<li>自定义的js、css和img文件，放到阿里云的oss中；</li>
+<li>整站上cdn。</li>
+</ol>
+</blockquote>
+<p>前两个方法本身不用多说。</p>
+<blockquote>
+<p>BootCDN 是 Bootstrap 中文网支持并维护的前端开源项目免费 CDN 服务，致力于为 Bootstrap、jQuery、Angular、Vuejs 一样优秀的前端开源项目提供稳定、快速的免费 CDN 加速服务。BootCDN 所收录的开源项目主要同步于 cdnjs 仓库。</p>
+</blockquote>
+<p>感谢BootCDN免费提供这么好的服务，有兴趣的朋友请点击<a href="https://www.bootcdn.cn/">这里</a>。</p>
+<h3 id="整站上cdn遇到的问题">整站上cdn遇到的问题</h3>
+<p>我选择了CloudFlare，原因还是坚持免备案原则，国内就没有免备案的服务商。</p>
+<blockquote>
+<ol>
+<li>按照提示，添加域名，一路完成设置，等生效；</li>
+<li>添加子域名解析，等生效。</li>
+</ol>
+</blockquote>
+<p>等了一个晚上，访问各个子域名对应的站点发现悲剧了，几乎全部子域名的网站都提示“将您重定向的次数过多”，Chome 中的报错信息为「ERR_TOO_MANY_REDIRECTS」，这是怎么回事？ 仔细分析之后找到了原因。
+这种错误是由 Cloudflare SSL 设置不当造成的。
+这个问题在《<a href="https://www.wpzhiku.com/wordpress-wang-zhan-shi-yong-cloudflare-hou-ti-shi-jiang-nin-chong-ding-xiang-de-ci-shu-guo-duo-de-yuan-yin-ji-jie-jue-ban-fa/">WordPress 网站使用 CloudFlare 后提示“将您重定向的次数过多” 的原因及解决办法</a>》这篇文章里有详细说明。</p>
+<p>Cloudflare Crypto 的 SSL 中有 4 个选项（如下），其中 Off 就是不启用 SSL，通过 HTTP 协议访问网站。另外 3 种是通过 HTTPS 协议访问网站。</p>
+<p>
+  <img src="/img/post/15688878-80bd5848c946391f.png" alt="Cloudflare的SSL配置">
+
+</p>
+<p>我将SSL的设置选择了Full。之后，问题解决。</p>
+<h2 id="4-使用nginx将请求转发至google-analytics实现后端统计">4 使用Nginx将请求转发至Google Analytics实现后端统计</h2>
+<p>原有页面加载统计js这种方案的缺点是：</p>
+<blockquote>
+<ol>
+<li>客户端到 Google Analytics 之间的网络问题，包括 analytics.js 脚本加载缓慢、向 Google Analytics 发送信息速度缓慢乃至失败等问题。由于各地网络情况不一，唯一通用的解决方案需要自己反向代理一个 analytics.js 脚本，并且由服务器中转向 Google Analytics 发送信息的通讯。</li>
+<li>客户端屏蔽 Google Analytics 的相关问题，包括常见的 ad­block 扩展等自带的屏蔽列表，利用 user­script 进行屏蔽等方式，这些客户端的手段都会导致统计的偏差问题。</li>
+</ol>
+</blockquote>
+<p>如果将 Google Analytics 的统计工作从前端转移到后端完成，就可以有效避免上述问题，直接使用 Nginx 自身的功能就可以完成这一工作。</p>
+<p>此方案的优点是：</p>
+<blockquote>
+<ol>
+<li>只需考虑服务器到 Google Analytics 的速度，不影响客户端的体验。</li>
+<li>统计数据真实准确，不受干扰与屏蔽。</li>
+<li>用户使用的语言可以通过浏览器发送的 Accept-Language 获得用户设定的 Preferred language，而 js 脚本只能获得浏览器安装时选择的语言。</li>
+<li>配置简单方便，不需要额外安装 Nodejs 等程序和包管理器，使用 Nginx 自身的功能即可完成。</li>
+</ol>
+</blockquote>
+<h3 id="nginx配置">Nginx配置</h3>
+<p>nginx 配置 server 块内加入以下内容</p>
+<pre tabindex="0"><code class="language-conf" data-lang="conf">userid on;
+userid_name cid;
+userid_domain moonagic.com;
+userid_path /;
+userid_expires max;
+if ($http_accept_language ~* '^(.+?),') {
+    set $first_language $1;
+}
+
+location @tracker {
+    resolver 8.8.8.8 ipv6=off; # 需要设定dns,不然无法解析.不支持ipv6的机器需要关闭ipv6
+    internal;
+    proxy_method GET;
+    proxy_pass https://www.google-analytics.com/collect?v=1&amp;tid=UA-*******-*&amp;$uid_set$uid_got&amp;t=pageview&amp;dh=$host&amp;dp=$request_uri&amp;uip=$remote_addr&amp;dr=$http_referer&amp;ul=$first_language&amp;z=$msec;
+    proxy_set_header User-Agent $http_user_agent;
+    proxy_pass_request_headers off;
+    proxy_pass_request_body off;
+}
+</code></pre><p>并在指向root的时候添加</p>
+<pre tabindex="0"><code>location / {
+    root   /content/path/;
+    post_action @tracker;
+    ...
+}
+</code></pre><p>或者bypass的时候</p>
+<pre tabindex="0"><code>location / {
+  proxy_pass http://127.0.0.1:8081;
+  post_action @tracker;
+  ...
+}
+</code></pre><p>这样配置以后各种文件的访问都会被记录,其中就包括js,css,xml这种实际上我们不需要统计的访问.
+解决的办法也很简单,利用Nginx配置将这些静态资源的访问过滤掉就好.
+比如:</p>
+<pre tabindex="0"><code>location ~ .*\.(css|js|ico|jpg|woff|png|txt|xml|ttf)$ {
+    root   /content/path/;
+    or
+    proxy_pass http://127.0.0.1:8081;
+}
+</code></pre><p>不过我的小站目前的静态资源已经全放出去了，所以这个问题还好。</p>
+<h2 id="5-给nginx加缓存">5 给nginx加缓存</h2>
+<p>这个就不分析了，直接上配置。</p>
+<p>在http块中加上这段配置</p>
+<pre tabindex="0"><code>http{
+	proxy_cache_path /path/to/cache levels=1:2 keys_zone=my_cache:10m max_size=10g inactive=60m use_temp_path=off;
+	
+	server{
+	...
+	}
+}
+</code></pre><p>在server配置中的location块，增加这段配置</p>
+<pre tabindex="0"><code>server{
+    ...
+	location / {
+	    proxy_cache my_cache;
+        proxy_pass http://127.0.0.1:8081;
+        proxy_cache_valid 200 206 304 301 302 10d;
+        proxy_cache_valid any 1m
+        proxy_buffer_size          128k;
+        proxy_buffers              32 256k;
+        proxy_busy_buffers_size    256k;
+    }
+	...
+}
+</code></pre><p>重要配置项介绍：</p>
+<ol>
+<li>Proxy_cache my_cache：使用名为my_cache的对应缓存配置</li>
+<li>proxy_cache_valid  200 206 304 301 302 10d： 对httpcode为200…的缓存10天</li>
+</ol>
+<p>至此，最基本的nginx缓存功能就配置成功了</p>
+<h2 id="6-优化效果">6 优化效果</h2>
+<p>什么都不如实测有力量，用站长工具中的<a href="http://tool.chinaz.com/speedtest">国内网站测速</a>跑一下，下面是测速结果图</p>
+<p>
+  <img src="/img/post/15688878-5057d4bab7db08e7.png" alt="国内网站测速">
+
+</p>
+<p>效果比之前已经好太多了。第一次整站优化，已经达到初步效果。</p>
+<blockquote>
+<p>
+  <img src="/img/post/cc-icon.png" alt="">
+
+
+本文链接
+<a href="https://blog.goodfun.me/articles/2019/11/19/1574138629837.html">https://blog.goodfun.me/articles/2019/11/19/1574138629837.html</a>
+本作品由 <a href="https://deewooo.github.io">IvyWooo</a> 采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a> 进行许可，转载请注明出处。</p>
+</blockquote>
+<hr>
+<p>参考文章</p>
+<ol>
+<li>《本博客零散优化点汇总》，https://imququ.com/post/summary-of-my-blog-optimization.html</li>
+<li>《WordPress 网站使用 CloudFlare 后提示“将您重定向的次数过多” 的原因及解决办法》，https://www.wpzhiku.com/wordpress-wang-zhan-shi-yong-cloudflare-hou-ti-shi-jiang-nin-chong-ding-xiang-de-ci-shu-guo-duo-de-yuan-yin-ji-jie-jue-ban-fa/</li>
+<li>《Nginx 异步处理Google Analytics》，https://www.gubo.org/nginx-forward-google-analytics-optimized-loading-speed/</li>
+<li>《在Nginx中配置Google-Analytics》，https://moonagic.com/google-analytics-with-nginx/</li>
+<li>《Nginx 对接 Google Analytics》，https://blog.huguotao.com/post/google-analytics-with-nginx</li>
+<li>《Nginx 内配置 Google Analytics 指南》，https://darknode.in/network/nginx-google-analytics/</li>
+<li>《nginx proxy_cache 缓存配置》，https://blog.csdn.net/dengjiexian123/article/details/53386586</li>
+</ol>
+
+
+                
+                
+<div class="entry-shang text-center">
+    
+	    <p>「真诚赞赏，手留余香」</p>
+	
+	<button class="zs show-zs btn btn-bred">赞赏支持</button>
+</div>
+<div class="zs-modal-bg"></div>
+<div class="zs-modal-box">
+	<div class="zs-modal-head">
+		<button type="button" class="close">×</button>
+		<span class="author"><a href="https://deewooo.github.io/"><img src="/img/favicon.png" />猫猫和狗狗的小窝</a></span>
+        
+	        <p class="tip"><i></i><span>真诚赞赏，手留余香</span></p>
+		
+ 
+	</div>
+	<div class="zs-modal-body">
+		<div class="zs-modal-btns">
+			<button class="btn btn-blink" data-num="2">2元</button>
+			<button class="btn btn-blink" data-num="5">5元</button>
+			<button class="btn btn-blink" data-num="10">10元</button>
+			<button class="btn btn-blink" data-num="50">50元</button>
+			<button class="btn btn-blink" data-num="100">100元</button>
+			<button class="btn btn-blink" data-num="1">任意金额</button>
+		</div>
+		<div class="zs-modal-pay">
+			<button class="btn btn-bred" id="pay-text">2元</button>
+			<p>使用<span id="pay-type">微信</span>扫描二维码完成支付</p>
+			<img src="/img/reward/wechat-2.png"  id="pay-image"/>
+		</div>
+	</div>
+	<div class="zs-modal-footer">
+		<label><input type="radio" name="zs-type" value="wechat" class="zs-type" checked="checked"><span ><span class="zs-wechat"><img src="/img/reward/wechat-btn.png"/></span></label>
+		<label><input type="radio" name="zs-type" value="alipay" class="zs-type" class="zs-alipay"><img src="/img/reward/alipay-btn.png"/></span></label>
+	</div>
+</div>
+<script type="text/javascript" src="/js/reward.js"></script>
+
+                
+
+                
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%BA%94%E7%AF%87-%E4%BD%BF%E7%94%A8frp%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" data-toggle="tooltip" data-placement="top" title="建站第五篇 使用frp实现内网穿透">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/post/%E5%A4%B1%E6%8E%A7kevin-kelly/" data-toggle="tooltip" data-placement="top" title="《失控》kevin Kelly">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+                
+
+                
+
+
+
+            </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/docker" title="docker">
+                            docker
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/%E5%9C%9F%E7%8C%AB%E7%88%AA%E7%97%95" title="土猫爪痕">
+                            土猫爪痕
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/%E6%95%88%E7%8E%87" title="效率">
+                            效率
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/%E7%AE%80%E5%8D%95%E7%94%9F%E9%95%BF" title="简单生长">
+                            简单生长
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+                <section>
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_blank" href=""></a></li>
+                        
+                    </ul>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">                  
+                    
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/deewooo">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="猫猫和狗狗的小窝" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; 猫猫和狗狗的小窝 2022
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-131907052-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+</html>
