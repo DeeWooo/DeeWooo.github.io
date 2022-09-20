@@ -320,9 +320,9 @@ For more examples and ideas, visit:
 <li>-v 后面是指定的配置路径，比如/media/ivy/新加卷/影音视频就是我原来的影音物理路径，/media就是jellyfin的映射路径</li>
 </ol>
 </blockquote>
-<p>docker会自动拉取镜像完成安装</p>
-<p>
-  <img src="https://upload-images.jianshu.io/upload_images/15688878-915fb98d417168ef.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="docker拉取镜像">
+<p>docker会自动拉取镜像完成安装
+
+  <img src="/img/post/15688878-915fb98d417168ef.png" alt="">
 
 </p>
 <p>如果能看到上面的画面，说明jellyfin安装完成，就是这么便捷！！！！docker越来越成功果然是有道理的。
@@ -348,19 +348,19 @@ For more examples and ideas, visit:
 </li>
 </ul>
 <p>
-  <img src="https://upload-images.jianshu.io/upload_images/15688878-b3d9ab9183f9dab3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png">
+  <img src="/img/post/15688878-b3d9ab9183f9dab3.png" alt="">
 
 </p>
 <ul>
 <li>可以将不同种类的片源分开管理，比如电影、电视剧
 
-  <img src="https://upload-images.jianshu.io/upload_images/15688878-206ad1a079b789dd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png">
+  <img src="/img/post/15688878-206ad1a079b789dd.png" alt="">
 
 </li>
 </ul>
 <p>后面该怎么选怎么选，电影路径、电视剧路径，语言神马的。最后注意一下远程访问的两个勾，默认是打上的。
 
-  <img src="https://upload-images.jianshu.io/upload_images/15688878-c3288cf2634eab41.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png">
+  <img src="/img/post/15688878-c3288cf2634eab41.png" alt="">
 
 </p>
 <p>这样，我们的jellyfin服务就安装好了。</p>
@@ -377,35 +377,35 @@ remote_port = 9096
 <pre tabindex="0"><code class="language-script" data-lang="script">./frpc -c frpc.ini
 </code></pre><p>现在，访问ecs的公网ip:9096就能访问自己的Jellyfin了。</p>
 <h4 id="35-运行效果">3.5 运行效果</h4>
-<p>来张整体图，能看到不同的媒体库以及各自的更新进度。</p>
-<p>
-  <img src="https://upload-images.jianshu.io/upload_images/15688878-06890ddf2fd38dfc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="首页全景">
+<p>来张整体图，能看到不同的媒体库以及各自的更新进度。
+
+  <img src="/img/post/15688878-06890ddf2fd38dfc.png" alt="">
 
 </p>
 <p>可以在首页直接打开视频
 
-  <img src="https://upload-images.jianshu.io/upload_images/15688878-b5475a879499928b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="直接打开播放">
+  <img src="/img/post/15688878-b5475a879499928b.png" alt="">
 
 </p>
 <p>也可以点击进入影片介绍页，是的，jellyfin居然还有影片介绍页，我们只需要提供合规格命名的片源，其他的都交给jellyfin吧。
 
-  <img src="https://upload-images.jianshu.io/upload_images/15688878-8f80a1c0bd9234b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="《三块广告牌》详情页">
+  <img src="/img/post/15688878-8f80a1c0bd9234b1.png" alt="《三块广告牌》详情页">
 
 </p>
 <p>截图时是在公网，网速不佳，不然是可以看到演员的照片，还会推荐本地存储的相关影片，这个有点逆天了，查了一下这是从emby带出来的功能，强大的搜刮能力。
 补一张卡司图
 
-  <img src="https://upload-images.jianshu.io/upload_images/15688878-6bd3cf9c59b044fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="《三块广告牌》的演员表">
+  <img src="/img/post/15688878-6bd3cf9c59b044fb.png" alt="《三块广告牌》的演员表">
 
 </p>
 <p>还可以进入演员详情页
 
-  <img src="https://upload-images.jianshu.io/upload_images/15688878-06cf055b043f5be5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Clarke Peters的介绍">
+  <img src="/img/post/15688878-06cf055b043f5be5.png" alt="Clarke Peters的介绍">
 
 </p>
 <p>Ok，不管从哪个路径进来，最终还是要播放影片。播放效果是这样滴
 
-  <img src="https://upload-images.jianshu.io/upload_images/15688878-bc535f511a155b63.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="《我们的星球第一集》">
+  <img src="/img/post/15688878-b3d9ab9183f9dab3.png" alt="《我们的星球第一集》">
 
 </p>
 <p>内网使用，还是非常流畅的。</p>
