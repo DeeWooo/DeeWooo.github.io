@@ -6,16 +6,7 @@
     <description>Recent content on 猫猫和狗狗的小窝</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Sep 2022 23:32:59 +0800</lastBuildDate><atom:link href="https://deewooo.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>建站第八篇 以阿里云的ecs为跳板机实现ssh访问内网服务器</title>
-      <link>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%85%AB%E7%AF%87-%E4%BB%A5%E9%98%BF%E9%87%8C%E4%BA%91%E7%9A%84ecs%E4%B8%BA%E8%B7%B3%E6%9D%BF%E6%9C%BA%E5%AE%9E%E7%8E%B0ssh%E8%AE%BF%E9%97%AE%E5%86%85%E7%BD%91%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
-      <pubDate>Tue, 20 Sep 2022 23:32:59 +0800</pubDate>
-      
-      <guid>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%85%AB%E7%AF%87-%E4%BB%A5%E9%98%BF%E9%87%8C%E4%BA%91%E7%9A%84ecs%E4%B8%BA%E8%B7%B3%E6%9D%BF%E6%9C%BA%E5%AE%9E%E7%8E%B0ssh%E8%AE%BF%E9%97%AE%E5%86%85%E7%BD%91%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
-      <description>#背景介绍 做为一个自由开发者，我拥有一台有公网ip的阿里云ecs，家中用台式机跑了几个vm，提供各种需求的开发和测试环境。平时开发在家里进行</description>
-    </item>
-    
+    <lastBuildDate>Wed, 30 Mar 2022 09:09:59 +0800</lastBuildDate><atom:link href="https://deewooo.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>费曼学习法（第一次学习笔记）</title>
       <link>https://deewooo.github.io/post/%E8%B4%B9%E6%9B%BC%E5%AD%A6%E4%B9%A0%E6%B3%95%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
@@ -86,6 +77,15 @@
       
       <guid>https://deewooo.github.io/post/%E5%A4%B1%E6%8E%A7kevin-kelly/</guid>
       <description>自然也是如此：它通过牺牲简洁性来换取可靠性。 零缺陷软件的代价就是它的“过度设计”，超量建设。 以知识为基础——数据是廉价的，而且大量充斥在网络</description>
+    </item>
+    
+    <item>
+      <title>建站第八篇 以阿里云的ecs为跳板机实现ssh访问内网服务器</title>
+      <link>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%85%AB%E7%AF%87-%E4%BB%A5%E9%98%BF%E9%87%8C%E4%BA%91%E7%9A%84ecs%E4%B8%BA%E8%B7%B3%E6%9D%BF%E6%9C%BA%E5%AE%9E%E7%8E%B0ssh%E8%AE%BF%E9%97%AE%E5%86%85%E7%BD%91%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <pubDate>Tue, 19 Nov 2019 23:32:59 +0800</pubDate>
+      
+      <guid>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%85%AB%E7%AF%87-%E4%BB%A5%E9%98%BF%E9%87%8C%E4%BA%91%E7%9A%84ecs%E4%B8%BA%E8%B7%B3%E6%9D%BF%E6%9C%BA%E5%AE%9E%E7%8E%B0ssh%E8%AE%BF%E9%97%AE%E5%86%85%E7%BD%91%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <description>#背景介绍 做为一个自由开发者，我拥有一台有公网ip的阿里云ecs，家中用台式机跑了几个vm，提供各种需求的开发和测试环境。平时开发在家里进行</description>
     </item>
     
     <item>
