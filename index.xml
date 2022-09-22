@@ -13,7 +13,7 @@
       <pubDate>Thu, 22 Sep 2022 18:23:08 +0800</pubDate>
       
       <guid>https://deewooo.github.io/post/%E4%BD%BF%E7%94%A8hugo&#43;github-action%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%88%B0github-pages/</guid>
-      <description>mark</description>
+      <description>花了一些时间用hugo重新搭建了猫狗窝，托管在github page上，又利用github action实现了CI/CD，太省心了。下面就把趟坑</description>
     </item>
     
     <item>
