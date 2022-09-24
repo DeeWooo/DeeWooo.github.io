@@ -254,7 +254,7 @@ if (!doNotTrack) {
 <li>配置Github Action实现CI/CD</li>
 </ol>
 <p>本篇为第一部分——搭建本地服务</p>
-<h2 id="为什么重建">为什么重建</h2>
+<h3 id="为什么重建">为什么重建</h3>
 <p>19年的时候，用leanote做私有笔记服务，这样可以直接把笔记发成web页面，省去很多维护公共平台账号之类的杂事。但个人站点随之而来的维护工作，又让我陷入繁琐，违背了使用leanote是为了专注在写作上的初心。最终个人站还是荒废了。</p>
 <p>今年决定重启blog，作为记录和写作的练习地。</p>
 <p>为了避免又一次陷入泥潭，这次的笔记方案要满足以下几个需求：</p>
@@ -264,7 +264,7 @@ if (!doNotTrack) {
 <li>源文件和站点文件都能够完全掌控</li>
 <li>框架要有良好的社区支持</li>
 </ol>
-<h2 id="框架选择">框架选择</h2>
+<h3 id="框架选择">框架选择</h3>
 <p>基于希望专注写作的考虑，首先排除了wordpress，因为它太重了，提供的管理服务太灵活了，非常容易让人分心。我需要的博客引擎，一定要提供最简单的写作体验。</p>
 <p>一番寻找之后，锁定了三个引擎：jekyll、hexo、hugo，这是目前码农最喜欢用的三个博客生成器。下面就对它们做个简单的对比。</p>
 <table>
@@ -305,14 +305,14 @@ if (!doNotTrack) {
 </table>
 <p>关于编译速度的差别，原因在于Hugo使用go语言开发，go是一种编译型语言，执行速度非常快。而Jekyll使用ruby，Hexo使用nodejs，这两种语言都是解释型语言，执行效率比go低很多。而nodejs又比ruby快一些。从上面的数据可以看到，Hugo比Jekyll快了近10倍，完全不是一个量级的比较。</p>
 <p>最终，我选择了Hugo。虽然上手可能需要一点时间，但几乎所有维度的比较，都让Hugo成为我的第一选择。</p>
-<h2 id="本地搭建">本地搭建</h2>
+<h3 id="本地搭建">本地搭建</h3>
 <p>下面就开始Hugo的探索之旅。</p>
-<h3 id="安装hugo">安装hugo</h3>
+<h4 id="安装hugo">安装hugo</h4>
 <p>非常简单的安装。我使用的是 macOS，官方推荐用 homebrew 方式。</p>
 <pre tabindex="0"><code>brew install hugo
 </code></pre><p>完成后，可使用以下命令进行验证：</p>
 <pre tabindex="0"><code>hugo version
-</code></pre><h3 id="创建站点">创建站点</h3>
+</code></pre><h4 id="创建站点">创建站点</h4>
 <p>要创建一个新的web站点，可通过执行<code>hugo new site 给博客起个名字</code>命令来实现。</p>
 <p>
   <img src="/img/post/20200409131452.png" alt="img.png">
@@ -333,11 +333,41 @@ if (!doNotTrack) {
 <p>content: md文件和html</p>
 <p>static: 静态资源</p>
 <p>themes: 主题</p>
-<p>其他的可先不管</p>
-<h3 id="选择主题">选择主题</h3>
-<h3 id="配置hugo">配置hugo</h3>
-<h3 id="写作">写作</h3>
-<h3 id="本地部署">本地部署</h3>
+<p>其他的可先不管。</p>
+<h4 id="选择主题">选择主题</h4>
+<p>Hugo没有默认主题，所以需要自己安装主题。我使用的是<a href="https://github.com/zhaohuabing/hugo-theme-cleanwhite">hugo-theme-cleanwhite</a> 。官网主题库：<a href="https://themes.gohugo.io/">Hugo Themes</a></p>
+<pre tabindex="0"><code>$ mkdir themes
+$ git submodule add https://github.com/zhaohuabing/hugo-theme-cleanwhite.git themes/hugo-theme-cleanwhite
+</code></pre><p>启动 Hugo 服务器，在 http://localhost:1313/ 将会看到由主题生成的示例网站</p>
+<pre tabindex="0"><code>$ hugo serve -t  hugo-theme-cleanwhite
+</code></pre><p>或只需要</p>
+<pre tabindex="0"><code>hugo server
+</code></pre><p>即可。</p>
+<h4 id="配置hugo">配置hugo</h4>
+<p>配置文件在网站根目录下 config.toml , 根据自身需求进行修改。在 hugo-theme-cleanwhite 主题下的 exampleSite 文件夹中的文件可作为参考。默认的文章将存储在 ./content/post 中，每当写完文章，运行 hugo 命令，Hugo 将自动生成静态网站到 public 文件夹中，我们只需要将该文件夹的内容发布在网络上即可。</p>
+<p>更多关于主题的配置可以参考 <a href="https://github.com/zhaohuabing/hugo-theme-cleanwhite">hugo-theme-cleanwhite README.md</a></p>
+<p>更详细的配置规则，可参考<a href="https://gohugo.io/getting-started/configuration/">Hugo官方文件</a></p>
+<h4 id="写作">写作</h4>
+<p>现在可以创建一篇文章了。执行命令<code>hugo new post/hello-world.md</code>，会在content/post/下新增一个名为hello-world.md的文件。我们将头部自动生成的部分进行修改后，就可以在下面写自己的笔记或博文了。</p>
+<pre tabindex="0"><code>---
+title: &quot;Hello World&quot;
+date: 2022-09-25T16:00:21+08:00
+categories:
+  - &quot;Blog&quot;
+tags:
+  - &quot;Hugo&quot;
+draft: true
+---
+
+# Hello World.
+
+Post example
+</code></pre><h4 id="本地部署">本地部署</h4>
+<p>本地调试命令，执行它，就可以直接通过 http://localhost:1313 地址访问本地预览网页。</p>
+<pre tabindex="0"><code>hugo server
+</code></pre><p>本地发布命令，执行它，就能在public/目录下生成整套静态网站，可以直接复制到web服务器中。</p>
+<pre tabindex="0"><code>hugo
+</code></pre><p>至此，Hugo本地方案的搭建过程完成！</p>
 <blockquote>
 <p>
   <img src="/img/post/cc-icon.png" alt="">
@@ -352,6 +382,8 @@ if (!doNotTrack) {
 <li>《浅谈我为什么从 HEXO 迁移到 HUGO》，https://sspai.com/post/59904</li>
 <li>《從 Jekyll 轉移到 Hugo 心得》，https://blog.yeshuanova.com/2018/07/from-jekyll-to-hugo/</li>
 <li>《Hugo + GitHub Action，搭建你的博客自动发布系统》，https://www.pseudoyu.com/zh/2022/05/29/deploy_your_blog_using_hugo_and_github_action/</li>
+<li>《使用 Hugo 搭建个人网站（博客、个人主页）并发布到 Github 上》，https://zhuanlan.zhihu.com/p/417259374</li>
+<li></li>
 </ol>
 
 
