@@ -306,9 +306,36 @@ if (!doNotTrack) {
 <p>关于编译速度的差别，原因在于Hugo使用go语言开发，go是一种编译型语言，执行速度非常快。而Jekyll使用ruby，Hexo使用nodejs，这两种语言都是解释型语言，执行效率比go低很多。而nodejs又比ruby快一些。从上面的数据可以看到，Hugo比Jekyll快了近10倍，完全不是一个量级的比较。</p>
 <p>最终，我选择了Hugo。虽然上手可能需要一点时间，但几乎所有维度的比较，都让Hugo成为我的第一选择。</p>
 <h2 id="本地搭建">本地搭建</h2>
+<p>下面就开始Hugo的探索之旅。</p>
 <h3 id="安装hugo">安装hugo</h3>
-<h3 id="配置hugo">配置hugo</h3>
+<p>非常简单的安装。我使用的是 macOS，官方推荐用 homebrew 方式。</p>
+<pre tabindex="0"><code>brew install hugo
+</code></pre><p>完成后，可使用以下命令进行验证：</p>
+<pre tabindex="0"><code>hugo version
+</code></pre><h3 id="创建站点">创建站点</h3>
+<p>要创建一个新的web站点，可通过执行<code>hugo new site 给博客起个名字</code>命令来实现。</p>
+<p>
+  <img src="/img/post/20200409131452.png" alt="img.png">
+
+</p>
+<p>执行后会创建一个文件夹，与命令中的名字同名，包括以下内容:</p>
+<pre tabindex="0"><code>.
+├── archetypes
+│   └── default.md
+├── config.toml
+├── content
+├── data
+├── layouts
+├── static
+└── themes
+</code></pre><p>其中</p>
+<p>config.toml: hugo配置文件
+content: md文件和html
+static: 静态资源
+themes: 主题
+其他的可先不管</p>
 <h3 id="选择主题">选择主题</h3>
+<h3 id="配置hugo">配置hugo</h3>
 <h3 id="写作">写作</h3>
 <h3 id="本地部署">本地部署</h3>
 <blockquote>
@@ -324,6 +351,7 @@ if (!doNotTrack) {
 <li>《静态博客框架jekyll、hexo和hugo三者之间的区别与差异》，https://zhuanlan.zhihu.com/p/368407566</li>
 <li>《浅谈我为什么从 HEXO 迁移到 HUGO》，https://sspai.com/post/59904</li>
 <li>《從 Jekyll 轉移到 Hugo 心得》，https://blog.yeshuanova.com/2018/07/from-jekyll-to-hugo/</li>
+<li>《Hugo + GitHub Action，搭建你的博客自动发布系统》，https://www.pseudoyu.com/zh/2022/05/29/deploy_your_blog_using_hugo_and_github_action/</li>
 </ol>
 
 
