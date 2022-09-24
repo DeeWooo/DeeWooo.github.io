@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>工具 on 猫猫和狗狗的小窝</title>
+    <link>https://deewooo.github.io/tags/%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 工具 on 猫猫和狗狗的小窝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 27 Nov 2019 10:32:52 +0800</lastBuildDate><atom:link href="https://deewooo.github.io/tags/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows下如何查看巨大的日志文件</title>
+      <link>https://deewooo.github.io/post/windows%E4%B8%8B%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E5%B7%A8%E5%A4%A7%E7%9A%84%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Wed, 27 Nov 2019 10:32:52 +0800</pubDate>
+      
+      <guid>https://deewooo.github.io/post/windows%E4%B8%8B%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E5%B7%A8%E5%A4%A7%E7%9A%84%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6/</guid>
+      <description>周末，为了追踪一个bug产生的原因，请运维同学帮忙记录了近20个小时的test环境的数据库binlog。拿到的日志文件解压后有200+M，这</description>
+    </item>
+    
+  </channel>
+</rss>
