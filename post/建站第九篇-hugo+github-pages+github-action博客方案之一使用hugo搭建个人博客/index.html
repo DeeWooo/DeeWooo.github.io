@@ -259,17 +259,51 @@ if (!doNotTrack) {
 今年决定重启blog，作为记录和写作的练习地。
 为了避免又一次陷入泥潭，这次的笔记方案要满足以下几个需求：</p>
 <ol>
-<li>支持md</li>
+<li>支持md，并且要保证将来可以方便的迁移</li>
 <li>可实现服务托管</li>
 <li>源文件和站点文件都能够完全掌控</li>
 <li>框架要有良好的社区支持</li>
 </ol>
 <h2 id="框架选择">框架选择</h2>
-<p>基于希望专注写作的考虑，首先排除了wordpress，因为它提供的管理服务太灵活了，非常容易让人分心。</p>
-<h3 id="jekyll">Jekyll</h3>
-<h3 id="hexo">Hexo</h3>
-<h3 id="hugo">Hugo</h3>
-<h3 id="最终选择">最终选择</h3>
+<p>基于希望专注写作的考虑，首先排除了wordpress，因为它太重了，提供的管理服务太灵活了，非常容易让人分心。我需要的博客引擎，一定要提供最简单的写作体验。一番寻找之后，锁定了三个引擎：jekyll、hexo、hugo，这是目前码农最喜欢用的三个博客生成器。下面就对它们做个简单的对比</p>
+<table>
+<thead>
+<tr>
+<th>对比维度</th>
+<th>Jekyll</th>
+<th>Hexo</th>
+<th>Hugo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>社区支持(2022年09月25日,github上star数目)</td>
+<td>45.3k</td>
+<td>35.4k</td>
+<td>62.5k</td>
+</tr>
+<tr>
+<td>开发语言</td>
+<td>ruby</td>
+<td>nodejs</td>
+<td>go</td>
+</tr>
+<tr>
+<td>编译速度(<a href="https://conscientiousprogrammer.com/blog/2015/05/31/why-i-switched-from-octopress-2-to-hugo/">这里</a> 提供了585篇文章的生成时长)</td>
+<td>15.90s</td>
+<td>两者之间</td>
+<td>4.90s</td>
+</tr>
+<tr>
+<td>其他方面</td>
+<td>Jekyll 有github支持，可以将markdown文件直接放到git仓库，github会自动生成网页文件。（Github一直是一个亲ruby的社区）</td>
+<td>Hexo提供了方便的部署命令，可以做到一条命令部署到github上。</td>
+<td>Hugo的官方文档写的非常好，部署简洁。前两者部署时需要安装很多依赖，而hugo可以直接提供二进制文件运行，甚至不需要root权限。</td>
+</tr>
+</tbody>
+</table>
+<p>关于编译速度的差别，原因在于Hugo使用go语言开发，go是一种编译型语言，执行速度非常快。而Jekyll使用ruby，Hexo使用nodejs，这两种语言都是解释型语言，执行效率比go低很多。而nodejs又比ruby快一些。从上面的数据可以看到，Hugo比Jekyll快了近10倍，完全不是一个量级的比较。</p>
+<p>最终，我选择了Hugo。虽然上手可能需要一点时间，但几乎所有维度的比较，都让Hugo成为我的第一选择。</p>
 <h2 id="本地搭建">本地搭建</h2>
 <h3 id="安装hugo">安装hugo</h3>
 <h3 id="配置hugo">配置hugo</h3>
@@ -287,7 +321,9 @@ if (!doNotTrack) {
 <hr>
 <h2 id="参考文章">参考文章</h2>
 <ol>
-<li>《Jekyll / Hugo / Hexo 比较》，https://lexcao.io/zh/posts/jekyll-hugo-hexo/</li>
+<li>《静态博客框架jekyll、hexo和hugo三者之间的区别与差异》，https://zhuanlan.zhihu.com/p/368407566</li>
+<li>《浅谈我为什么从 HEXO 迁移到 HUGO》，https://sspai.com/post/59904</li>
+<li>《從 Jekyll 轉移到 Hugo 心得》，https://blog.yeshuanova.com/2018/07/from-jekyll-to-hugo/</li>
 </ol>
 
 
