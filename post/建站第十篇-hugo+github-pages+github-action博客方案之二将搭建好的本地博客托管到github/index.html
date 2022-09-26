@@ -30,15 +30,15 @@ if (!doNotTrack) {
     
 
     
-    <meta name="title" content="《人间是剧场》 读书笔记" />
-    <meta property="og:title" content="《人间是剧场》 读书笔记" />
-    <meta property="twitter:title" content="《人间是剧场》 读书笔记" />
+    <meta name="title" content="建站第十篇 Hugo&#43;Github Pages&#43;Github Action博客方案之二——将搭建好的本地博客托管到github" />
+    <meta property="og:title" content="建站第十篇 Hugo&#43;Github Pages&#43;Github Action博客方案之二——将搭建好的本地博客托管到github" />
+    <meta property="twitter:title" content="建站第十篇 Hugo&#43;Github Pages&#43;Github Action博客方案之二——将搭建好的本地博客托管到github" />
     
 
     
-    <meta name="description" content="IvyWooo，程序员, 开源爱好者，生活探险家 | 这里是 DD299 的博客，与你一起发现更大的世界。">
-    <meta property="og:description" content="IvyWooo，程序员, 开源爱好者，生活探险家 | 这里是 DD299 的博客，与你一起发现更大的世界。" />
-    <meta property="twitter:description" content="IvyWooo，程序员, 开源爱好者，生活探险家 | 这里是 DD299 的博客，与你一起发现更大的世界。" />
+    <meta name="description" content="花了一些时间用hugo重新搭建了猫狗窝，托管在github page上，又利用github action实现了CI/CD。非常省心！做到了专注写文，直接发布的效果。">
+    <meta property="og:description" content="花了一些时间用hugo重新搭建了猫狗窝，托管在github page上，又利用github action实现了CI/CD。非常省心！做到了专注写文，直接发布的效果。" />
+    <meta property="twitter:description" content="花了一些时间用hugo重新搭建了猫狗窝，托管在github page上，又利用github action实现了CI/CD。非常省心！做到了专注写文，直接发布的效果。" />
     
 
     
@@ -49,9 +49,9 @@ if (!doNotTrack) {
     <meta name="keyword"  content="dd299, dd299的网络日志, dd299的博客, DD299 Blog, 博客, 个人网站, 互联网, Web, 量化，投资，美食">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>《人间是剧场》 读书笔记 | DD299的博客 | DD299 Blog</title>
+    <title>建站第十篇 Hugo&#43;Github Pages&#43;Github Action博客方案之二——将搭建好的本地博客托管到github | DD299的博客 | DD299 Blog</title>
 
-    <link rel="canonical" href="/post/%E4%BA%BA%E9%97%B4%E6%98%AF%E5%89%A7%E5%9C%BA-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">
+    <link rel="canonical" href="/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E7%AF%87-hugo&#43;github-pages&#43;github-action%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88%E4%B9%8B%E4%BA%8C%E5%B0%86%E6%90%AD%E5%BB%BA%E5%A5%BD%E7%9A%84%E6%9C%AC%E5%9C%B0%E5%8D%9A%E5%AE%A2%E6%89%98%E7%AE%A1%E5%88%B0github/">
 
     
     
@@ -197,25 +197,33 @@ if (!doNotTrack) {
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/%E5%AE%97%E8%90%A8%E8%92%8B%E6%89%AC%E9%92%A6%E5%93%B2%E4%BB%81%E6%B3%A2%E5%88%87" title="宗萨蒋扬钦哲仁波切">
-                            宗萨蒋扬钦哲仁波切
+                        <a class="tag" href="/tags/hugo" title="Hugo">
+                            Hugo
                         </a>
                         
-                        <a class="tag" href="/tags/%E5%9C%9F%E7%8C%AB%E8%AF%BB%E4%B9%A6" title="土猫读书">
-                            土猫读书
+                        <a class="tag" href="/tags/github-action" title="Github Action">
+                            Github Action
+                        </a>
+                        
+                        <a class="tag" href="/tags/github-pages" title="Github Pages">
+                            Github Pages
+                        </a>
+                        
+                        <a class="tag" href="/tags/%E5%BB%BA%E7%AB%99" title="建站">
+                            建站
                         </a>
                         
                     </div>
-                    <h1>《人间是剧场》 读书笔记</h1>
+                    <h1>建站第十篇 Hugo&#43;Github Pages&#43;Github Action博客方案之二——将搭建好的本地博客托管到github</h1>
                     <h2 class="subheading"></h2>
                     <span class="meta">
                         
                             Posted by 
                             
-                                     &#34;99&#34;
+                                     &#34;DD&#34;
                              
                             on 
-                            Tuesday, July 16, 2019
+                            Sunday, September 25, 2022
                             
                             
                             
@@ -241,36 +249,63 @@ if (!doNotTrack) {
                 post-container">
 
                 
-                <p>
-  <img src="/img/post/15688878-df9b05be9a5516a6.png" alt="">
+                <p>本系列包括三部分：</p>
+<ol>
+<li><a href="https://www.goodfun.me/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B9%9D%E7%AF%87-hugo+github-pages+github-action%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88%E4%B9%8B%E4%B8%80%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">搭建本地服务</a></li>
+<li>发布到Github Pages</li>
+<li>配置Github Action实现CI/CD</li>
+</ol>
+<p>本篇为第二部分——将搭建好的本地博客托管到github。</p>
+<p>本方案以第一篇Hugo搭建的博客为例，但不限于Hugo，所有的静态网站都可以采用此方案。</p>
+<h3 id="需要准备的">需要准备的</h3>
+<ol>
+<li>github账户</li>
+<li>发布好的本地静态网页文件，根据<a href="https://www.goodfun.me/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B9%9D%E7%AF%87-hugo+github-pages+github-action%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88%E4%B9%8B%E4%B8%80%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">上一篇</a> 中的结果，执行<code>hugo</code>命令后，会在public/目录下生成整套静态网站。</li>
+</ol>
+<h3 id="流程">流程</h3>
+<p>根据<a href="https://pages.github.com/">官网</a>,主要步骤大致如下：</p>
+<ol>
+<li>创建一个GithubPages仓库</li>
+<li>将仓库拉到本地</li>
+<li>添加静态网页文件添加到本地仓库</li>
+<li>提交到github仓库</li>
+</ol>
+<h3 id="动手干">动手干</h3>
+<h4 id="第一步创建githubpages仓库">第一步，创建GithubPages仓库</h4>
+<p>新建一个public仓库，并命名为<code>username.github.io</code>，其中<code>username</code>指github账户名。</p>
+<p>GitHub Pages 项目需要符合 <code>username.github.io</code> 的特殊命名格式，如果仓库名和账户名没有完全匹配的话，网站就不能运行，所以一定要保证完全匹配。</p>
+<p>
+  <img src="https://pages.github.com/images/user-repo@2x.png" alt="官网例子">
 
 </p>
-<p>作者：宗萨蒋扬钦哲仁波切
-2010年  《人间是剧场》 life as cinema      新星出版社</p>
-<p>1、大乘、小乘、金刚乘
-我们该做的，是不去伤害他别人，不伤害众生，也不累积害人的因，那你就不仅是普通人，同时也是小乘行者。
-如果你更勇敢些，想做更多的事情，那么除了不伤害别人，你还要尝试去把帮助别人，并累积助人的因，那你就不仅是普通人，同时也是大乘行者。
-金刚乘行者，你必须要有“净观”，视众生为情境，视轮回、涅槃为同样清净。</p>
-<p>2、禅定
-奢摩他很简单。坐直，专注于呼吸，这就是你要坐的。你要保持简单，不要复杂化。呼吸就发生在当下，不在过去，不在未来，这就是为什么我认为运用呼吸很好。呼吸发生在每时每刻——吐气时，它离开、结束，永远不再回来，然后我们再次吸气。</p>
-<p>3、十二缘起法
-佛教说明三世轮回的基本理论，包括无明、行、识、名色、人 、触、受、爱、取、有、生、老死十二个部分。</p>
-<p>4、无明
-无明实际上就是对标签的稚拙。在所有标签当中，最具有破坏性，最难以琢磨的标签就是“自我”、“我的”或“我”。</p>
-<p>猪代表无明，从无明产生渴求，渴求是贪欲之母；从无明也产生恐惧，恐惧时嗔恨之母。所以我们有三种基本的心理，是这三者在感知事务，它们以多种不同的方式去感知事物。</p>
-<p>5、根据佛教，生命只是感知，一种相继不断的感知。</p>
-<p>6、我们有六道。大体而言，当感知来自嗔恨时，你时在体验地狱道；当感知来自执著、执取或贪吝，你在体验饿鬼道；当你的感知通过无明过滤，你在经验畜生道；当你生出很强的满心，你就投生到天道；生出嫉妒心，投生到阿修罗道；而当你贪欲炽盛时，你投生到人道。</p>
-<p>7、处于正常状态的心，即是智慧。
-大乘佛教最重要的特征是般若——根本的智慧。其他的特质，比如布施、持戒、道德，都次于智慧。</p>
-<p>8、整个佛法基本上就像一种安慰剂。
-不过，即便我们所热爱的修道是一场骗局，即使它是安慰剂，它确实必要的安慰剂。为什么？因为我们有各种各样的执著、束缚和串习，必须被斩断。藏语中的“Dorje Churpa” 或梵文中的 “Vajracchedika”，有很多不同的译法，中文往往翻译为“金刚能断”（能断骗局之金刚），很多藏文翻译成“能断金刚的智慧”。</p>
-<p>9、“我”只不过是贴在由诸蕴组合而成的几个实体上的标签。</p>
-<p>10、出离心
-出离的标准定义是：了知执著是无用、无自性的，所以我们应该摆脱它们。</p>
-<p>11、般若波罗蜜
-“般若”意味着至高的心、最高的智力，而“波罗蜜”的意思是，甚至超越它。</p>
-<p>12、痛苦从何而来？很清楚的，它来自相互依存（缘起）的不确定性。任何相互依存的，基本上都不确定。我们希望得到理想中的和平与宁静，却无法确定能拥有它，因为我们的理想得依赖我们无法控制得条件。</p>
-<p>13、什么是能力呢？就是觉得自在，无障碍，没有被剥夺或者缺乏什么。</p>
+<h4 id="第二步将仓库拉到本地">第二步，将仓库拉到本地</h4>
+<p>在你希望的目录位置，用下面的命令将新建的远程仓库拉到本地。</p>
+<pre tabindex="0"><code>git clone https://github.com/username/username.github.io
+</code></pre><p>建议用github官方提供的客户端来操作，主要是省去了维护登录账号的工作。</p>
+<h4 id="第三步添加静态网页文件添加到本地仓库">第三步，添加静态网页文件添加到本地仓库</h4>
+<p>将hugo生成的public/目录下所有文件，复制到本地仓库，</p>
+<pre tabindex="0"><code>cp -rf hugo项目/public/* xxx.github.io/
+git add --all
+git commit -m &quot;Initial commit&quot;
+</code></pre><p>再次建议git操作使用github客户端完成。</p>
+<h4 id="提交到github仓库">提交到github仓库</h4>
+<pre tabindex="0"><code>git push -u origin main
+
+</code></pre><p>待提交完成后，打开浏览器，访问https://username.github.io，就能看到和本地hugo网页一样的效果了。</p>
+<hr>
+<h2 id="参考文章">参考文章</h2>
+<ol>
+<li>《用 GitHub Pages 建个人网站的小白级教程》，https://zhuanlan.zhihu.com/p/58254227</li>
+<li>《GitHub Pages | Websites for you and your projects》，https://pages.github.com/</li>
+<li>《使用 Hugo 搭建个人网站（博客、个人主页）并发布到 Github 上》，https://zhuanlan.zhihu.com/p/417259374</li>
+</ol>
+<blockquote>
+<p>
+  <img src="/img/post/cc-icon.png" alt="">
+
+</p>
+<p>本作品由 <a href="https://www.goodfun.me">IvyWooo</a> 采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a> 进行许可，转载请注明出处。 <a href="https://www.goodfun.me/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E7%AF%87-Hugo+Github-Pages+Github-Action%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88%E4%B9%8B%E4%BA%8C%E2%80%94%E2%80%94%E5%B0%86%E6%90%AD%E5%BB%BA%E5%A5%BD%E7%9A%84%E6%9C%AC%E5%9C%B0%E5%8D%9A%E5%AE%A2%E6%89%98%E7%AE%A1%E5%88%B0github">本文链接</a></p>
+</blockquote>
 
 
                 
@@ -320,15 +355,10 @@ if (!doNotTrack) {
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%85%AD%E7%AF%87-%E5%B0%8F%E7%AB%99%E4%BC%98%E5%8C%96%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%E4%BA%8C%E4%B8%89%E4%BA%8B/" data-toggle="tooltip" data-placement="top" title="建站第六篇 小站优化访问速度二三事">&larr;
+                        <a href="/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B9%9D%E7%AF%87-hugo&#43;github-pages&#43;github-action%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88%E4%B9%8B%E4%B8%80%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" data-toggle="tooltip" data-placement="top" title="建站第九篇 Hugo&#43;Github Pages&#43;Github Action博客方案之一——使用Hugo搭建个人博客">&larr;
                             Previous Post</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B8%83%E7%AF%87-%E4%BD%BF%E7%94%A8docker%E5%AE%89%E8%A3%85elasticsearch/" data-toggle="tooltip" data-placement="top" title="建站第七篇 使用Docker安装elasticSearch">Next
-                            Post &rarr;</a>
-                    </li>
                     
                 </ul>
                 
