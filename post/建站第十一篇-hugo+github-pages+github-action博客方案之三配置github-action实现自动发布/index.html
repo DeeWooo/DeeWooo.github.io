@@ -30,9 +30,9 @@ if (!doNotTrack) {
     
 
     
-    <meta name="title" content="建站第九篇 Hugo&#43;Github Pages&#43;Github Action博客方案之一——使用Hugo搭建个人博客" />
-    <meta property="og:title" content="建站第九篇 Hugo&#43;Github Pages&#43;Github Action博客方案之一——使用Hugo搭建个人博客" />
-    <meta property="twitter:title" content="建站第九篇 Hugo&#43;Github Pages&#43;Github Action博客方案之一——使用Hugo搭建个人博客" />
+    <meta name="title" content="建站第十一篇 Hugo&#43;Github Pages&#43;Github Action博客方案之三——配置Github Action实现自动发布" />
+    <meta property="og:title" content="建站第十一篇 Hugo&#43;Github Pages&#43;Github Action博客方案之三——配置Github Action实现自动发布" />
+    <meta property="twitter:title" content="建站第十一篇 Hugo&#43;Github Pages&#43;Github Action博客方案之三——配置Github Action实现自动发布" />
     
 
     
@@ -49,9 +49,9 @@ if (!doNotTrack) {
     <meta name="keyword"  content="dd299, dd299的网络日志, dd299的博客, DD299 Blog, 博客, 个人网站, 互联网, Web, 量化，投资，美食">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>建站第九篇 Hugo&#43;Github Pages&#43;Github Action博客方案之一——使用Hugo搭建个人博客 | DD299的博客 | DD299 Blog</title>
+    <title>建站第十一篇 Hugo&#43;Github Pages&#43;Github Action博客方案之三——配置Github Action实现自动发布 | DD299的博客 | DD299 Blog</title>
 
-    <link rel="canonical" href="/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B9%9D%E7%AF%87-hugo&#43;github-pages&#43;github-action%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88%E4%B9%8B%E4%B8%80%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
+    <link rel="canonical" href="/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AF%87-hugo&#43;github-pages&#43;github-action%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88%E4%B9%8B%E4%B8%89%E9%85%8D%E7%BD%AEgithub-action%E5%AE%9E%E7%8E%B0%E8%87%AA%E5%8A%A8%E5%8F%91%E5%B8%83/">
 
     
     
@@ -197,6 +197,10 @@ if (!doNotTrack) {
                 <div class="post-heading">
                     <div class="tags">
                         
+                        <a class="tag" href="/tags/%E5%BB%BA%E7%AB%99" title="建站">
+                            建站
+                        </a>
+                        
                         <a class="tag" href="/tags/hugo" title="Hugo">
                             Hugo
                         </a>
@@ -209,12 +213,8 @@ if (!doNotTrack) {
                             Github Pages
                         </a>
                         
-                        <a class="tag" href="/tags/%E5%BB%BA%E7%AB%99" title="建站">
-                            建站
-                        </a>
-                        
                     </div>
-                    <h1>建站第九篇 Hugo&#43;Github Pages&#43;Github Action博客方案之一——使用Hugo搭建个人博客</h1>
+                    <h1>建站第十一篇 Hugo&#43;Github Pages&#43;Github Action博客方案之三——配置Github Action实现自动发布</h1>
                     <h2 class="subheading"></h2>
                     <span class="meta">
                         
@@ -223,7 +223,7 @@ if (!doNotTrack) {
                                      &#34;DD&#34;
                              
                             on 
-                            Thursday, September 22, 2022
+                            Tuesday, September 27, 2022
                             
                             
                             
@@ -249,143 +249,199 @@ if (!doNotTrack) {
                 post-container">
 
                 
-                <p>花了一些时间用hugo重新搭建了猫狗窝，托管在github page上，又利用github action实现了CI/CD。非常省心！做到了专注写文，直接发布的效果。本篇记录就是写一点发布一点，陆续成文。</p>
-<p>下面就把这一次趟坑的过程总结一下，本系列包括三部分：</p>
+                <p>本系列包括三部分：</p>
 <ol>
-<li>搭建本地服务</li>
+<li><a href="../%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B9%9D%E7%AF%87-hugo+github-pages+github-action%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88%E4%B9%8B%E4%B8%80%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">搭建本地服务</a></li>
 <li><a href="../%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E7%AF%87-Hugo+Github-Pages+Github-Action%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88%E4%B9%8B%E4%BA%8C%E2%80%94%E2%80%94%E5%B0%86%E6%90%AD%E5%BB%BA%E5%A5%BD%E7%9A%84%E6%9C%AC%E5%9C%B0%E5%8D%9A%E5%AE%A2%E6%89%98%E7%AE%A1%E5%88%B0github">发布到Github Pages</a></li>
-<li><a href="../%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AF%87-Hugo+Github-Pages+Github-Action%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88%E4%B9%8B%E4%B8%89%E2%80%94%E2%80%94%E9%85%8D%E7%BD%AEGithub-Action%E5%AE%9E%E7%8E%B0%E8%87%AA%E5%8A%A8%E5%8F%91%E5%B8%83">配置Github Action实现CI/CD</a></li>
+<li>配置Github Action实现CI/CD</li>
 </ol>
-<p>本篇为第一部分——搭建本地服务</p>
-<h3 id="为什么重建">为什么重建</h3>
-<p>19年的时候，用leanote做私有笔记服务，这样可以直接把笔记发成web页面，省去很多维护公共平台账号之类的杂事。但个人站点随之而来的维护工作，又让我陷入繁琐，违背了使用leanote是为了专注在写作上的初心。最终个人站还是荒废了。</p>
-<p>今年决定重启blog，作为记录和写作的练习地。</p>
-<p>为了避免又一次陷入泥潭，这次的笔记方案要满足以下几个需求：</p>
+<p>本篇为第三部分——配置Github Action实现CI/CD。</p>
+<p>本方案以第一篇Hugo搭建的博客为例，但不限于Hugo，所有的博客生成器都可以采用此方案。</p>
+<h3 id="为什么要配置自动发布">为什么要配置自动发布</h3>
+<p>基于前两个部分组成方案中，一次更新过程如下：</p>
 <ol>
-<li>支持md，并且要保证将来可以方便的迁移</li>
-<li>可实现服务托管</li>
-<li>源文件和站点文件都能够完全掌控</li>
-<li>框架要有良好的社区支持</li>
+<li>在本地写好md文章</li>
+<li>用hugo发布到public/目录下</li>
+<li>复制到本地仓库(也可以将git本地仓库配置到public/目录下，但因为我同时也在用git管理md，这么做会将两个项目的git纠缠在一起，不够清爽，违背我的审美)</li>
+<li>再推到远程仓库</li>
 </ol>
-<h3 id="框架选择">框架选择</h3>
-<p>基于希望专注写作的考虑，首先排除了wordpress，因为它太重了，提供的管理服务太灵活了，非常容易让人分心。我需要的博客引擎，一定要提供最简单的写作体验。</p>
-<p>一番寻找之后，锁定了三个引擎：jekyll、hexo、hugo，这是目前码农最喜欢用的三个博客生成器。下面就对它们做个简单的对比。</p>
-<table>
-<thead>
-<tr>
-<th>对比维度</th>
-<th>Jekyll</th>
-<th>Hexo</th>
-<th>Hugo</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>社区支持(2022年09月25日,github上star数目)</td>
-<td>45.3k</td>
-<td>35.4k</td>
-<td>62.5k</td>
-</tr>
-<tr>
-<td>开发语言</td>
-<td>ruby</td>
-<td>nodejs</td>
-<td>go</td>
-</tr>
-<tr>
-<td>编译速度(<a href="https://conscientiousprogrammer.com/blog/2015/05/31/why-i-switched-from-octopress-2-to-hugo/">这里</a> 提供了585篇文章的生成时长)</td>
-<td>15.90s</td>
-<td>两者之间</td>
-<td>4.90s</td>
-</tr>
-<tr>
-<td>其他方面</td>
-<td>Jekyll 有github支持，可以将markdown文件直接放到git仓库，github会自动生成网页文件。（Github一直是一个亲ruby的社区）</td>
-<td>Hexo提供了方便的部署命令，可以做到一条命令部署到github上。</td>
-<td>Hugo的官方文档写的非常好，部署简洁。前两者部署时需要安装很多依赖，而hugo可以直接提供二进制文件运行，甚至不需要root权限。</td>
-</tr>
-</tbody>
-</table>
-<p>关于编译速度的差别，原因在于Hugo使用go语言开发，go是一种编译型语言，执行速度非常快。而Jekyll使用ruby，Hexo使用nodejs，这两种语言都是解释型语言，执行效率比go低很多。而nodejs又比ruby快一些。从上面的数据可以看到，Hugo比Jekyll快了近10倍，完全不是一个量级的比较。</p>
-<p>最终，我选择了Hugo。虽然上手可能需要一点时间，但几乎所有维度的比较，都让Hugo成为我的第一选择。</p>
-<h3 id="本地搭建">本地搭建</h3>
-<p>下面就开始Hugo的探索之旅。</p>
-<h4 id="安装hugo">安装hugo</h4>
-<p>非常简单的安装。我使用的是 macOS，官方推荐用 homebrew 方式。</p>
-<pre tabindex="0"><code>brew install hugo
-</code></pre><p>完成后，可使用以下命令进行验证：</p>
-<pre tabindex="0"><code>hugo version
-</code></pre><h4 id="创建站点">创建站点</h4>
-<p>要创建一个新的web站点，可通过执行<code>hugo new site 给博客起个名字</code>命令来实现。</p>
+<p>这样做的弊端是：</p>
+<ol>
+<li>本地必须管理两个git仓库，一个是hugo-md源码库，另一个是生成的静态网页库，增加了更新文章的复杂度；</li>
+<li>发布必须先发一个本地，然后手动上传，也增加了出错的风险。</li>
+</ol>
+<p>一个理想的状态是，我只负责写文，和将好的md提交到git备份，然后就可以坐等网站内容更新了。github官方提供的GitHub Action正可以满足这个需求。</p>
+<p>这样的需求下，整个Github Action只需要做两件事：</p>
+<ol>
+<li>编译，生成静态文件</li>
+<li>部署，把静态文件移动到合适的位置
+<ul>
+<li>比如放到某个云服务器上</li>
+<li>或者放到 Github Pages</li>
+</ul>
+</li>
+</ol>
+<p>然后我们再通过<code>git push</code>来触发Github Action就可以了。</p>
+<h3 id="准备">准备</h3>
+<p>需要我们在github上准备两个仓库：</p>
+<ul>
+<li>一个是存放博客源码的私有仓库</li>
+<li>另一个是<a href="../%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E7%AF%87-Hugo+Github-Pages+Github-Action%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88%E4%B9%8B%E4%BA%8C%E2%80%94%E2%80%94%E5%B0%86%E6%90%AD%E5%BB%BA%E5%A5%BD%E7%9A%84%E6%9C%AC%E5%9C%B0%E5%8D%9A%E5%AE%A2%E6%89%98%E7%AE%A1%E5%88%B0github">上一篇</a> 创建的Github Pages公开库</li>
+</ul>
+<h3 id="主要流程">主要流程</h3>
+<ol>
+<li>配置私有库的Github Action</li>
+<li>配置合适的token</li>
+</ol>
+<h3 id="具体实现">具体实现</h3>
+<h4 id="配置私有库的github-action">配置私有库的Github Action</h4>
+<ul>
+<li>在hugo博客根目录下，创建放置Github Action配置文件的目录 <code>.github/workflows</code>；</li>
+<li>在 <code>.github/workflows</code>目录下，创建一个yml文件，这就是Github Action需要的一个工作流的配置，如果需要多个工作流可以创建多个yml文件；
+Hugo的官方文档<a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/#build-hugo-with-github-action">Build Hugo With GitHub Action</a> 中也推荐采用GitHub Actions作为持续集成部署方案，并提供了yml文件示例:</li>
+</ul>
+<pre tabindex="0"><code>name: github pages
+
+on:
+  push:
+    branches:
+      - main  # Set a branch to deploy
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          # extended: true
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+</code></pre><p>整个 Action 一个包含 4 个步骤：</p>
+<ol>
+<li>拉取代码</li>
+<li>准备 hugo 环境</li>
+<li>使用 hugo 编译生成静态文件</li>
+<li>把生成的静态文件发布到 Github Pages</li>
+</ol>
+<p>可以根据自己的情况修改配置参数，最好和本地配置一致，可以避免版本不同造成的问题。我改了以下几处：</p>
+<ul>
+<li>jobs.build-deploy.runs-on改为macos-latest（为了和本地版本一致）</li>
+<li>jobs.build-deploy.steps.uses.with.hugo-version改为 &ldquo;0.88.1&rdquo; （为了和本地版本一致）</li>
+<li>token改用personal_token（github_token不支持外部库，我们采用的两个仓库的方案不能使用github_token）</li>
+<li>增加cname配置自己的自定义域名</li>
+</ul>
+<p>最终我的yml配置文件是这样的：</p>
+<pre tabindex="0"><code>name: dd299blog
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-deploy:
+#    runs-on: ubuntu-20.04
+    runs-on: macos-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v2
+
+      - name: Setup hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+#          hugo-version: &quot;latest&quot; # 可以修改为你使用的 Hugo 版本
+          hugo-version: &quot;0.88.1&quot; #
+          extended: true # 设置是否需要 extended 版本
+
+      - name: Build
+        run: hugo
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.PERSONAL_TOKEN }} # 另外还支持 deploy_token 和 github_token
+          external_repository: DeeWooo/DeeWooo.github.io # 修改为你的 GitHub Pages 仓库
+          publish_dir: ./public
+#          keep_files: false
+          publish_branch: master
+          # 如果使用自定义域名，还需要添加下面一行配置
+          cname: www.goodfun.me
+
+</code></pre><h4 id="配置合适的token">配置合适的token</h4>
+<p>首先，需要生成一个<code>Personal access tokens</code></p>
+<ol>
+<li>在个人GitHub页面，依次点击<code>Settings</code>-&gt;<code>Developer settings</code>-&gt;<code>Personal access tokens</code>进入如下页面：</li>
+</ol>
 <p>
-  <img src="/img/post/20200409131452.png" alt="img.png">
+  <img src="/img/post/%e7%94%9f%e6%88%90%e7%9a%84token.png" alt="">
 
 </p>
-<p>执行后会创建一个文件夹，与命令中的名字同名，包括以下内容:</p>
-<pre tabindex="0"><code>.
-├── archetypes
-│   └── default.md
-├── config.toml
-├── content
-├── data
-├── layouts
-├── static
-└── themes
-</code></pre><p>其中</p>
-<p>config.toml: hugo配置文件</p>
-<p>content: md文件和html</p>
-<p>static: 静态资源</p>
-<p>themes: 主题</p>
-<p>其他的可先不管。</p>
-<h4 id="选择主题">选择主题</h4>
-<p>Hugo没有默认主题，所以需要自己安装主题。我使用的是<a href="https://github.com/zhaohuabing/hugo-theme-cleanwhite">hugo-theme-cleanwhite</a> 。官网主题库：<a href="https://themes.gohugo.io/">Hugo Themes</a></p>
-<pre tabindex="0"><code>$ mkdir themes
-$ git submodule add https://github.com/zhaohuabing/hugo-theme-cleanwhite.git themes/hugo-theme-cleanwhite
-</code></pre><p>启动 Hugo 服务器，在 http://localhost:1313/ 将会看到由主题生成的示例网站</p>
-<pre tabindex="0"><code>$ hugo serve -t  hugo-theme-cleanwhite
-</code></pre><p>或只需要</p>
-<pre tabindex="0"><code>hugo server
-</code></pre><p>即可。</p>
-<h4 id="配置hugo">配置hugo</h4>
-<p>配置文件在网站根目录下 config.toml , 根据自身需求进行修改。在 hugo-theme-cleanwhite 主题下的 exampleSite 文件夹中的文件可作为参考。默认的文章将存储在 ./content/post 中，每当写完文章，运行 hugo 命令，Hugo 将自动生成静态网站到 public 文件夹中，我们只需要将该文件夹的内容发布在网络上即可。</p>
-<p>更多关于主题的配置可以参考 <a href="https://github.com/zhaohuabing/hugo-theme-cleanwhite">hugo-theme-cleanwhite README.md</a></p>
-<p>更详细的配置规则，可参考<a href="https://gohugo.io/getting-started/configuration/">Hugo官方文件</a></p>
-<h4 id="写作">写作</h4>
-<p>现在可以创建一篇文章了。执行命令<code>hugo new post/hello-world.md</code>，会在content/post/下新增一个名为hello-world.md的文件。我们将头部自动生成的部分进行修改后，就可以在下面写自己的笔记或博文了。</p>
-<pre tabindex="0"><code>---
-title: &quot;Hello World&quot;
-date: 2022-09-25T16:00:21+08:00
-categories:
-  - &quot;Blog&quot;
-tags:
-  - &quot;Hugo&quot;
-draft: true
----
+<ol start="2">
+<li>
+<p>点击<code>Generate new token</code>出现如下界面，在Note中输入名称，在Select scopes选择<code>workflow</code>
 
-# Hello World.
+  <img src="/img/post/WX20220927-191945.png" alt="设置token信息">
 
-Post example
-</code></pre><h4 id="本地部署">本地部署</h4>
-<p>本地调试命令，执行它，就可以直接通过 http://localhost:1313 地址访问本地预览网页。</p>
-<pre tabindex="0"><code>hugo server
-</code></pre><p>本地发布命令，执行它，就能在public/目录下生成整套静态网站，可以直接复制到web服务器中。</p>
-<pre tabindex="0"><code>hugo
-</code></pre><p>至此，Hugo本地方案的搭建过程完成！</p>
+</p>
+</li>
+<li>
+<p>将生成的token复制出来为后续创建<code>secret</code>做准备，注意必须及时复制，一旦离开此页面后续就无法查看其值，只能重新创建新token。</p>
+</li>
+<li>
+<p>进入对应的<code>GitHub</code>项目下，依次点击<code>Settings</code>-&gt;<code>Secrets</code>-&gt;<code>Actions</code>进入添加<code>Action secrets</code>的界面，点击<code>New repository secret</code>按钮
+
+  <img src="/img/post/WX20220927-191434.png" alt="创建action secret token">
+
+</p>
+</li>
+<li>
+<p>在出现的界面中name部分输入在yml中设置的值，<code>Secret</code>部分输入步骤3中记录的token值，然后点击<code>Add secret</code>按钮
+
+  <img src="/img/post/WX20220927-192125.png" alt="设置action secret">
+
+</p>
+</li>
+</ol>
+<p>需要注意的是<code>name</code>的值不能以<code>GITHUB_</code>开头，否则创建会出错</p>
+<ol start="6">
+<li>在流水线中将<code>personal_token</code>值设置为步骤5中<code>secret</code>的名称，类似<code>${{ secrets.PERSONAL_TOKEN }}s</code>，至此<code>personal_token</code>设置过程完毕。</li>
+</ol>
+<p>在这里需要特别说明一下， hugo官网的例子用的是github_token，然而实操时才发现github_token不支持外部库，我们采用的两个仓库的方案不能使用github_token。
+Github Action除了github_token之外，还支持deploy_token和personal_token。出于方便考虑，我选择了personal_token。</p>
+<p>至此整个设置过程完毕！</p>
+<h3 id="结论">结论</h3>
+<p>完成上述配置后，当我们完成一篇md文章后，用git命令push到远程仓库时，即可触发GitHub Action，按工作流的配置自动生成静态页面文件，并推送到GitHub Pages仓库。而 GitHub Pages 仓库更新后，又会自动触发官方页面部署 CI，实现网站的自动发布。</p>
+<p>到此，我们已经实现了 Hugo 博客本地搭建及版本管理、GitHub Pages 自动部署网站发布，实现了完整的自动发布系统。现在每当我完成内容编辑后，只需要推送代码，等待几分钟，即可通过我们的自定义域名访问更新后的网站。</p>
 <hr>
 <h2 id="参考文章">参考文章</h2>
 <ol>
-<li>《静态博客框架jekyll、hexo和hugo三者之间的区别与差异》，https://zhuanlan.zhihu.com/p/368407566</li>
-<li>《浅谈我为什么从 HEXO 迁移到 HUGO》，https://sspai.com/post/59904</li>
-<li>《從 Jekyll 轉移到 Hugo 心得》，https://blog.yeshuanova.com/2018/07/from-jekyll-to-hugo/</li>
 <li>《Hugo + GitHub Action，搭建你的博客自动发布系统》，https://www.pseudoyu.com/zh/2022/05/29/deploy_your_blog_using_hugo_and_github_action/</li>
-<li>《使用 Hugo 搭建个人网站（博客、个人主页）并发布到 Github 上》，https://zhuanlan.zhihu.com/p/417259374</li>
+<li>Hugo的官方文档《Build Hugo With GitHub Action》，https://gohugo.io/hosting-and-deployment/hosting-on-github/#build-hugo-with-github-action</li>
+<li>《利用GitHub Action实现Hugo博客在GitHub Pages自动部署》，https://lucumt.info/post/hugo/using-github-action-to-auto-build-deploy/</li>
+<li>《基于 Github Action 自动构建 Hugo 博客》，https://www.lixueduan.com/posts/blog/01-github-action-deploy-hugo/</li>
+<li>《使用 GitHub Actions 自动部署 Hugo 站点》，https://www.fournoas.com/posts/deploy-hugo-site-using-github-actions/</li>
+<li>《Hugo使用Github Action自动部署博客到Github Pages》，https://tomial.github.io/posts/hugo%E4%BD%BF%E7%94%A8github-action%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2%E5%88%B0github-pages/</li>
 </ol>
 <blockquote>
 <p>
   <img src="/img/post/cc-icon.png" alt="">
 
 </p>
-<p>本作品由 <a href="https://www.goodfun.me">IvyWooo</a> 采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a> 进行许可，转载请注明出处。 <a href="https://www.goodfun.me/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B9%9D%E7%AF%87-hugo+github-pages+github-action%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88%E4%B9%8B%E4%B8%80%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">本文链接</a></p>
+<p>本作品由 <a href="https://www.goodfun.me">IvyWooo</a> 采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a> 进行许可，转载请注明出处。 <a href="https://www.goodfun.me/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AF%87-Hugo+Github-Pages+Github-Action%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88%E4%B9%8B%E4%B8%89%E2%80%94%E2%80%94%E9%85%8D%E7%BD%AEGithub-Action%E5%AE%9E%E7%8E%B0%E8%87%AA%E5%8A%A8%E5%8F%91%E5%B8%83">本文链接</a></p>
 </blockquote>
 
 
@@ -436,15 +492,10 @@ Post example
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/%E8%B4%B9%E6%9B%BC%E5%AD%A6%E4%B9%A0%E6%B3%95%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-toggle="tooltip" data-placement="top" title="费曼学习法（第一次学习笔记）">&larr;
+                        <a href="/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E7%AF%87-hugo&#43;github-pages&#43;github-action%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88%E4%B9%8B%E4%BA%8C%E5%B0%86%E6%90%AD%E5%BB%BA%E5%A5%BD%E7%9A%84%E6%9C%AC%E5%9C%B0%E5%8D%9A%E5%AE%A2%E6%89%98%E7%AE%A1%E5%88%B0github/" data-toggle="tooltip" data-placement="top" title="建站第十篇 Hugo&#43;Github Pages&#43;Github Action博客方案之二——将搭建好的本地博客托管到github">&larr;
                             Previous Post</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E7%AF%87-hugo&#43;github-pages&#43;github-action%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88%E4%B9%8B%E4%BA%8C%E5%B0%86%E6%90%AD%E5%BB%BA%E5%A5%BD%E7%9A%84%E6%9C%AC%E5%9C%B0%E5%8D%9A%E5%AE%A2%E6%89%98%E7%AE%A1%E5%88%B0github/" data-toggle="tooltip" data-placement="top" title="建站第十篇 Hugo&#43;Github Pages&#43;Github Action博客方案之二——将搭建好的本地博客托管到github">Next
-                            Post &rarr;</a>
-                    </li>
                     
                 </ul>
                 
