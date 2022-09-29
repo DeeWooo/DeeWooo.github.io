@@ -38,9 +38,9 @@ if (!doNotTrack) {
     
 
     
-    <meta name="description" content="IvyWooo，开发者，自由职业与宽客的探索路上，用代码打造未来 | 这里是 DD299 的博客，反射出美食与技术的温暖光芒。">
-    <meta property="og:description" content="IvyWooo，开发者，自由职业与宽客的探索路上，用代码打造未来 | 这里是 DD299 的博客，反射出美食与技术的温暖光芒。" />
-    <meta property="twitter:description" content="IvyWooo，开发者，自由职业与宽客的探索路上，用代码打造未来 | 这里是 DD299 的博客，反射出美食与技术的温暖光芒。" />
+    <meta name="description" content="IvyWooo，独立开发者，自由职业与宽客的探索路上，用代码打造未来 | 这里是 DD299 的博客，反射出美食与技术的温暖光芒。">
+    <meta property="og:description" content="IvyWooo，独立开发者，自由职业与宽客的探索路上，用代码打造未来 | 这里是 DD299 的博客，反射出美食与技术的温暖光芒。" />
+    <meta property="twitter:description" content="IvyWooo，独立开发者，自由职业与宽客的探索路上，用代码打造未来 | 这里是 DD299 的博客，反射出美食与技术的温暖光芒。" />
     
 
     
@@ -142,9 +142,9 @@ if (!doNotTrack) {
                     
 
                     
-		    <li>
+                    <li>
                         <a href="/search"><i class="fa fa-search"></i></a>
-		    </li>
+                    </li>
                     
                 </ul>
             </div>
@@ -200,319 +200,32 @@ if (!doNotTrack) {
 
 
 
-<div class="container">
-    <div class="row">
-        
-        
-   	    <div class="
-            col-lg-8 col-lg-offset-1
-            col-md-8 col-md-offset-1
-            col-sm-12
-            col-xs-12
-            post-container
-        ">
-            
-<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment.min.js"></script>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
-
-<div id="search-searchbar"></div>
- <div class="post-list" id="search-hits">
- </div>
-
-<script>
-const search = instantsearch({
-  appId: '',
-  indexName: '',
-  apiKey: ''
-});
-
-const hitTemplate = function(hit) {
-
-
-  let date = '';
-  if (hit.date) {
-    date = moment.unix(hit.date).format('MMM D, YYYY');
-  }
-  let url = `${hit.url}#${hit.anchor}`;
-  const title = hit._highlightResult.title.value;
-
-  let breadcrumbs = '';
-  if (hit._highlightResult.headings) {
-    breadcrumbs = hit._highlightResult.headings.map(match => {
-      return `<span class="post-breadcrumb">${match.value}</span>`
-    }).join(' > ')
-  }
-
-  let content = "" ; 
-  if (hit._highlightResult.content){
-      content = hit._highlightResult.content.value;
-  }
-  else{
-      content = hit.summary;
-  }
-
-
-  return `
-    <div class="post-item">
-      <span class="post-meta">${date}</span>
-      <h2><a class="post-link" href="${url}">${title}</a></h2>
-      <a href="${url}" class="post-breadcrumbs">${breadcrumbs}</a>
-      <div class="post-snippet">${content}</div>
+<section class="resume-section p-3 p-lg-5 d-flex flex-column">
+    <div class="my-auto" >
+        <form action="https://deewooo.github.io/search">
+        <input id="search-query" name="s"/>
+        </form>
+        <div id="search-results">
+            <h3>Matching pages</h3>
+        </div>
     </div>
-  `;
-}
+</section>
 
-
-search.addWidget(
-  instantsearch.widgets.searchBox({
-    container: '#search-searchbar',
-    placeholder: 'Search into posts...',
-    poweredBy: true // This is required if you're on the free Community plan
-  })
-);
-
-search.addWidget(
-  instantsearch.widgets.hits({
-    container: '#search-hits',
-    templates: {
-      item: hitTemplate
-    }
-  })
-);
-
-search.start();
+<script id="search-result-template" type="text/x-js-template">
+    <div id="summary-${key}">
+        <h4><a href="${link}">${title}</a></h4>
+        <p>${snippet}</p>
+        ${ isset tags }<p>Tags: ${tags}</p>${ end }
+        ${ isset categories }<p>Categories: ${categories}</p>${ end }
+    </div>
 </script>
 
-<style>
-.ais-search-box {
-  max-width: 100%;
-  margin-bottom: 15px;
-}
-.post-item {
-  margin-bottom: 30px;
-}
-.post-link .ais-Highlight {
-  color: #111;
-  font-style: normal;
-  text-decoration: underline;
-}
-.post-breadcrumbs {
-  color: #424242;
-  display: block;
-}
-.post-breadcrumb {
-  font-size: 18px;
-  color: #424242;
-}
-.post-breadcrumb .ais-Highlight {
-  font-weight: bold;
-  font-style: normal;
-}
-.post-snippet .ais-Highlight {
-  color: #2a7ae2;
-  font-style: normal;
-  font-weight: bold;
-}
-.post-snippet img {
-  display: none;
-}
-</style>
 
-       	</div>
-        
 
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-	
-    <section class="visible-md visible-lg">
-	
-        <div class="short-about">
-            
-            <a href="/top/about">
-               <img src="/img/logo.png" alt="avatar" style="cursor: pointer" />
-            </a>
-            
-            
-                <p>Developer，Quant，Freelancer，Coding life</p>
-            
-           
-           <ul class="list-inline">
-               
-               
-               
-               
-               
-               
-               
-               <li>
-                   <a target="_blank" href="https://github.com/deewooo">
-                       <span class="fa-stack fa-lg">
-                           <i class="fas fa-circle fa-stack-2x"></i>
-                           <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               
-               
-               
-               
-            
-            
-               
-               
-               
-               
-                </ul>
-            </div>
-    </section>
-	
-    
-    
-    
-    
-    <section>
-        <hr class="hidden-sm hidden-xs">
-        <h5>FEATURED TAGS</h5>
-        <div class="tags">
-            
-            
-               
-            
-               
-            
-               
-            
-               
-            
-               
-                    <a href="/tags/docker" title="docker">
-                        docker
-                    </a>
-               
-            
-               
-            
-               
-            
-               
-            
-               
-            
-               
-            
-               
-                    <a href="/tags/github-action" title="github-action">
-                        github-action
-                    </a>
-               
-            
-               
-                    <a href="/tags/github-pages" title="github-pages">
-                        github-pages
-                    </a>
-               
-            
-               
-            
-               
-                    <a href="/tags/hugo" title="hugo">
-                        hugo
-                    </a>
-               
-            
-               
-            
-               
-            
-               
-            
-               
-            
-               
-            
-               
-            
-               
-            
-               
-            
-               
-            
-               
-            
-               
-                    <a href="/tags/%E5%9C%9F%E7%8C%AB%E7%88%AA%E7%97%95" title="土猫爪痕">
-                        土猫爪痕
-                    </a>
-               
-            
-               
-            
-               
-                    <a href="/tags/%E5%9C%9F%E7%8C%AB%E8%AF%BB%E4%B9%A6" title="土猫读书">
-                        土猫读书
-                    </a>
-               
-            
-               
-            
-               
-            
-               
-                    <a href="/tags/%E5%BB%BA%E7%AB%99" title="建站">
-                        建站
-                    </a>
-               
-            
-               
-                    <a href="/tags/%E6%95%88%E7%8E%87" title="效率">
-                        效率
-                    </a>
-               
-            
-               
-                    <a href="/tags/%E7%AE%80%E5%8D%95%E7%94%9F%E9%95%BF" title="简单生长">
-                        简单生长
-                    </a>
-               
-            
-               
-            
-               
-            
-               
-            
-        </div>
-    </section>
-    
-
-    
-    
-    <section>
-        <hr class="hidden-sm hidden-xs">
-        <h5>FRIENDS</h5>
-        <ul class="list-inline">
-            
-            <li><a target="_blank" href=""></a></li>
-            
-        </ul>
-    </section>
-    
-    
-</div>
-
-	</div>
-</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.0/fuse.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script>
+<script src="https://deewooo.github.io/js/search.js"></script>
 
 
 
