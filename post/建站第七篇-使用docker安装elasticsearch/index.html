@@ -89,6 +89,34 @@
     
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5920484041747601"
             crossorigin="anonymous"></script>
+
+    
+    
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var int = setInterval(fixCount, 100);
+            var busuanziSiteOffset =  -45736152 
+            var busuanziSiteUvOffset =  -23329539 
+
+            function fixCount() {
+                if ($("#busuanzi_container_site_pv").css("display") != "none") {
+                    clearInterval(int);
+                    $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + busuanziSiteOffset);
+                }
+                if ($("#busuanzi_container_site_uv").css("display") != "none") {
+                    clearInterval(int);
+                    $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + busuanziSiteUvOffset);
+                }
+
+            }
+        });
+    </script>
+    
+
+
 </head>
 
 
@@ -365,9 +393,12 @@ $(function() {
                             
                     </span>
                 </div>
+
             </div>
         </div>
     </div>
+
+
 </header>
 
 
@@ -478,7 +509,9 @@ $ sudo sysctl -p
                     
                 </ul>
                 
-
+                <span id="busuanzi_container_page_pv">
+                    本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+                </span>
                 
 
 
@@ -682,6 +715,7 @@ $ sudo sysctl -p
 
 
 <footer>
+
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -737,9 +771,22 @@ $ sudo sysctl -p
                         src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
                     </iframe>
                 </p>
+                <p>
+                     <span id="busuanzi_container_site_pv">
+                        本站访问量：<span id="busuanzi_value_site_pv"></span>次
+                     </span>
+                    &nbsp;
+                    <span id="busuanzi_container_site_uv">
+                        您是本站第 <span id="busuanzi_value_site_uv"></span> 位访问者
+                    </span>
+                </p>
             </div>
         </div>
     </div>
+
+
+
+
 </footer>
 
 
