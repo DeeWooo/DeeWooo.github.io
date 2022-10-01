@@ -396,7 +396,7 @@ $(function() {
 });
 </script>
 
-                                阅读 </span></span>|<span class="post-date">共477字</span>，阅读约<span class="more-meta"> 1 分钟</span>
+                                阅读 </span></span>|<span class="post-date">共506字</span>，阅读约<span class="more-meta"> 2 分钟</span>
 
                             
 
@@ -432,17 +432,21 @@ $(function() {
 <h3 id="修改模版文件">修改模版文件</h3>
 <p>layouts/_default/single.html</p>
 <p>原本</p>
-<pre tabindex="0"><code>{{ if .Site.Params.page_view_conter }}
+<pre tabindex="0"><code>...
+{{ if .Site.Params.page_view_conter }}
     {{ partial &quot;page_view_counter.html&quot; . }}
 {{ end }}
+...
 </code></pre><p>改为</p>
-<pre tabindex="0"><code>{{ if .Site.Params.page_view_conter }}
+<pre tabindex="0"><code>...
+{{ if .Site.Params.page_view_conter }}
                                 &lt;span id=&quot;busuanzi_container_page_pv&quot;&gt;|&lt;span id=&quot;busuanzi_value_page_pv&quot;&gt;&lt;/span&gt;&lt;span&gt;
 
     {{ partial &quot;page_view_counter.html&quot; . }}
                                     阅读 &lt;/span&gt;&lt;/span&gt;|&lt;span class=&quot;post-date&quot;&gt;共{{ .WordCount  }}字&lt;/span&gt;，阅读约&lt;span class=&quot;more-meta&quot;&gt; {{ .ReadingTime  }} 分钟&lt;/span&gt;
 
 {{ end }}
+...
 </code></pre><h3 id="修改configtoml">修改config.toml</h3>
 <p>将<code>[params]</code>下的参数<code>page_view_conter</code>赋值为<code>true</code></p>
 <pre tabindex="0"><code>[params]
@@ -456,6 +460,7 @@ $(function() {
 <h2 id="参考文章">参考文章</h2>
 <ol>
 <li>《给Hugo添加字数统计和阅读时间功能》，https://huangzhongde.cn/post/2020-02-22-%E7%BB%99hugo%E6%B7%BB%E5%8A%A0%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1%E5%92%8C%E9%98%85%E8%AF%BB%E6%97%B6%E9%97%B4%E5%8A%9F%E8%83%BD/</li>
+<li>不蒜子官网，http://ibruce.info/</li>
 </ol>
 <blockquote>
 <p>
@@ -520,9 +525,11 @@ $(function() {
                     
                 </ul>
                 
+
                 <span id="busuanzi_container_page_pv">
                     本文总阅读量<span id="busuanzi_value_page_pv"></span>次
                 </span>
+
                 
 
 
