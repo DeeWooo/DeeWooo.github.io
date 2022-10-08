@@ -1,5 +1,7 @@
 // https://developers.google.com/web/tools/workbox/guides/get-started
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js');
+// importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js');
+importScripts('https://cdn.jsdelivr.net/npm/workbox-cdn/workbox/workbox-sw.js')
+
 
 if (workbox) {
     console.log(`Yay! Workbox is loaded 🎉`);
