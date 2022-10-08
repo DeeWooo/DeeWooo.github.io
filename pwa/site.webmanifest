@@ -1,0 +1,20 @@
+{
+    "name": "美食与技术的温暖光芒",
+    "short_name": "猫狗窝",
+    "icons": [
+        {
+            "src": "/pwa/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/pwa/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#000000",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "start_url": "/"
+}
