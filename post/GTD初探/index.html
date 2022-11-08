@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    
+
+
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RB3D4NTEED"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag ( 'set', { 'restricted_data_processing': true });
+    gtag('config', 'G-RB3D4NTEED');
+</script>
+
+
+
+    
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="猫猫和狗狗的小窝">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://deewooo.github.io//img/bg3-1.jpeg">
+    <meta property="twitter:image" content="https://deewooo.github.io//img/bg3-1.jpeg" />
+    
+
+    
+    <meta name="title" content="GTD初探" />
+    <meta property="og:title" content="GTD初探" />
+    <meta property="twitter:title" content="GTD初探" />
+    
+
+    
+    <meta name="description" content="IvyWooo，独立开发者，自由职业与宽客的探索路上，用代码打造未来 | 这里是 DD299 的博客，反射出美食与技术的温暖光芒。">
+    <meta property="og:description" content="IvyWooo，独立开发者，自由职业与宽客的探索路上，用代码打造未来 | 这里是 DD299 的博客，反射出美食与技术的温暖光芒。" />
+    <meta property="twitter:description" content="IvyWooo，独立开发者，自由职业与宽客的探索路上，用代码打造未来 | 这里是 DD299 的博客，反射出美食与技术的温暖光芒。" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="dd299, dd299的网络日志, dd299的博客, DD299 Blog, 博客, 个人网站, 互联网, Web, 量化，投资，美食">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>GTD初探 | DD299的博客 | DD299 Blog</title>
+
+    <link rel="canonical" href="/post/GTD%E5%88%9D%E6%8E%A2/">
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.1/css/all.css" rel="stylesheet" type="text/css">
+
+    
+    
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5920484041747601"
+            crossorigin="anonymous"></script>
+
+    
+    
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var int = setInterval(fixCount, 100);
+            var busuanziSiteOffset =  0 
+            var busuanziSiteUvOffset =  0 
+
+            function fixCount() {
+                if ($("#busuanzi_container_site_pv").css("display") != "none") {
+                    clearInterval(int);
+                    $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + busuanziSiteOffset);
+                }
+                if ($("#busuanzi_container_site_uv").css("display") != "none") {
+                    clearInterval(int);
+                    $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + busuanziSiteUvOffset);
+                }
+
+                if ($("#busuanzi_container_page_pv").css("display") != "none") {
+                    clearInterval(int);
+                    $("#busuanzi_value_page_pv").html(parseInt($("#busuanzi_value_page_pv").html()));
+                }
+            }
+        });
+    </script>
+    
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/pwa/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/pwa/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/pwa/favicon-16x16.png">
+    <link rel="manifest" href="/pwa/site.webmanifest">
+    <link rel="mask-icon" href="/pwa/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+
+    <meta name=”apple-mobile-web-app-capable” content=”yes”>
+
+
+
+
+
+
+
+
+
+    <script>
+        
+        if ('serviceWorker' in navigator) {
+            
+            window.addEventListener('load', function () {
+                
+                
+                navigator.serviceWorker.register('/js/service-worker.js')
+                    .then(function (registration) {
+                        
+                        console.log('sw.js 注册成功', registration.scope);
+                    })
+                    .catch(function (err) {
+                        
+                        console.log('sw.js 注册失败 ', err);
+                    });
+            });
+        }
+    </script>
+
+</head>
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">猫猫和狗狗的小窝</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">All Posts</a>
+                    </li>
+                    
+                        
+                        <li>
+                            <a href="/categories/%E5%8E%86%E5%8F%B2">历史</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/%E6%8A%80%E6%9C%AF">技术</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/%E6%95%88%E7%8E%87">效率</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/%E7%AE%80%E5%8D%95%E7%94%9F%E9%95%BF">简单生长</a>
+                        </li>
+                        
+                    
+                    
+		    
+                        <li><a href="/archive/">ARCHIVE</a></li>
+                    
+
+                    
+                    <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/bg3-1.jpeg')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/GTD" title="GTD">
+                            GTD
+                        </a>
+                        
+                    </div>
+                    <h1>GTD初探</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                     &#34;DD&#34;
+                             
+                            on 
+                            Friday, March 11, 2022
+                            
+                                <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
+                                <span id="/post/GTD%E5%88%9D%E6%8E%A2/" class="leancloud_visitors meta_data_item" data-flag-title="">
+    <span class="post-meta-item-icon">
+      <span class="octicon octicon-eye"></span> 
+    </span>
+    <i class="fa fa-eye"></i>
+    <span class="old-visitors-count" style="display: none;"></span>
+    <span class="leancloud-visitors-count"></span>
+</span>
+
+
+
+<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+
+<script>
+	AV.initialize("", "");
+</script>
+
+<script type="text/javascript">
+function showTime(Counter) {
+    var query = new AV.Query(Counter);
+    var entries = [];
+    var $visitors = $(".leancloud_visitors");
+
+    $visitors.each(function() {
+        entries.push($(this).attr("id").trim());
+    });
+
+    query.containedIn('url', entries);
+    query.find()
+        .done(function(results) {
+            var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+            var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
+
+            
+            
+            
+            
+
+            for (var i = 0; i < results.length; i++) {
+                var item = results[i];
+                var url = item.get('url');
+                var time = item.get('time');
+                var element = document.getElementById(url);
+
+                $(element).find(COUNT_CONTAINER_REF).text(time);
+            }
+            for (var i = 0; i < entries.length; i++) {
+                var url = entries[i];
+                var element = document.getElementById(url);
+                var countSpan = $(element).find(COUNT_CONTAINER_REF);
+                if (countSpan.text() == '') {
+                    var oldCountSpan = $(element).find(OLD_COUNT_CONTAINER_REF).text();
+                    if(oldCountSpan!=''){
+                        countSpan.text(0+parseInt(oldCountSpan));
+                    }else{
+                        countSpan.text(0);          
+                    }
+                }
+            }
+        })
+        .fail(function(object, error) {
+            console.log("Error: " + error.code + " " + error.message);
+        });
+}
+
+function addCount(Counter) {
+    var $visitors = $(".leancloud_visitors");
+    var url = $visitors.attr('id').trim();
+    var title = $visitors.attr('data-flag-title').trim();
+    var query = new AV.Query(Counter);
+
+    query.equalTo("url", url);
+    query.find({
+        success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment("time");
+                counter.save(null, {
+                    success: function(counter) {
+                        var $element = $(document.getElementById(url));
+                        $element.find('.leancloud-visitors-count').text(counter.get('time'));
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+                var newcounter = new Counter();
+                 
+                var acl = new AV.ACL();
+                acl.setPublicReadAccess(true);
+                acl.setPublicWriteAccess(true);
+                newcounter.setACL(acl);
+                 
+                newcounter.set("title", title);
+                newcounter.set("url", url);
+                var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
+                var $element = $(document.getElementById(url));
+                var oldCountSpan = $element.find(OLD_COUNT_CONTAINER_REF).text();
+                if(oldCountSpan!=''){
+                    newcounter.set("time", parseInt(oldCountSpan)+1);
+                }else{
+ 	                    newcounter.set("time",  1);
+                }
+                newcounter.save(null, {
+                    success: function(newcounter) {
+                        var $element = $(document.getElementById(url));
+                        $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+                    },
+                    error: function(newcounter, error) {
+                        console.log('Failed to create');
+                    }
+                });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + " " + error.message);
+        }
+    });
+}
+$(function() {
+    var Counter = AV.Object.extend("Counter");
+    
+    
+    if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+    } else {
+        showTime(Counter);
+    }
+});
+</script>
+
+                                阅读 </span></span>|<span class="post-date">共514字</span>，阅读约<span class="more-meta"> 2 分钟</span>
+
+                            
+
+                            
+                            
+                            
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <h3 id="gtd的主要流程">GTD的主要流程</h3>
+<p>一套GTD流程需要用到下面几种清单类型：</p>
+<ul>
+<li>杂事收集篮
+<ul>
+<li>所有大脑中想起的想法，任何事物都放在这里，确保大脑清空</li>
+</ul>
+</li>
+<li>下一步清单
+<ul>
+<li>经过整理之后只需要专注完成的事务</li>
+</ul>
+</li>
+<li>项目清单
+<ul>
+<li>一天以内不能完成的事务，需要分解成一天以内的步骤</li>
+</ul>
+</li>
+<li>将来/也许清单
+<ul>
+<li>人生是一定要有梦想的</li>
+</ul>
+</li>
+<li>等待清单
+<ul>
+<li>需要和他人合作的事务</li>
+</ul>
+</li>
+</ul>
+<p>也可以根据自己的需要，决定是否使用日历。</p>
+<h4 id="收集">收集</h4>
+<p>首先，将所有的杂事放入待办收集篮。</p>
+<h4 id="整理">整理</h4>
+<p>针对每一个事项，问自己下面的5个问题：</p>
+<p>1. 这件事可行动么？——否——&gt;{放入1. 参考资料；2. 将来/也许清单；回收箱}</p>
+<p>2. 可以1步搞定么？——否——&gt;{放入：项目清单}</p>
+<p>3. 可以2分钟搞定么？——能——&gt;{立即做}</p>
+<p>4. 该我做么？——否——&gt;{放入：等待清单}</p>
+<p>5. 有特定时间么？——无——&gt;{放入：下一步清单}</p>
+<p>6. 放入日历</p>
+<h4 id="回顾">回顾</h4>
+<p>问自己下面5个问题，更新清单内容。</p>
+<p>1. Inbox清空没？</p>
+<p>2. 收集够没？</p>
+<p>3. 等待清单下一步？在做么？如何了？</p>
+<p>4. 项目清单下一步？在做么？如何了？</p>
+<p>5. 可能清单下一步？在做么？如何了？</p>
+<p>
+  <img src="/img/post/v2-03d34d938652fb7491939c3d5ec4e69d_720w.jpeg" alt="GTD杂事整理流程">
+
+</p>
+<p>[[GTD主要流程]]</p>
+<h3 id="需要注意的点">需要注意的点</h3>
+<ul>
+<li>有闪念随时都要记录下来，放在收集篮中</li>
+<li>每次从“下一步清单”中取出一件事，专注做完，再取下一件。</li>
+<li>定期回顾，确保不会偏离起初的方向</li>
+</ul>
+
+
+                
+                
+<div class="entry-shang text-center">
+    
+	    <p>「真诚赞赏，手留余香」</p>
+	
+	<button class="zs show-zs btn btn-bred">赞赏支持</button>
+</div>
+<div class="zs-modal-bg"></div>
+<div class="zs-modal-box">
+	<div class="zs-modal-head">
+		<button type="button" class="close">×</button>
+		<span class="author"><a href="https://deewooo.github.io/"><img src="/img/favicon.png" />猫猫和狗狗的小窝</a></span>
+        
+	        <p class="tip"><i></i><span>真诚赞赏，手留余香</span></p>
+		
+ 
+	</div>
+	<div class="zs-modal-body">
+		<div class="zs-modal-btns">
+			<button class="btn btn-blink" data-num="2">2元</button>
+			<button class="btn btn-blink" data-num="5">5元</button>
+			<button class="btn btn-blink" data-num="10">10元</button>
+			<button class="btn btn-blink" data-num="50">50元</button>
+			<button class="btn btn-blink" data-num="100">100元</button>
+			<button class="btn btn-blink" data-num="1">任意金额</button>
+		</div>
+		<div class="zs-modal-pay">
+			<button class="btn btn-bred" id="pay-text">2元</button>
+			<p>使用<span id="pay-type">微信</span>扫描二维码完成支付</p>
+			<img src="/img/reward/wechat-2.png"  id="pay-image"/>
+		</div>
+	</div>
+	<div class="zs-modal-footer">
+		<label><input type="radio" name="zs-type" value="wechat" class="zs-type" checked="checked"><span ><span class="zs-wechat"><img src="/img/reward/wechat-btn.png"/></span></label>
+		<label><input type="radio" name="zs-type" value="alipay" class="zs-type" class="zs-alipay"><img src="/img/reward/alipay-btn.png"/></span></label>
+	</div>
+</div>
+<script type="text/javascript" src="/js/reward.js"></script>
+
+                
+
+                
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/%E4%B8%B0%E5%8E%BF%E4%BA%8B%E4%BB%B6%E4%B8%80%E5%9C%BA%E6%97%B6%E4%BB%A3%E7%9A%84%E8%AE%B0%E5%BD%95%E6%88%91%E8%A7%81%E8%AF%81/" data-toggle="tooltip" data-placement="top" title="丰县事件，一场时代的记录，我见证">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/post/%E7%BE%8E%E5%9B%BD%E5%8D%97%E5%8C%97%E6%88%98%E4%BA%89%E6%98%AF%E6%80%8E%E4%B9%88%E5%9B%9E%E4%BA%8B%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-toggle="tooltip" data-placement="top" title="美国南北战争是怎么回事?（第一次学习笔记）">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+                
+
+                <span id="busuanzi_container_page_pv">
+                    本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+                </span>
+
+                
+
+
+<script src="https://giscus.app/client.js"
+        data-repo="DeeWooo/DeeWooo.github.io"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkxODY2MDIxOTQ="
+        data-category="Announcements"
+        data-category-id="DIC_kwDOCx9S0s4CRrRd"
+        data-mapping="pathname"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+            </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/Docker" title="Docker">
+                            Docker
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/Github-Action" title="Github-Action">
+                            Github-Action
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/Github-Gist" title="Github-Gist">
+                            Github-Gist
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/Github-Pages" title="Github-Pages">
+                            Github-Pages
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/Hugo" title="Hugo">
+                            Hugo
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/fuse.js" title="fuse.js">
+                            fuse.js
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/hugo" title="hugo">
+                            hugo
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/%E5%9C%9F%E7%8C%AB%E7%88%AA%E7%97%95" title="土猫爪痕">
+                            土猫爪痕
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/%E5%9C%9F%E7%8C%AB%E8%AF%BB%E4%B9%A6" title="土猫读书">
+                            土猫读书
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/%E5%BB%BA%E7%AB%99" title="建站">
+                            建站
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2" title="站内搜索">
+                            站内搜索
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/%E7%AE%80%E5%8D%95%E7%94%9F%E9%95%BF" title="简单生长">
+                            简单生长
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+                <section>
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_blank" href=""></a></li>
+                        
+                    </ul>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+
+<footer>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">                  
+                    
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/deewooo">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="猫猫和狗狗的小窝" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; 猫猫和狗狗的小窝 2022
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                </p>
+                <p>
+                     <span id="busuanzi_container_site_pv">
+                        本站访问量：<span id="busuanzi_value_site_pv"></span>次
+                     </span>
+                    &nbsp;
+                    <span id="busuanzi_container_site_uv">
+                        您是本站第 <span id="busuanzi_value_site_uv"></span> 位访问者
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -9,64 +9,64 @@
     <lastBuildDate>Tue, 08 Nov 2022 11:04:46 +0800</lastBuildDate><atom:link href="https://deewooo.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>一次Iphone14验机过程的记录</title>
-      <link>https://deewooo.github.io/post/%E4%B8%80%E6%AC%A1iphone14%E9%AA%8C%E6%9C%BA%E8%BF%87%E7%A8%8B%E7%9A%84%E8%AE%B0%E5%BD%95/</link>
+      <link>https://deewooo.github.io/post/%E4%B8%80%E6%AC%A1Iphone14%E9%AA%8C%E6%9C%BA%E8%BF%87%E7%A8%8B%E7%9A%84%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Tue, 08 Nov 2022 11:04:46 +0800</pubDate>
       
-      <guid>https://deewooo.github.io/post/%E4%B8%80%E6%AC%A1iphone14%E9%AA%8C%E6%9C%BA%E8%BF%87%E7%A8%8B%E7%9A%84%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://deewooo.github.io/post/%E4%B8%80%E6%AC%A1Iphone14%E9%AA%8C%E6%9C%BA%E8%BF%87%E7%A8%8B%E7%9A%84%E8%AE%B0%E5%BD%95/</guid>
       <description>大前天收到货，昨天预约去到南京东路苹果店检测，没有问题，官方检测软件硬件全部可以检测出来。其实没有去到店里之前，自己验机录屏，基本心里是有底</description>
     </item>
     
     <item>
       <title>建站第十四篇 Hugo博客添加字数统计和阅读时间功能</title>
-      <link>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E5%9B%9B%E7%AF%87-hugo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1%E5%92%8C%E9%98%85%E8%AF%BB%E6%97%B6%E9%97%B4%E5%8A%9F%E8%83%BD/</link>
+      <link>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E5%9B%9B%E7%AF%87-Hugo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1%E5%92%8C%E9%98%85%E8%AF%BB%E6%97%B6%E9%97%B4%E5%8A%9F%E8%83%BD/</link>
       <pubDate>Fri, 30 Sep 2022 16:51:31 +0800</pubDate>
       
-      <guid>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E5%9B%9B%E7%AF%87-hugo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1%E5%92%8C%E9%98%85%E8%AF%BB%E6%97%B6%E9%97%B4%E5%8A%9F%E8%83%BD/</guid>
+      <guid>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E5%9B%9B%E7%AF%87-Hugo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1%E5%92%8C%E9%98%85%E8%AF%BB%E6%97%B6%E9%97%B4%E5%8A%9F%E8%83%BD/</guid>
       <description>现在我们要给博客添加字数统计和阅读时间功能。这才像个技术分享博客的样纸。 非常幸运，Hugo支持这个需求。 修改模版文件 layouts/_default/single.html 原本 ... {{ if .Site.Params.page_view_conter }} {{ partial &amp;quot;page_view_counter.html&amp;quot; .</description>
     </item>
     
     <item>
       <title>建站第十三篇 Hugo博客实现轻量级搜索功能</title>
-      <link>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AF%87-hugo%E5%8D%9A%E5%AE%A2%E5%AE%9E%E7%8E%B0%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</link>
+      <link>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AF%87-Hugo%E5%8D%9A%E5%AE%A2%E5%AE%9E%E7%8E%B0%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</link>
       <pubDate>Fri, 30 Sep 2022 09:03:39 +0800</pubDate>
       
-      <guid>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AF%87-hugo%E5%8D%9A%E5%AE%A2%E5%AE%9E%E7%8E%B0%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</guid>
+      <guid>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AF%87-Hugo%E5%8D%9A%E5%AE%A2%E5%AE%9E%E7%8E%B0%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</guid>
       <description>Hugo是由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。静态站点无法自带动态搜索功能，但作为一个博客，随着文章渐渐增多</description>
     </item>
     
     <item>
       <title>建站第十二篇 Hugo博客使用giscus作为评论系统</title>
-      <link>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E4%BA%8C%E7%AF%87-hugo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8giscus%E4%BD%9C%E4%B8%BA%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</link>
+      <link>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E4%BA%8C%E7%AF%87-Hugo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8giscus%E4%BD%9C%E4%B8%BA%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</link>
       <pubDate>Thu, 29 Sep 2022 00:16:56 +0800</pubDate>
       
-      <guid>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E4%BA%8C%E7%AF%87-hugo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8giscus%E4%BD%9C%E4%B8%BA%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</guid>
+      <guid>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E4%BA%8C%E7%AF%87-Hugo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8giscus%E4%BD%9C%E4%B8%BA%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</guid>
       <description>在前面的系列文章中，我们成功的利用Github Pages搭建了基于hugo生成的博客站，并且可以通过Github Action实现CI/CD。</description>
     </item>
     
     <item>
       <title>建站第十一篇 Hugo&#43;Github Pages&#43;Github Action博客方案之三——配置Github Action实现自动发布</title>
-      <link>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AF%87-hugo&#43;github-pages&#43;github-action%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88%E4%B9%8B%E4%B8%89%E9%85%8D%E7%BD%AEgithub-action%E5%AE%9E%E7%8E%B0%E8%87%AA%E5%8A%A8%E5%8F%91%E5%B8%83/</link>
+      <link>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AF%87-Hugo&#43;Github-Pages&#43;Github-Action%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88%E4%B9%8B%E4%B8%89%E9%85%8D%E7%BD%AEGithub-Action%E5%AE%9E%E7%8E%B0%E8%87%AA%E5%8A%A8%E5%8F%91%E5%B8%83/</link>
       <pubDate>Tue, 27 Sep 2022 09:16:15 +0800</pubDate>
       
-      <guid>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AF%87-hugo&#43;github-pages&#43;github-action%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88%E4%B9%8B%E4%B8%89%E9%85%8D%E7%BD%AEgithub-action%E5%AE%9E%E7%8E%B0%E8%87%AA%E5%8A%A8%E5%8F%91%E5%B8%83/</guid>
+      <guid>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AF%87-Hugo&#43;Github-Pages&#43;Github-Action%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88%E4%B9%8B%E4%B8%89%E9%85%8D%E7%BD%AEGithub-Action%E5%AE%9E%E7%8E%B0%E8%87%AA%E5%8A%A8%E5%8F%91%E5%B8%83/</guid>
       <description>本系列包括三部分： 搭建本地服务 发布到Github Pages 配置Github Action实现CI/CD 本篇为第三部分——配置Github Action实</description>
     </item>
     
     <item>
       <title>建站第十篇 Hugo&#43;Github Pages&#43;Github Action博客方案之二——将搭建好的本地博客托管到github</title>
-      <link>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E7%AF%87-hugo&#43;github-pages&#43;github-action%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88%E4%B9%8B%E4%BA%8C%E5%B0%86%E6%90%AD%E5%BB%BA%E5%A5%BD%E7%9A%84%E6%9C%AC%E5%9C%B0%E5%8D%9A%E5%AE%A2%E6%89%98%E7%AE%A1%E5%88%B0github/</link>
+      <link>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E7%AF%87-Hugo&#43;Github-Pages&#43;Github-Action%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88%E4%B9%8B%E4%BA%8C%E5%B0%86%E6%90%AD%E5%BB%BA%E5%A5%BD%E7%9A%84%E6%9C%AC%E5%9C%B0%E5%8D%9A%E5%AE%A2%E6%89%98%E7%AE%A1%E5%88%B0github/</link>
       <pubDate>Sun, 25 Sep 2022 10:42:30 +0800</pubDate>
       
-      <guid>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E7%AF%87-hugo&#43;github-pages&#43;github-action%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88%E4%B9%8B%E4%BA%8C%E5%B0%86%E6%90%AD%E5%BB%BA%E5%A5%BD%E7%9A%84%E6%9C%AC%E5%9C%B0%E5%8D%9A%E5%AE%A2%E6%89%98%E7%AE%A1%E5%88%B0github/</guid>
+      <guid>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E7%AF%87-Hugo&#43;Github-Pages&#43;Github-Action%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88%E4%B9%8B%E4%BA%8C%E5%B0%86%E6%90%AD%E5%BB%BA%E5%A5%BD%E7%9A%84%E6%9C%AC%E5%9C%B0%E5%8D%9A%E5%AE%A2%E6%89%98%E7%AE%A1%E5%88%B0github/</guid>
       <description>本系列包括三部分： 搭建本地服务 发布到Github Pages 配置Github Action实现CI/CD 本篇为第二部分——将搭建好的本地博客托管到git</description>
     </item>
     
     <item>
       <title>建站第九篇 Hugo&#43;Github Pages&#43;Github Action博客方案之一——使用Hugo搭建个人博客</title>
-      <link>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B9%9D%E7%AF%87-hugo&#43;github-pages&#43;github-action%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88%E4%B9%8B%E4%B8%80%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <link>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B9%9D%E7%AF%87-Hugo&#43;Github-Pages&#43;Github-Action%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88%E4%B9%8B%E4%B8%80%E4%BD%BF%E7%94%A8Hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Thu, 22 Sep 2022 18:23:08 +0800</pubDate>
       
-      <guid>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B9%9D%E7%AF%87-hugo&#43;github-pages&#43;github-action%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88%E4%B9%8B%E4%B8%80%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <guid>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B9%9D%E7%AF%87-Hugo&#43;Github-Pages&#43;Github-Action%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88%E4%B9%8B%E4%B8%80%E4%BD%BF%E7%94%A8Hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
       <description>花了一些时间用hugo重新搭建了猫狗窝，托管在github page上，又利用github action实现了CI/CD。非常省心！做到了专注写</description>
     </item>
     
@@ -90,10 +90,10 @@
     
     <item>
       <title>GTD初探</title>
-      <link>https://deewooo.github.io/post/gtd%E5%88%9D%E6%8E%A2/</link>
+      <link>https://deewooo.github.io/post/GTD%E5%88%9D%E6%8E%A2/</link>
       <pubDate>Fri, 11 Mar 2022 09:19:05 +0800</pubDate>
       
-      <guid>https://deewooo.github.io/post/gtd%E5%88%9D%E6%8E%A2/</guid>
+      <guid>https://deewooo.github.io/post/GTD%E5%88%9D%E6%8E%A2/</guid>
       <description>GTD的主要流程 一套GTD流程需要用到下面几种清单类型： 杂事收集篮 所有大脑中想起的想法，任何事物都放在这里，确保大脑清空 下一步清单 经过整理之</description>
     </item>
     
@@ -117,10 +117,10 @@
     
     <item>
       <title>一堆漂亮的MARCO铅笔，让我记起善良和给予</title>
-      <link>https://deewooo.github.io/post/%E4%B8%80%E5%A0%86%E6%BC%82%E4%BA%AE%E7%9A%84marco%E9%93%85%E7%AC%94%E8%AE%A9%E6%88%91%E8%AE%B0%E8%B5%B7%E5%96%84%E8%89%AF%E5%92%8C%E7%BB%99%E4%BA%88/</link>
+      <link>https://deewooo.github.io/post/%E4%B8%80%E5%A0%86%E6%BC%82%E4%BA%AE%E7%9A%84MARCO%E9%93%85%E7%AC%94%E8%AE%A9%E6%88%91%E8%AE%B0%E8%B5%B7%E5%96%84%E8%89%AF%E5%92%8C%E7%BB%99%E4%BA%88/</link>
       <pubDate>Fri, 12 Jun 2020 01:48:29 +0800</pubDate>
       
-      <guid>https://deewooo.github.io/post/%E4%B8%80%E5%A0%86%E6%BC%82%E4%BA%AE%E7%9A%84marco%E9%93%85%E7%AC%94%E8%AE%A9%E6%88%91%E8%AE%B0%E8%B5%B7%E5%96%84%E8%89%AF%E5%92%8C%E7%BB%99%E4%BA%88/</guid>
+      <guid>https://deewooo.github.io/post/%E4%B8%80%E5%A0%86%E6%BC%82%E4%BA%AE%E7%9A%84MARCO%E9%93%85%E7%AC%94%E8%AE%A9%E6%88%91%E8%AE%B0%E8%B5%B7%E5%96%84%E8%89%AF%E5%92%8C%E7%BB%99%E4%BA%88/</guid>
       <description>从今年2月底失业到现在，失业大概接近4个月时间，而工作前景依旧不明朗，少有岗位发布出来，企业招人的少，要求也比以前挑剔很多。 不得不说，疫情的</description>
     </item>
     
@@ -144,10 +144,10 @@
     
     <item>
       <title>Windows下如何查看巨大的日志文件</title>
-      <link>https://deewooo.github.io/post/windows%E4%B8%8B%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E5%B7%A8%E5%A4%A7%E7%9A%84%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6/</link>
+      <link>https://deewooo.github.io/post/Windows%E4%B8%8B%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E5%B7%A8%E5%A4%A7%E7%9A%84%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6/</link>
       <pubDate>Wed, 27 Nov 2019 10:32:52 +0800</pubDate>
       
-      <guid>https://deewooo.github.io/post/windows%E4%B8%8B%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E5%B7%A8%E5%A4%A7%E7%9A%84%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6/</guid>
+      <guid>https://deewooo.github.io/post/Windows%E4%B8%8B%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E5%B7%A8%E5%A4%A7%E7%9A%84%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6/</guid>
       <description>周末，为了追踪一个bug产生的原因，请运维同学帮忙记录了近20个小时的test环境的数据库binlog。拿到的日志文件解压后有200+M，这</description>
     </item>
     
@@ -162,10 +162,10 @@
     
     <item>
       <title>建站第七篇 使用Docker安装elasticSearch</title>
-      <link>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B8%83%E7%AF%87-%E4%BD%BF%E7%94%A8docker%E5%AE%89%E8%A3%85elasticsearch/</link>
+      <link>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B8%83%E7%AF%87-%E4%BD%BF%E7%94%A8Docker%E5%AE%89%E8%A3%85elasticSearch/</link>
       <pubDate>Wed, 07 Aug 2019 23:23:15 +0800</pubDate>
       
-      <guid>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B8%83%E7%AF%87-%E4%BD%BF%E7%94%A8docker%E5%AE%89%E8%A3%85elasticsearch/</guid>
+      <guid>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B8%83%E7%AF%87-%E4%BD%BF%E7%94%A8Docker%E5%AE%89%E8%A3%85elasticSearch/</guid>
       <description>在安装好docker之后，部署docker版的应用，只需要一句代码就好。 1 环境 os：ubuntu 16.04 docker版本：Docker CE，Doc</description>
     </item>
     
@@ -198,19 +198,19 @@
     
     <item>
       <title>建站第四篇 使用Docker部署calibre Web私人云书库</title>
-      <link>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%9B%9B%E7%AF%87-%E4%BD%BF%E7%94%A8docker%E9%83%A8%E7%BD%B2calibre-web%E7%A7%81%E4%BA%BA%E4%BA%91%E4%B9%A6%E5%BA%93/</link>
+      <link>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%9B%9B%E7%AF%87-%E4%BD%BF%E7%94%A8Docker%E9%83%A8%E7%BD%B2calibre-web%E7%A7%81%E4%BA%BA%E4%BA%91%E4%B9%A6%E5%BA%93/</link>
       <pubDate>Mon, 08 Jul 2019 22:37:01 +0800</pubDate>
       
-      <guid>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%9B%9B%E7%AF%87-%E4%BD%BF%E7%94%A8docker%E9%83%A8%E7%BD%B2calibre-web%E7%A7%81%E4%BA%BA%E4%BA%91%E4%B9%A6%E5%BA%93/</guid>
+      <guid>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%9B%9B%E7%AF%87-%E4%BD%BF%E7%94%A8Docker%E9%83%A8%E7%BD%B2calibre-web%E7%A7%81%E4%BA%BA%E4%BA%91%E4%B9%A6%E5%BA%93/</guid>
       <description>1 什么是calibre-web 我自己一直在用Calibre管理mac上的本地图书，说是世界上最好的电子书管理解决方案一点也不过分，时间久了就</description>
     </item>
     
     <item>
       <title>建站第三篇 使用Docker安装Jellyfin媒体服务器</title>
-      <link>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B8%89%E7%AF%87-%E4%BD%BF%E7%94%A8docker%E5%AE%89%E8%A3%85jellyfin%E5%AA%92%E4%BD%93%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <link>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B8%89%E7%AF%87-%E4%BD%BF%E7%94%A8Docker%E5%AE%89%E8%A3%85Jellyfin%E5%AA%92%E4%BD%93%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
       <pubDate>Thu, 04 Jul 2019 21:42:29 +0800</pubDate>
       
-      <guid>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B8%89%E7%AF%87-%E4%BD%BF%E7%94%A8docker%E5%AE%89%E8%A3%85jellyfin%E5%AA%92%E4%BD%93%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <guid>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B8%89%E7%AF%87-%E4%BD%BF%E7%94%A8Docker%E5%AE%89%E8%A3%85Jellyfin%E5%AA%92%E4%BD%93%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
       <description>1 前言 随手浏览简书时，翻到一篇文章《服务器指北 - 有了服务器之后可以做点什么》，我平时就喜欢在家里搞东搞西，这标题正对胃口。毫不犹豫的点进去看</description>
     </item>
     
@@ -234,10 +234,10 @@
     
     <item>
       <title>建站第一篇 Leanote自建服务器</title>
-      <link>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B8%80%E7%AF%87-leanote%E8%87%AA%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <link>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B8%80%E7%AF%87-Leanote%E8%87%AA%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
       <pubDate>Tue, 01 Jan 2019 22:26:39 +0800</pubDate>
       
-      <guid>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B8%80%E7%AF%87-leanote%E8%87%AA%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <guid>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B8%80%E7%AF%87-Leanote%E8%87%AA%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
       <description>这是去年4月的一次自建笔记服务的记录，在这里也做个记录，有前辈说，备份不怕多，我也觉得应是如此。 这些年，笔记搬家了3次，又不喜欢笔记本地化，</description>
     </item>
     
