@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>自动化 on 猫猫和狗狗的小窝</title>
+    <link>https://deewooo.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</link>
+    <description>Recent content in 自动化 on 猫猫和狗狗的小窝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Nov 2022 23:04:12 +0800</lastBuildDate><atom:link href="https://deewooo.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>撸了个简易mac版网易云番茄脚本</title>
+      <link>https://deewooo.github.io/post/%E6%92%B8%E4%BA%86%E4%B8%AA%E7%AE%80%E6%98%93mac%E7%89%88%E7%BD%91%E6%98%93%E4%BA%91%E7%95%AA%E8%8C%84%E8%84%9A%E6%9C%AC/</link>
+      <pubDate>Thu, 10 Nov 2022 23:04:12 +0800</pubDate>
+      
+      <guid>https://deewooo.github.io/post/%E6%92%B8%E4%BA%86%E4%B8%AA%E7%AE%80%E6%98%93mac%E7%89%88%E7%BD%91%E6%98%93%E4%BA%91%E7%95%AA%E8%8C%84%E8%84%9A%E6%9C%AC/</guid>
+      <description>手边常用的番茄工具有：滴答清单和专注清单。都不能支持自定义背景乐，而我又是网易云音乐的重度用户。一时不爽，索性用applescript+sh</description>
+    </item>
+    
+  </channel>
+</rss>

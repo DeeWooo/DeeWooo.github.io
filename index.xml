@@ -6,7 +6,16 @@
     <description>Recent content on 猫猫和狗狗的小窝</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Nov 2022 11:04:46 +0800</lastBuildDate><atom:link href="https://deewooo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Nov 2022 23:04:12 +0800</lastBuildDate><atom:link href="https://deewooo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>撸了个简易mac版网易云番茄脚本</title>
+      <link>https://deewooo.github.io/post/%E6%92%B8%E4%BA%86%E4%B8%AA%E7%AE%80%E6%98%93mac%E7%89%88%E7%BD%91%E6%98%93%E4%BA%91%E7%95%AA%E8%8C%84%E8%84%9A%E6%9C%AC/</link>
+      <pubDate>Thu, 10 Nov 2022 23:04:12 +0800</pubDate>
+      
+      <guid>https://deewooo.github.io/post/%E6%92%B8%E4%BA%86%E4%B8%AA%E7%AE%80%E6%98%93mac%E7%89%88%E7%BD%91%E6%98%93%E4%BA%91%E7%95%AA%E8%8C%84%E8%84%9A%E6%9C%AC/</guid>
+      <description>手边常用的番茄工具有：滴答清单和专注清单。都不能支持自定义背景乐，而我又是网易云音乐的重度用户。一时不爽，索性用applescript+sh</description>
+    </item>
+    
     <item>
       <title>一次Iphone14验机过程的记录</title>
       <link>https://deewooo.github.io/post/%E4%B8%80%E6%AC%A1Iphone14%E9%AA%8C%E6%9C%BA%E8%BF%87%E7%A8%8B%E7%9A%84%E8%AE%B0%E5%BD%95/</link>
