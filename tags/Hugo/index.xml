@@ -6,7 +6,16 @@
     <description>Recent content in Hugo on 猫猫和狗狗的小窝</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Sep 2022 16:51:31 +0800</lastBuildDate><atom:link href="https://deewooo.github.io/tags/Hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Nov 2022 09:25:29 +0800</lastBuildDate><atom:link href="https://deewooo.github.io/tags/Hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>建站第十五篇 Google Adsense在Hugo中的配置</title>
+      <link>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AF%87-Google-Adsense%E5%9C%A8Hugo%E4%B8%AD%E7%9A%84%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Fri, 11 Nov 2022 09:25:29 +0800</pubDate>
+      
+      <guid>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AF%87-Google-Adsense%E5%9C%A8Hugo%E4%B8%AD%E7%9A%84%E9%85%8D%E7%BD%AE/</guid>
+      <description>博客运行一段时间之后，有了一点点流量，随即向Google申请了Adsense，流量虽少也不想浪费。 如何申请就不多讲了，去Google Adse</description>
+    </item>
+    
     <item>
       <title>建站第十四篇 Hugo博客添加字数统计和阅读时间功能</title>
       <link>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E5%9B%9B%E7%AF%87-Hugo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1%E5%92%8C%E9%98%85%E8%AF%BB%E6%97%B6%E9%97%B4%E5%8A%9F%E8%83%BD/</link>

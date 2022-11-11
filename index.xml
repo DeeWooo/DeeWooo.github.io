@@ -6,7 +6,16 @@
     <description>Recent content on 猫猫和狗狗的小窝</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 10 Nov 2022 23:04:12 +0800</lastBuildDate><atom:link href="https://deewooo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Nov 2022 09:25:29 +0800</lastBuildDate><atom:link href="https://deewooo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>建站第十五篇 Google Adsense在Hugo中的配置</title>
+      <link>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AF%87-Google-Adsense%E5%9C%A8Hugo%E4%B8%AD%E7%9A%84%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Fri, 11 Nov 2022 09:25:29 +0800</pubDate>
+      
+      <guid>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AF%87-Google-Adsense%E5%9C%A8Hugo%E4%B8%AD%E7%9A%84%E9%85%8D%E7%BD%AE/</guid>
+      <description>博客运行一段时间之后，有了一点点流量，随即向Google申请了Adsense，流量虽少也不想浪费。 如何申请就不多讲了，去Google Adse</description>
+    </item>
+    
     <item>
       <title>撸了个简易mac版网易云番茄脚本</title>
       <link>https://deewooo.github.io/post/%E6%92%B8%E4%BA%86%E4%B8%AA%E7%AE%80%E6%98%93mac%E7%89%88%E7%BD%91%E6%98%93%E4%BA%91%E7%95%AA%E8%8C%84%E8%84%9A%E6%9C%AC/</link>
