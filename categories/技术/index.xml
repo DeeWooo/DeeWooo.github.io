@@ -6,7 +6,16 @@
     <description>Recent content in 技术 on 猫猫和狗狗的小窝</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Nov 2022 09:25:29 +0800</lastBuildDate><atom:link href="https://deewooo.github.io/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Mar 2023 22:13:13 +0800</lastBuildDate><atom:link href="https://deewooo.github.io/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ChatGPT帮我写了个功能之一</title>
+      <link>https://deewooo.github.io/post/ChatGPT%E5%B8%AE%E6%88%91%E5%86%99%E4%BA%86%E4%B8%AA%E5%8A%9F%E8%83%BD%E4%B9%8B%E4%B8%80/</link>
+      <pubDate>Wed, 01 Mar 2023 22:13:13 +0800</pubDate>
+      
+      <guid>https://deewooo.github.io/post/ChatGPT%E5%B8%AE%E6%88%91%E5%86%99%E4%BA%86%E4%B8%AA%E5%8A%9F%E8%83%BD%E4%B9%8B%E4%B8%80/</guid>
+      <description>自从ChatGPT横空出世以来，我一直在围观这场狂欢。终于，在观察了许久之后，我决定尝试使用ChatGPT编写一些代码。如果不能写出代码，至</description>
+    </item>
+    
     <item>
       <title>建站第十五篇 Google Adsense在Hugo中的配置</title>
       <link>https://deewooo.github.io/post/%E5%BB%BA%E7%AB%99%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AF%87-Google-Adsense%E5%9C%A8Hugo%E4%B8%AD%E7%9A%84%E9%85%8D%E7%BD%AE/</link>
