@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tech on 猫猫和狗狗的小窝</title>
+    <link>https://deewooo.github.io/categories/Tech/</link>
+    <description>Recent content in Tech on 猫猫和狗狗的小窝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 16 Mar 2023 09:30:26 +0800</lastBuildDate><atom:link href="https://deewooo.github.io/categories/Tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在ChatGPT的帮助下从零开始了解Event Sourcing的一次记录</title>
+      <link>https://deewooo.github.io/post/%E5%9C%A8ChatGPT%E7%9A%84%E5%B8%AE%E5%8A%A9%E4%B8%8B%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E4%BA%86%E8%A7%A3Event-Sourcing%E7%9A%84%E4%B8%80%E6%AC%A1%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Thu, 16 Mar 2023 09:30:26 +0800</pubDate>
+      
+      <guid>https://deewooo.github.io/post/%E5%9C%A8ChatGPT%E7%9A%84%E5%B8%AE%E5%8A%A9%E4%B8%8B%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E4%BA%86%E8%A7%A3Event-Sourcing%E7%9A%84%E4%B8%80%E6%AC%A1%E8%AE%B0%E5%BD%95/</guid>
+      <description>昨天，我从朋友那里听到了一个词——Event Sourcing，据说是一种很有趣的架构模式，但目前在国内却没有一个成熟的应用。那该死的好奇心就</description>
+    </item>
+    
+  </channel>
+</rss>

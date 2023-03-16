@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    
+
+
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RB3D4NTEED"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag ( 'set', { 'restricted_data_processing': true });
+    gtag('config', 'G-RB3D4NTEED');
+</script>
+
+
+
+    
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="猫猫和狗狗的小窝">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://deewooo.github.io//img/bg3-1.jpeg">
+    <meta property="twitter:image" content="https://deewooo.github.io//img/bg3-1.jpeg" />
+    
+
+    
+    <meta name="title" content="在ChatGPT的帮助下从零开始了解Event Sourcing的一次记录" />
+    <meta property="og:title" content="在ChatGPT的帮助下从零开始了解Event Sourcing的一次记录" />
+    <meta property="twitter:title" content="在ChatGPT的帮助下从零开始了解Event Sourcing的一次记录" />
+    
+
+    
+    <meta name="description" content="IvyWooo，独立开发者，自由职业与宽客的探索路上，用代码打造未来 | 这里是 DD299 的博客，反射出美食与技术的温暖光芒。">
+    <meta property="og:description" content="IvyWooo，独立开发者，自由职业与宽客的探索路上，用代码打造未来 | 这里是 DD299 的博客，反射出美食与技术的温暖光芒。" />
+    <meta property="twitter:description" content="IvyWooo，独立开发者，自由职业与宽客的探索路上，用代码打造未来 | 这里是 DD299 的博客，反射出美食与技术的温暖光芒。" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="dd299, dd299的网络日志, dd299的博客, DD299 Blog, 博客, 个人网站, 互联网, Web, 量化，投资，美食">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>在ChatGPT的帮助下从零开始了解Event Sourcing的一次记录 | DD299的博客 | DD299 Blog</title>
+
+    <link rel="canonical" href="/post/%E5%9C%A8ChatGPT%E7%9A%84%E5%B8%AE%E5%8A%A9%E4%B8%8B%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E4%BA%86%E8%A7%A3Event-Sourcing%E7%9A%84%E4%B8%80%E6%AC%A1%E8%AE%B0%E5%BD%95/">
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.1/css/all.css" rel="stylesheet" type="text/css">
+
+    
+    
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5920484041747601"
+            crossorigin="anonymous"></script>
+
+    
+    
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var int = setInterval(fixCount, 100);
+            var busuanziSiteOffset =  0 
+            var busuanziSiteUvOffset =  0 
+
+            function fixCount() {
+                if ($("#busuanzi_container_site_pv").css("display") != "none") {
+                    clearInterval(int);
+                    $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + busuanziSiteOffset);
+                }
+                if ($("#busuanzi_container_site_uv").css("display") != "none") {
+                    clearInterval(int);
+                    $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + busuanziSiteUvOffset);
+                }
+
+                if ($("#busuanzi_container_page_pv").css("display") != "none") {
+                    clearInterval(int);
+                    $("#busuanzi_value_page_pv").html(parseInt($("#busuanzi_value_page_pv").html()));
+                }
+            }
+        });
+    </script>
+    
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/pwa/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/pwa/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/pwa/favicon-16x16.png">
+    <link rel="manifest" href="/pwa/site.webmanifest">
+    <link rel="mask-icon" href="/pwa/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+
+    <meta name=”apple-mobile-web-app-capable” content=”yes”>
+
+
+
+
+
+
+
+
+
+    <script>
+        
+        if ('serviceWorker' in navigator) {
+            
+            window.addEventListener('load', function () {
+                
+                
+                navigator.serviceWorker.register('/js/service-worker.js')
+                    .then(function (registration) {
+                        
+                        console.log('sw.js 注册成功', registration.scope);
+                    })
+                    .catch(function (err) {
+                        
+                        console.log('sw.js 注册失败 ', err);
+                    });
+            });
+        }
+    </script>
+
+</head>
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">猫猫和狗狗的小窝</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">All Posts</a>
+                    </li>
+                    
+                        
+                        <li>
+                            <a href="/categories/Tech">Tech</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/%E4%BA%BA%E9%97%B4%E7%83%9F%E7%81%AB">人间烟火</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/%E5%8E%86%E5%8F%B2">历史</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/%E6%8A%80%E6%9C%AF">技术</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/%E6%95%88%E7%8E%87">效率</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/%E7%AE%80%E5%8D%95%E7%94%9F%E9%95%BF">简单生长</a>
+                        </li>
+                        
+                    
+                    
+		    
+                        <li><a href="/archive/">ARCHIVE</a></li>
+                    
+
+                    
+                    <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/bg3-1.jpeg')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/ChatGPT" title="ChatGPT">
+                            ChatGPT
+                        </a>
+                        
+                        <a class="tag" href="/tags/Event-Sourcing" title="Event Sourcing">
+                            Event Sourcing
+                        </a>
+                        
+                    </div>
+                    <h1>在ChatGPT的帮助下从零开始了解Event Sourcing的一次记录</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                     &#34;DD&#34;
+                             
+                            on 
+                            Thursday, March 16, 2023
+                            
+                                <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
+                                <span id="/post/%E5%9C%A8ChatGPT%E7%9A%84%E5%B8%AE%E5%8A%A9%E4%B8%8B%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E4%BA%86%E8%A7%A3Event-Sourcing%E7%9A%84%E4%B8%80%E6%AC%A1%E8%AE%B0%E5%BD%95/" class="leancloud_visitors meta_data_item" data-flag-title="">
+    <span class="post-meta-item-icon">
+      <span class="octicon octicon-eye"></span> 
+    </span>
+    <i class="fa fa-eye"></i>
+    <span class="old-visitors-count" style="display: none;"></span>
+    <span class="leancloud-visitors-count"></span>
+</span>
+
+
+
+<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+
+<script>
+	AV.initialize("", "");
+</script>
+
+<script type="text/javascript">
+function showTime(Counter) {
+    var query = new AV.Query(Counter);
+    var entries = [];
+    var $visitors = $(".leancloud_visitors");
+
+    $visitors.each(function() {
+        entries.push($(this).attr("id").trim());
+    });
+
+    query.containedIn('url', entries);
+    query.find()
+        .done(function(results) {
+            var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+            var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
+
+            
+            
+            
+            
+
+            for (var i = 0; i < results.length; i++) {
+                var item = results[i];
+                var url = item.get('url');
+                var time = item.get('time');
+                var element = document.getElementById(url);
+
+                $(element).find(COUNT_CONTAINER_REF).text(time);
+            }
+            for (var i = 0; i < entries.length; i++) {
+                var url = entries[i];
+                var element = document.getElementById(url);
+                var countSpan = $(element).find(COUNT_CONTAINER_REF);
+                if (countSpan.text() == '') {
+                    var oldCountSpan = $(element).find(OLD_COUNT_CONTAINER_REF).text();
+                    if(oldCountSpan!=''){
+                        countSpan.text(0+parseInt(oldCountSpan));
+                    }else{
+                        countSpan.text(0);          
+                    }
+                }
+            }
+        })
+        .fail(function(object, error) {
+            console.log("Error: " + error.code + " " + error.message);
+        });
+}
+
+function addCount(Counter) {
+    var $visitors = $(".leancloud_visitors");
+    var url = $visitors.attr('id').trim();
+    var title = $visitors.attr('data-flag-title').trim();
+    var query = new AV.Query(Counter);
+
+    query.equalTo("url", url);
+    query.find({
+        success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment("time");
+                counter.save(null, {
+                    success: function(counter) {
+                        var $element = $(document.getElementById(url));
+                        $element.find('.leancloud-visitors-count').text(counter.get('time'));
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+                var newcounter = new Counter();
+                 
+                var acl = new AV.ACL();
+                acl.setPublicReadAccess(true);
+                acl.setPublicWriteAccess(true);
+                newcounter.setACL(acl);
+                 
+                newcounter.set("title", title);
+                newcounter.set("url", url);
+                var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
+                var $element = $(document.getElementById(url));
+                var oldCountSpan = $element.find(OLD_COUNT_CONTAINER_REF).text();
+                if(oldCountSpan!=''){
+                    newcounter.set("time", parseInt(oldCountSpan)+1);
+                }else{
+ 	                    newcounter.set("time",  1);
+                }
+                newcounter.save(null, {
+                    success: function(newcounter) {
+                        var $element = $(document.getElementById(url));
+                        $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+                    },
+                    error: function(newcounter, error) {
+                        console.log('Failed to create');
+                    }
+                });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + " " + error.message);
+        }
+    });
+}
+$(function() {
+    var Counter = AV.Object.extend("Counter");
+    
+    
+    if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+    } else {
+        showTime(Counter);
+    }
+});
+</script>
+
+                                阅读 </span></span>|<span class="post-date">共5507字</span>，阅读约<span class="more-meta"> 11 分钟</span>
+
+                            
+
+                            
+                            
+                            
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <p>昨天，我从朋友那里听到了一个词——Event Sourcing，据说是一种很有趣的架构模式，但目前在国内却没有一个成熟的应用。那该死的好奇心就控制了我，晚上便立刻去知乎上搜了一篇<a href="https://zhuanlan.zhihu.com/p/38968012">介绍Event Sourcing的文章</a>，但扫了一眼之后，并没有那种被深深吸引住的感觉。</p>
+<p>我感到十分疑惑和不甘心，于是又去了B站，找了一段<a href="https://www.bilibili.com/video/BV15541147z3?vd_source=21037874ab3a579145a8db0b5a05ab6a">10分钟的介绍视频</a>来看，这次算是对Event Sourcing有了一些初步的概念，但还是觉得不够深入和令人满意。</p>
+<p>终于，我决定打开ChatGPT，并开始了一系列关于Event Sourcing的灵魂提问。以下是整个探究过程的记录：</p>
+<ul>
+<li>
+<p>我：你知道event sourcing么？</p>
+</li>
+<li>
+<p>ChatGPT：</p>
+<blockquote>
+<p>是的，Event Sourcing 是一种由 Martin Fowler 和 Greg Young 等人提出的架构模式，主要用于构建事务性业务应用系统。</p>
+<p>Event Sourcing 中，所有的操作都被视为系统中发生的事件，系统状态的变化是通过一系列事件的顺序而得到的，这些事件会被保存下来，用于重建系统状态。通过这种方式，我们可以将状态存储到一个不可变的事件日志中，实现了事件的溯源，可以轻易地回溯系统的历史状态，支持多版本状态的管理和并行处理多个操作等。</p>
+<p>Event Sourcing 通过使用事件来描述系统状态的变化，实现了对时间的敏感度，而不仅仅是基于当前状态。这使得它能够处理很多传统架构难以支持的复杂应用场景，例如多版本控制、日志审计、系统历史状态回溯等。但是，它也对数据的处理和实现方式提出了更高的要求，需要在系统设计之初就将事件溯源机制考虑进去，需要设计并实现将事件入库、事件存储、事件检索等多个方面的系统组成部分。</p>
+</blockquote>
+</li>
+<li>
+<p>我：它和DDD有什么关系？</p>
+</li>
+<li>
+<p>ChatGPT：</p>
+<blockquote>
+<p>Event Sourcing 和领域驱动设计 (DDD) 有很强的关联关系，两者可以一起使用来构建高度稳健、可扩展和可维护的业务应用程序。</p>
+<p>在 DDD 中，我们将系统看作由多个领域模型组成的，每个领域模型具有自己的生命周期和状态转换规则。而在 Event Sourcing 中，我们更强调系统状态的演进过程，它会将每一个状态改变都视为一个事件，这些事件组成了系统的事件流，根据这些事件可以逐步重建出系统当前状态。</p>
+<p>在使用 Event Sourcing 架构模式时，我们需要使用 DDD 的思想来对领域模型进行划分，并利用事件流来保持模型的状态。使用 DDD 模型可以让我们更清晰地了解模型的状态合理性，以及如何采取措施来防止状态的非法转换。</p>
+<p>此外，DDD 和 Event Sourcing 的核心思想都是围绕着领域模型进行的，它们通过共同关注领域知识和业务需求，可以帮助我们在开发过程中更好地把握系统概念、架构和实现。在实际开发中，DDD 和 Event Sourcing 应该结合起来使用，通过事件流和领域模型的双重保障来实现可维护、可扩展、高性能的业务应用系统。</p>
+</blockquote>
+</li>
+<li>
+<p>我：这方面，你知道有哪些成熟的应用？</p>
+</li>
+<li>
+<p>ChatGPT：</p>
+<blockquote>
+<p>vent Sourcing 的应用相对较新，尚未有太多的成熟应用。不过这种架构模式逐渐被越来越多的企业和组织所接受，也已经在某些领域得到了广泛的应用。</p>
+<p>下面列举一些比较知名的使用 Event Sourcing 的应用：</p>
+<ol>
+<li>车辆物联网系统</li>
+</ol>
+<p>车辆物联网系统是一个由多台设备组成的系统，包括车载终端、路边设备和云服务器等。在这个系统中，使用 Event Sourcing 可以保证每个车辆的状态变化、路况数据收集和行驶轨迹等信息都被记录下来，对车辆监视、驾驶数据分析和行驶路线优化等有很大的帮助。</p>
+<ol start="2">
+<li>电子商务应用</li>
+</ol>
+<p>电子商务应用中，使用 Event Sourcing 可以实现订单管理、库存管理、支付处理等核心业务功能。由于订单状态的变化非常频繁，传统的关系型数据库存储方式不太适合用来处理这种高写入频率的信息。使用 Event Sourcing 可以更好地处理这些信息，保证每个订单状态的变化都被记录下来，从而实现更好的订单管理和跟踪。</p>
+<ol start="3">
+<li>区块链应用</li>
+</ol>
+<p>区块链应用的核心是去中心化的分布式账本系统，其记录了所有交易发生的时间和内容，所有的账户、交易都是不可变的。Event Sourcing 提供了可溯源性和可信性，是区块链应用设计中不可或缺的一环。</p>
+<p>还有一些业界较著名的 Event Sourcing 实际应用框架和工具，如 Axon Framework、Lagom、EventStore、Apache Kafka 等。这些工具和框架都提供了一定程度上的支持来帮助我们更容易地实现 Event Sourcing 架构模式，可以更快速地开发出可靠、高效的业务应用程序。</p>
+</blockquote>
+</li>
+<li>
+<p>我：是否可以说Event Sourcing在应用上就是DDD？</p>
+</li>
+<li>
+<p>ChatGPT：</p>
+<blockquote>
+<p>Event Sourcing 和 DDD 是两种不同的架构设计思想，它们在应用上有很多相似之处，但并不是完全相同的。</p>
+<p>Event Sourcing 是指将系统状态的演进过程，划分为一系列的事件，并将这些事件组成一个事件流来维护系统状态。这种设计思想强调每个状态改变都是可追溯的，可以通过查看事件流来重建系统的状态。</p>
+<p>而 DDD 则是一种面向业务领域的软件设计思想，它强调通过针对业务领域的领域模型（Domain Model）来实现功能和降低耦合度。DDD 不关注具体的实现方式，而是关注如何划分、组织和管理领域模型。</p>
+<p>从应用上来看，Event Sourcing 和 DDD 常常一起使用，因为 Event Sourcing 维护的事件流可以作为 DDD 中领域模型的持久化存储。通过将 DDD 中领域模型的状态记录到事件流中，可以帮助我们更好地处理状态变化和重建问题。同时，DDD 在事件流的设计上也可以提供一些帮助，比如通过将事件分类、命名、组织来帮助我们更好地理解领域模型中不同状态的变化。</p>
+<p>因此，可以说 Event Sourcing 经常与 DDD 一起使用，但并不能简单地将它们归为一类。它们在软件设计中各自发挥不同的作用，但都可以帮助我们构建高质量、可扩展、稳健的业务系统。</p>
+</blockquote>
+</li>
+<li>
+<p>我：那和“事件驱动开发”的关系是什么？</p>
+</li>
+<li>
+<p>ChatGPT：</p>
+<blockquote>
+<p>事件驱动开发是指通过响应事件来驱动应用程序的开发模式。它与 Event Sourcing 和 DDD 有一定的关联，但这三者并不是完全相同的概念。</p>
+<p>事件驱动开发可以与 Event Sourcing 配合使用，以实现在应用程序中记录和处理事件的功能。在 Event Sourcing 中，应用程序中的每个变化都可以视为一个事件，这些事件被按顺序记录到一个不可变的事件流中。相比之下，事件驱动开发中的事件则是由外部的事件源或系统组件发出的，应用程序需要根据这些事件来执行相应的操作。因此，在使用 Event Sourcing 的同时，事件驱动开发可以为应用程序提供更多的事件来源和响应机制，从而提高应用程序的可伸缩性和灵活性。</p>
+<p>另一方面，DDD 中的领域事件也可以被视为一种事件驱动的方法，用于描述系统中的业务过程和状态变化。在使用 Event Sourcing 时，可以利用领域事件来帮助设计事件模型和重建系统状态。因此，DDD 和 Event Sourcing 的配合可以帮助我们更好地构建具备业务价值的应用程序。</p>
+<p>综上所述，虽然事件驱动开发、Event Sourcing 和 DDD 都与事件处理相关，但它们是针对不同方面的技术和概念。它们可以在一些场景下相互结合和补充，以提高应用程序的可维护性、可扩展性和可靠性。</p>
+</blockquote>
+</li>
+<li>
+<p>我：我可以把Event Sourcing理解成一种log么？</p>
+</li>
+<li>
+<p>ChatGPT：</p>
+<blockquote>
+<p>是的，你可以把 Event Sourcing 理解为一种事件日志（event log）的实现方式之一。在 Event Sourcing 中，应用程序中的各种状态变化和操作都被视为事件，被顺序记录到一个基于时间的不可变数据结构中（通常是一个事件流或事件存储）。这个过程类似于一个事件日志，而事件存储中的每个事件就相当于事件日志中的每个时间戳条目。</p>
+<p>与传统的日志系统不同，Event Sourcing 的事件记录不仅记录了应用程序状态的变化，还可以用于重建应用程序状态和执行业务逻辑。通过回放事件流，应用程序可以在任意时间点恢复它的状态，甚至可以在不同的部署环境中复制应用程序状态。因此，Event Sourcing 让应用程序的状态变得不可变和可重现，并且能够提高应用程序的可伸缩性和可维护性。</p>
+<p>当然，Event Sourcing 和传统的日志系统也有所不同。Event Sourcing 记录的事件应该是领域事件，和特定的应用程序业务逻辑相关。而传统的日志系统则更多地关注系统级别的事件，比如网络连接、错误日志等等。此外，Event Sourcing 记录的事件也更加详细和有意义，记录了事件发生的时刻、事件来源、事件内容等方面的信息。</p>
+</blockquote>
+</li>
+<li>
+<p>我：Event Sourcing模式下，会不会发生数据上的错误？</p>
+</li>
+<li>
+<p>ChatGPT：</p>
+<blockquote>
+<p>在 Event Sourcing 模式下，虽然不会出现丢失数据的情况（因为所有的状态变化都被记录下来了），但仍然可能发生数据上的错误。以下是一些可能出现的错误情况：</p>
+<ol>
+<li>
+<p>事件版本冲突：当两个或多个并发的操作产生相同的事件，且这些事件都要对同一个聚合根进行状态变更时，这些事件就会产生版本冲突。这种情况下，需要使用乐观锁等机制来解决版本冲突，否则可能会导致数据错误。</p>
+</li>
+<li>
+<p>数据同步问题：在多个服务之间交换消息时，可能会出现数据同步问题。例如，一个服务发布了一个事件，但由于网络延迟等原因，另一个服务没有及时接收到该事件，而导致数据不一致。</p>
+</li>
+<li>
+<p>事件溢出：如果事件数量太多，可能会导致事件存储器空间不足。此时，需要对事件进行归档或删除，否则可能会对系统性能和稳定性造成影响。</p>
+</li>
+<li>
+<p>数据错误：在记录事件的过程中，如果出现了错误或者非法操作，可能会导致事件本身的错误，从而影响应用程序状态的正确性。</p>
+</li>
+</ol>
+<p>为了解决这些问题，需要使用合适的设计模式、技术和工具。例如，使用基于时间戳的并发控制机制，通过异步消息传递实现数据同步，使用高可靠的事件存储器来防止事件丢失等。同时，也需要进行定期的事件清理和备份，以确保数据的完整性和可靠性。</p>
+</blockquote>
+</li>
+<li>
+<p>我：有没有一种可能，git的版本管理方式，就是一种Event Sourcing？</p>
+</li>
+<li>
+<p>ChatGPT：</p>
+<blockquote>
+<p>是的，可以将 Git 的版本管理方式视为一种基于事件溯源（Event Sourcing）的实现方式之一。</p>
+<p>在 Git 中，每次提交操作都会被记录为一个新的版本，在版本控制树上形成分支和合并的历史记录。这些提交操作都是修改某些文件内容的事件，这些事件以时间戳的方式记录在 Git 的对象库中。类似于 Event Sourcing，这些事件是不可变的，可以被追溯和回溯，可以重现历史状态。</p>
+<p>不同的是，Git 中的事件并没有像 Event Sourcing 中的事件那样完整记录应用程序状态的变化。而是只记录了对特定文件或代码库的操作。因此 Git 可以被归类为一种更为特化的事件存储，特别用于版本控制。而在 Event Sourcing 中，事件通常涵盖更多方面的领域事件，而不仅仅是针对代码库的版本控制。</p>
+<p>但是，Git 的版本控制方式仍然具有许多与 Event Sourcing 相似的特点和优点，如可追溯性、可重放性、幂等性、可恢复性等。因此可以说，基于 Git 的版本管理，可以借鉴 Event Sourcing 的一些优秀设计思想和实践。</p>
+</blockquote>
+</li>
+<li>
+<p>我：它之前提到的应用种，包括了区块链，我就顺势把区块链拎出来问问：区块链的技术有哪些？</p>
+</li>
+<li>
+<p>ChatGPT：</p>
+<blockquote>
+<p>区块链技术有以下几个主要方面：</p>
+<ol>
+<li>
+<p>分布式账本技术：区块链的核心技术之一，将所有参与者之间的交易信息记录在一个共享的账本中。这个账本是分布式存储的，只要存在网络中的一个节点，就可以获取到完整的账本信息。其中最著名的实现方式是比特币区块链。</p>
+</li>
+<li>
+<p>共识算法：由于区块链的去中心化特性，在进行交易时必须要保证账本信息的一致性。为此，区块链需要一种共识算法，以确保节点之间对交易的确认达成一致。常见的共识算法有工作量证明（PoW）、权益证明（PoS）、拜占庭容错（BFT）等。</p>
+</li>
+<li>
+<p>密码学技术：区块链基于密码学实现了去中心化的安全性，如公私钥加密、哈希算法和数字签名等技术，确保只有合法的使用者才能读写区块链上的记录，保证交易的安全性和隐私性。</p>
+</li>
+<li>
+<p>智能合约：智能合约是构建在区块链技术之上的一种编程模型，可以封装和自动执行协议。智能合约能够对交易进行自动化执行和验证，以确保交易顺利完成。以太坊是智能合约应用最广泛的区块链项目之一。</p>
+</li>
+<li>
+<p>跨链技术：由于不同的区块链之间无法直接通信，因此需要一种跨链技术来实现不同区块链之间的交互。常见的跨链技术有侧链、原子交换和跨链协议等。</p>
+</li>
+<li>
+<p>元数据标准化：在许多区块链应用中，需要对大量的数据进行存储和交换。元数据标准化是将这些数据进行统一格式和设定的技术，确保区块链上的数据格式一致，从而方便数据交换和分析。例如，Hyperledger Indy 就提供了统一的身份元数据标准。</p>
+</li>
+</ol>
+<p>这些技术在不同的区块链项目中可能会有所不同，不同的区块链应用场景需要使用不同的技术组合，以适应各自的需求。</p>
+</blockquote>
+</li>
+<li>
+<p>我：这些哪个用到Event Sourcing了？</p>
+</li>
+<li>
+<p>ChatGPT：</p>
+<blockquote>
+<p>Event Sourcing 是一种在应用程序中记录和存储事件的架构模式，它允许构建一个可靠的事件日志，可以记录系统中所有的变化。以下是一些使用 Event Sourcing 技术的区块链项目：</p>
+<ol>
+<li>
+<p>Corda：Corda 是一个分布式账本平台，可以用于在机构之间传输价值和协议数据。Corda 使用 Event Sourcing 技术来记录和存储所有的状态变化，以便在需要时进行审计和重放交易。</p>
+</li>
+<li>
+<p>Hyperledger Fabric：Hyperledger Fabric 是一个企业级区块链框架，它支持各种不同的共识算法和身份验证机制。Hyperledger Fabric 使用 Event Sourcing 技术来记录事务历史，以便可以追溯和审计所有的交易。</p>
+</li>
+<li>
+<p>Ethereum：Ethereum 是一个智能合约平台，它允许使用 Solidity 编写智能合约，这些智能合约可以在区块链上运行。Ethereum 使用 Event Sourcing 技术来记录所有的交易事件和状态变化，以便可以验证所有的交易和状态更改。</p>
+</li>
+<li>
+<p>Bitcoin：Bitcoin 是一种用于价值传输的加密货币，它使用了区块链技术。Bitcoin 使用 Event Sourcing 技术来记录所有的交易历史，以便在需要时进行追溯和审计。</p>
+</li>
+</ol>
+<p>这些项目都使用了 Event Sourcing 技术来记录和存储事件，以便可以在需要时进行审计和追溯。</p>
+</blockquote>
+</li>
+</ul>
+<p>至此，我形成了对Event Sourcing的一个非常初步的印象： 跟DDD和TDD都有点像又有点不一样，感觉更像个git，区块链是它的一种应用。</p>
+<p>在问答的过程中，我会用google之类的其他工具来交叉印证ChatGPT的回答。即使这样做，在ChatGPT上用时不到半小时。</p>
+<p>这是一次非常高效的探究体验。</p>
+<hr>
+<p>ps：本篇主体文字用ChatGPT润色过。</p>
+<hr>
+<blockquote>
+<p>
+  <img src="/img/post/cc-icon.png" alt="">
+
+</p>
+<p>本作品由 <a href="https://www.goodfun.me">IvyWooo</a> 采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a> 进行许可，转载请注明出处。</p>
+<p>[本文链接](<a href="https://www.goodfun.me/post/">https://www.goodfun.me/post/</a>在ChatGPT的帮助下从零开始了解Event Sourcing的一次记录/)</p>
+</blockquote>
+
+
+                
+                
+<div class="entry-shang text-center">
+    
+	    <p>「真诚赞赏，手留余香」</p>
+	
+	<button class="zs show-zs btn btn-bred">赞赏支持</button>
+</div>
+<div class="zs-modal-bg"></div>
+<div class="zs-modal-box">
+	<div class="zs-modal-head">
+		<button type="button" class="close">×</button>
+		<span class="author"><a href="https://deewooo.github.io/"><img src="/img/favicon.png" />猫猫和狗狗的小窝</a></span>
+        
+	        <p class="tip"><i></i><span>真诚赞赏，手留余香</span></p>
+		
+ 
+	</div>
+	<div class="zs-modal-body">
+		<div class="zs-modal-btns">
+			<button class="btn btn-blink" data-num="2">2元</button>
+			<button class="btn btn-blink" data-num="5">5元</button>
+			<button class="btn btn-blink" data-num="10">10元</button>
+			<button class="btn btn-blink" data-num="50">50元</button>
+			<button class="btn btn-blink" data-num="100">100元</button>
+			<button class="btn btn-blink" data-num="1">任意金额</button>
+		</div>
+		<div class="zs-modal-pay">
+			<button class="btn btn-bred" id="pay-text">2元</button>
+			<p>使用<span id="pay-type">微信</span>扫描二维码完成支付</p>
+			<img src="/img/reward/wechat-2.png"  id="pay-image"/>
+		</div>
+	</div>
+	<div class="zs-modal-footer">
+		<label><input type="radio" name="zs-type" value="wechat" class="zs-type" checked="checked"><span ><span class="zs-wechat"><img src="/img/reward/wechat-btn.png"/></span></label>
+		<label><input type="radio" name="zs-type" value="alipay" class="zs-type" class="zs-alipay"><img src="/img/reward/alipay-btn.png"/></span></label>
+	</div>
+</div>
+<script type="text/javascript" src="/js/reward.js"></script>
+
+                
+
+                
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/ChatGPT%E5%B8%AE%E6%88%91%E5%86%99%E4%BA%86%E4%B8%AA%E5%8A%9F%E8%83%BD%E4%B9%8B%E4%BA%8C/" data-toggle="tooltip" data-placement="top" title="ChatGPT帮我写了个功能之二">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+                
+
+                <span id="busuanzi_container_page_pv">
+                    本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+                </span>
+
+                
+
+
+<script src="https://giscus.app/client.js"
+        data-repo="DeeWooo/DeeWooo.github.io"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkxODY2MDIxOTQ="
+        data-category="Announcements"
+        data-category-id="DIC_kwDOCx9S0s4CRrRd"
+        data-mapping="pathname"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+            </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/AIGC" title="AIGC">
+                            AIGC
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/ChatGPT" title="ChatGPT">
+                            ChatGPT
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/Docker" title="Docker">
+                            Docker
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/Github-Action" title="Github-Action">
+                            Github-Action
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/Github-Gist" title="Github-Gist">
+                            Github-Gist
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/Github-Pages" title="Github-Pages">
+                            Github-Pages
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/Hugo" title="Hugo">
+                            Hugo
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/fuse.js" title="fuse.js">
+                            fuse.js
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/hugo" title="hugo">
+                            hugo
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/iphone14" title="iphone14">
+                            iphone14
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/%E5%9C%9F%E7%8C%AB%E7%88%AA%E7%97%95" title="土猫爪痕">
+                            土猫爪痕
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/%E5%9C%9F%E7%8C%AB%E8%AF%BB%E4%B9%A6" title="土猫读书">
+                            土猫读书
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/%E5%BB%BA%E7%AB%99" title="建站">
+                            建站
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/%E7%89%A9%E8%B5%84" title="物资">
+                            物资
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2" title="站内搜索">
+                            站内搜索
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/%E7%AE%80%E5%8D%95%E7%94%9F%E9%95%BF" title="简单生长">
+                            简单生长
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+                <section>
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_blank" href=""></a></li>
+                        
+                    </ul>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+
+<footer>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">                  
+                    
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/deewooo">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="猫猫和狗狗的小窝" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; 猫猫和狗狗的小窝 2023
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                </p>
+                <p>
+                     <span id="busuanzi_container_site_pv">
+                        本站访问量：<span id="busuanzi_value_site_pv"></span>次
+                     </span>
+                    &nbsp;
+                    <span id="busuanzi_container_site_uv">
+                        您是本站第 <span id="busuanzi_value_site_uv"></span> 位访问者
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
