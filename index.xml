@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>为Github Desktop 设置代理</title>
+      <link>https://deewooo.github.io/post/%E4%B8%BAGithub-Desktop%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86/</link>
+      <pubDate>Mon, 22 May 2023 15:42:57 +0800</pubDate>
+      
+      <guid>https://deewooo.github.io/post/%E4%B8%BAGithub-Desktop%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86/</guid>
+      <description>我们在使用Github Desktop时，经常由于不可说的原因在同步代码时会报提示： fatal: unable to access &amp;#39;https://github.com/username/reprository.git/&amp;#39;: Failed to connect to github.com port 443: Timed out 当然我们可以将自己的代理服务设</description>
+    </item>
+    
+    <item>
       <title>这个世界少了一盏明灯</title>
       <link>https://deewooo.github.io/post/%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C%E5%B0%91%E4%BA%86%E4%B8%80%E7%9B%8F%E6%98%8E%E7%81%AF/</link>
       <pubDate>Tue, 16 May 2023 18:19:15 +0800</pubDate>
