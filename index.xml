@@ -6,7 +6,16 @@
     <description>Recent content on 猫猫和狗狗的小窝</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 May 2023 18:19:15 +0800</lastBuildDate><atom:link href="https://deewooo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 May 2023 15:47:22 +0800</lastBuildDate><atom:link href="https://deewooo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ITerm终端设置代理</title>
+      <link>https://deewooo.github.io/post/iTerm%E7%BB%88%E7%AB%AF%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86/</link>
+      <pubDate>Mon, 22 May 2023 15:47:22 +0800</pubDate>
+      
+      <guid>https://deewooo.github.io/post/iTerm%E7%BB%88%E7%AB%AF%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86/</guid>
+      <description>程序员用mac工作时，经常会使用iterm这类的命令行终端。 当我们使用git、docker或者brew升级软件包时，经常遭遇那座无形的墙，导</description>
+    </item>
+    
     <item>
       <title>这个世界少了一盏明灯</title>
       <link>https://deewooo.github.io/post/%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C%E5%B0%91%E4%BA%86%E4%B8%80%E7%9B%8F%E6%98%8E%E7%81%AF/</link>

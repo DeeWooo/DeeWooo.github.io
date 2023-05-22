@@ -6,7 +6,16 @@
     <description>Recent content in 技术 on 猫猫和狗狗的小窝</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Mar 2023 09:30:26 +0800</lastBuildDate><atom:link href="https://deewooo.github.io/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 May 2023 15:47:22 +0800</lastBuildDate><atom:link href="https://deewooo.github.io/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ITerm终端设置代理</title>
+      <link>https://deewooo.github.io/post/iTerm%E7%BB%88%E7%AB%AF%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86/</link>
+      <pubDate>Mon, 22 May 2023 15:47:22 +0800</pubDate>
+      
+      <guid>https://deewooo.github.io/post/iTerm%E7%BB%88%E7%AB%AF%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86/</guid>
+      <description>程序员用mac工作时，经常会使用iterm这类的命令行终端。 当我们使用git、docker或者brew升级软件包时，经常遭遇那座无形的墙，导</description>
+    </item>
+    
     <item>
       <title>在ChatGPT的帮助下从零开始了解Event Sourcing的一次记录</title>
       <link>https://deewooo.github.io/post/%E5%9C%A8ChatGPT%E7%9A%84%E5%B8%AE%E5%8A%A9%E4%B8%8B%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E4%BA%86%E8%A7%A3Event-Sourcing%E7%9A%84%E4%B8%80%E6%AC%A1%E8%AE%B0%E5%BD%95/</link>
