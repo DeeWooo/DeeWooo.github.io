@@ -2,8 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://deewooo.github.io/tags/AI%E5%8A%A9%E6%89%8B/</loc>
+    <lastmod>2023-06-07T15:24:07+08:00</lastmod>
+  </url><url>
     <loc>https://deewooo.github.io/categories/</loc>
-    <lastmod>2023-05-31T00:15:47+08:00</lastmod>
+    <lastmod>2023-06-07T15:24:07+08:00</lastmod>
+  </url><url>
+    <loc>https://deewooo.github.io/tags/ChatGPT/</loc>
+    <lastmod>2023-06-07T15:24:07+08:00</lastmod>
+  </url><url>
+    <loc>https://deewooo.github.io/post/</loc>
+    <lastmod>2023-06-07T15:24:07+08:00</lastmod>
+  </url><url>
+    <loc>https://deewooo.github.io/tags/</loc>
+    <lastmod>2023-06-07T15:24:07+08:00</lastmod>
+  </url><url>
+    <loc>https://deewooo.github.io/post/%E5%88%97%E4%B8%80%E4%B8%8B%E8%87%AA%E5%B7%B1%E7%9A%84AI%E5%8A%A9%E6%89%8B%E4%BB%AC/</loc>
+    <lastmod>2023-06-07T15:24:07+08:00</lastmod>
+  </url><url>
+    <loc>https://deewooo.github.io/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2023-06-07T15:24:07+08:00</lastmod>
+  </url><url>
+    <loc>https://deewooo.github.io/</loc>
+    <lastmod>2023-06-07T15:24:07+08:00</lastmod>
   </url><url>
     <loc>https://deewooo.github.io/tags/langchain/</loc>
     <lastmod>2023-05-31T00:15:47+08:00</lastmod>
@@ -14,19 +35,7 @@
     <loc>https://deewooo.github.io/tags/openai/</loc>
     <lastmod>2023-05-31T00:15:47+08:00</lastmod>
   </url><url>
-    <loc>https://deewooo.github.io/post/</loc>
-    <lastmod>2023-05-31T00:15:47+08:00</lastmod>
-  </url><url>
-    <loc>https://deewooo.github.io/tags/</loc>
-    <lastmod>2023-05-31T00:15:47+08:00</lastmod>
-  </url><url>
     <loc>https://deewooo.github.io/tags/zilliz/</loc>
-    <lastmod>2023-05-31T00:15:47+08:00</lastmod>
-  </url><url>
-    <loc>https://deewooo.github.io/categories/%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2023-05-31T00:15:47+08:00</lastmod>
-  </url><url>
-    <loc>https://deewooo.github.io/</loc>
     <lastmod>2023-05-31T00:15:47+08:00</lastmod>
   </url><url>
     <loc>https://deewooo.github.io/post/%E7%BB%99langchain%E6%8A%93%E4%BA%86%E4%B8%80%E4%B8%AAbug/</loc>
@@ -76,9 +85,6 @@
   </url><url>
     <loc>https://deewooo.github.io/categories/%E7%AE%80%E5%8D%95%E7%94%9F%E9%95%BF/</loc>
     <lastmod>2023-04-13T15:56:53+08:00</lastmod>
-  </url><url>
-    <loc>https://deewooo.github.io/tags/ChatGPT/</loc>
-    <lastmod>2023-03-16T09:30:26+08:00</lastmod>
   </url><url>
     <loc>https://deewooo.github.io/tags/Event-Sourcing/</loc>
     <lastmod>2023-03-16T09:30:26+08:00</lastmod>
