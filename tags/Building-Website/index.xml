@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Building Website on 猫猫和狗狗的小窝</title>
+    <link>https://deewooo.github.io/tags/Building-Website/</link>
+    <description>Recent content in Building Website on 猫猫和狗狗的小窝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Jul 2023 14:39:21 +0800</lastBuildDate><atom:link href="https://deewooo.github.io/tags/Building-Website/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo&#43;Github Pages&#43;Github Action Blog Solution I   Building a Personal Blog With Hugo</title>
+      <link>https://deewooo.github.io/post/Hugo&#43;Github-Pages&#43;Github-Action-blog-solution-I-building-a-personal-blog-with-Hugo/</link>
+      <pubDate>Sat, 08 Jul 2023 14:39:21 +0800</pubDate>
+      
+      <guid>https://deewooo.github.io/post/Hugo&#43;Github-Pages&#43;Github-Action-blog-solution-I-building-a-personal-blog-with-Hugo/</guid>
+      <description>I spent some time rebuilding &amp;ldquo;猫狗窝&amp;rdquo; (a website for cats and dogs) using Hugo, hosted it on Github Pages, and implemented CI/CD using Github Actions. It has been a hassle-free process, allowing me to focus on writing content and easily publishing it. This article is a continuous work-in-progress, allowing me to write and publish</description>
+    </item>
+    
+  </channel>
+</rss>
