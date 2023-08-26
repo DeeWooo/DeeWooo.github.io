@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 猫猫和狗狗的小窝</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Jul 2023 14:39:21 +0800</lastBuildDate><atom:link href="https://deewooo.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 26 Aug 2023 13:46:13 +0800</lastBuildDate><atom:link href="https://deewooo.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Position Monitor 插件工具说明</title>
+      <link>https://deewooo.github.io/post/position-monitor%E6%8F%92%E4%BB%B6%E5%B7%A5%E5%85%B7%E8%AF%B4%E6%98%8E/</link>
+      <pubDate>Sat, 26 Aug 2023 13:46:13 +0800</pubDate>
+      
+      <guid>https://deewooo.github.io/post/position-monitor%E6%8F%92%E4%BB%B6%E5%B7%A5%E5%85%B7%E8%AF%B4%E6%98%8E/</guid>
+      <description>介绍 插件工具名称：position-monitor 插件工具类型：Chrome 扩展应用 position-monitor 是一个用于投资新手的持仓监控插件。它可以帮助投资者实时</description>
+    </item>
+    
     <item>
       <title>Hugo&#43;Github Pages&#43;Github Action Blog Solution I   Building a Personal Blog With Hugo</title>
       <link>https://deewooo.github.io/post/Hugo&#43;Github-Pages&#43;Github-Action-blog-solution-I-building-a-personal-blog-with-Hugo/</link>
